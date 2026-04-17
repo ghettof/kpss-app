@@ -1,98 +1,69 @@
-import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
-
-import { HelloWave } from '@/components/hello-wave';
-import ParallaxScrollView from '@/components/parallax-scroll-view';
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { Link } from 'expo-router';
+import { router } from 'expo-router';
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function HomeScreen() {
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
-        />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12',
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <Link href="/modal">
-          <Link.Trigger>
-            <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-          </Link.Trigger>
-          <Link.Preview />
-          <Link.Menu>
-            <Link.MenuAction title="Action" icon="cube" onPress={() => alert('Action pressed')} />
-            <Link.MenuAction
-              title="Share"
-              icon="square.and.arrow.up"
-              onPress={() => alert('Share pressed')}
-            />
-            <Link.Menu title="More" icon="ellipsis">
-              <Link.MenuAction
-                title="Delete"
-                icon="trash"
-                destructive
-                onPress={() => alert('Delete pressed')}
-              />
-            </Link.Menu>
-          </Link.Menu>
-        </Link>
+    <ScrollView style={styles.container}>
+      <View style={styles.header}>
+        <Text style={styles.title}>KPSS Hazırlık</Text>
+        <Text style={styles.subtitle}>Başarıya giden yol</Text>
+      </View>
 
-        <ThemedText>
-          {`Tap the Explore tab to learn more about what's included in this starter app.`}
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          {`When you're ready, run `}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-    </ParallaxScrollView>
+      <View style={styles.grid}>
+        <TouchableOpacity style={[styles.card, { backgroundColor: '#4A90D9' }]} onPress={() => router.push('/cikmis-sorular')}>
+          <Text style={styles.cardEmoji}>📚</Text>
+          <Text style={styles.cardTitle}>Çıkmış Sorular</Text>
+          <Text style={styles.cardDesc}>Yıllara göre sorular</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={[styles.card, { backgroundColor: '#E67E22' }]} onPress={() => router.push('/deneme-sinavi')}>
+          <Text style={styles.cardEmoji}>📝</Text>
+          <Text style={styles.cardTitle}>Deneme Sınavı</Text>
+          <Text style={styles.cardDesc}>120 soruluk deneme</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={[styles.card, { backgroundColor: '#27AE60' }]} onPress={() => router.push('/konu-calis')}>
+          <Text style={styles.cardEmoji}>🎯</Text>
+          <Text style={styles.cardTitle}>Konu Çalış</Text>
+          <Text style={styles.cardDesc}>Konuya göre sorular</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={[styles.card, { backgroundColor: '#8E44AD' }]} onPress={() => router.push('/ai-soru')}>
+          <Text style={styles.cardEmoji}>🤖</Text>
+          <Text style={styles.cardTitle}>AI Soru Üret</Text>
+          <Text style={styles.cardDesc}>Yapay zeka soruları</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={[styles.card, { backgroundColor: '#16A085' }]} onPress={() => router.push('/istatistik')}>
+          <Text style={styles.cardEmoji}>📊</Text>
+          <Text style={styles.cardTitle}>İstatistikler</Text>
+          <Text style={styles.cardDesc}>Performans analizi</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={[styles.card, { backgroundColor: '#F39C12' }]} onPress={() => router.push('/rozetler')}>
+          <Text style={styles.cardEmoji}>🏆</Text>
+          <Text style={styles.cardTitle}>Rozetler</Text>
+          <Text style={styles.cardDesc}>Başarılarını gör</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={[styles.card, { backgroundColor: '#C0392B' }]} onPress={() => router.push('/spk')}>
+          <Text style={styles.cardEmoji}>📈</Text>
+          <Text style={styles.cardTitle}>SPK Hazırlık</Text>
+          <Text style={styles.cardDesc}>Sermaye piyasası</Text>
+        </TouchableOpacity>
+      </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-  },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
-  },
+  container: { flex: 1, backgroundColor: '#0F1923' },
+  header: { padding: 30, paddingTop: 60, alignItems: 'center' },
+  title: { fontSize: 32, fontWeight: 'bold', color: '#FFFFFF' },
+  subtitle: { fontSize: 16, color: '#8899AA', marginTop: 6 },
+  grid: { flexDirection: 'row', flexWrap: 'wrap', padding: 16, gap: 16 },
+  card: { width: '45%', borderRadius: 16, padding: 20, alignItems: 'center' },
+  cardEmoji: { fontSize: 36, marginBottom: 10 },
+  cardTitle: { fontSize: 16, fontWeight: 'bold', color: '#fff', textAlign: 'center' },
+  cardDesc: { fontSize: 12, color: 'rgba(255,255,255,0.8)', marginTop: 4, textAlign: 'center' },
 });
