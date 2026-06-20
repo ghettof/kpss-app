@@ -25,6 +25,7 @@ export default function RootLayout() {
         <Stack.Screen name="rozetler" options={{ headerShown: false }} />
         <Stack.Screen name="spk" options={{ headerShown: false }} />
         <Stack.Screen name="spk-sinav" options={{ headerShown: false }} />
+        <Stack.Screen name="flashcard" options={{ headerShown: false }} />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>

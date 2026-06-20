@@ -626,15 +626,15 @@ export const questions2020 = [
   },
   {
     id: 2020091, yil: 2020, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Aylık ortalama yağış ve sıcaklık grafiği verilen il merkezi hangisidir? (Yazın yağış az, kışın fazla; sıcaklık ılıman)',
+    soru: 'Yazın yağış az, kışın yağış fazla ve sıcaklık ılıman olan iklim tipi Türkiye\'de en belirgin hangi ilde gözlemlenir?',
     secenekler: ['A) Adana', 'B) Trabzon', 'C) Konya', 'D) Erzurum', 'E) Diyarbakır'],
-    cevap: 2, aciklama: 'Bu iklim özellikleri Konya\'ya aittir. Doğru cevap C şıkkıdır.',
+    cevap: 0, aciklama: 'Adana, Akdeniz iklimine sahip olup yazları sıcak ve kurak, kışları ılıman ve yağışlı geçer; bu özellikler Akdeniz ikliminin tipik göstergesidir. Doğru cevap A şıkkıdır.',
   },
   {
     id: 2020092, yil: 2020, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Bir araştırmacı zakkum, defne, sandal, funda, menengiç, keçiboynuzu, pırnal meşesi gibi bitkilere rastlamıştır. Bu bitkiler hangi alanda yaygındır?',
-    secenekler: ['A) I', 'B) II', 'C) III', 'D) IV', 'E) V'],
-    cevap: 2, aciklama: 'Akdeniz makisine ait bu bitkiler III numaralı alanda yaygındır. Doğru cevap C şıkkıdır.',
+    soru: 'Zakkum, defne, sandal, funda, menengiç, keçiboynuzu ve pırnal meşesi gibi bitkiler Türkiye\'nin hangi bölgesinde yaygındır?',
+    secenekler: ['A) Karadeniz Bölgesi', 'B) İç Anadolu Bölgesi', 'C) Akdeniz ve Ege kıyıları', 'D) Doğu Anadolu Bölgesi', 'E) Güneydoğu Anadolu Bölgesi'],
+    cevap: 2, aciklama: 'Bu bitkiler Akdeniz makisi topluluğuna aittir; Türkiye\'de Akdeniz ve Ege kıyı kuşaklarında yaygın olarak bulunurlar. Doğru cevap C şıkkıdır.',
   },
   {
     id: 2020093, yil: 2020, ders: 'Coğrafya', seviye: 'Lisans',
@@ -644,9 +644,9 @@ export const questions2020 = [
   },
   {
     id: 2020094, yil: 2020, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Vertisoller (kepir) haritada hangi numaralı alanda yaygın olarak görülür?',
-    secenekler: ['A) I', 'B) II', 'C) III', 'D) IV', 'E) V'],
-    cevap: 0, aciklama: 'I numaralı alanda vertisoller yaygındır. Doğru cevap A şıkkıdır.',
+    soru: 'Vertisoller (kepir) olarak adlandırılan kil ağırlıklı topraklar Türkiye\'de en yaygın olarak hangi bölgede görülür?',
+    secenekler: ['A) Güneydoğu Anadolu Bölgesi', 'B) Karadeniz Bölgesi', 'C) Ege Bölgesi', 'D) Doğu Anadolu Bölgesi', 'E) İç Anadolu Bölgesi'],
+    cevap: 0, aciklama: 'Vertisoller (kepir), yaz-kış yağış farkının belirgin ve sıcaklığın yüksek olduğu Güneydoğu Anadolu Bölgesi\'nde en yaygın biçimde görülür. Doğru cevap A şıkkıdır.',
   },
   {
     id: 2020095, yil: 2020, ders: 'Coğrafya', seviye: 'Lisans',
@@ -656,9 +656,9 @@ export const questions2020 = [
   },
   {
     id: 2020096, yil: 2020, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Haritadaki alanlardan hangileri diğerlerine göre daha fazla göç vermektedir?',
-    secenekler: ['A) I ve II', 'B) I ve IV', 'C) II ve III', 'D) III ve V', 'E) IV ve V'],
-    cevap: 3, aciklama: 'III ve V numaralı alanlar göç vermektedir. Doğru cevap D şıkkıdır.',
+    soru: 'Türkiye\'de diğer bölgelere göre daha fazla göç veren bölgeler hangileridir?',
+    secenekler: ['A) Marmara ve Ege', 'B) Marmara ve Akdeniz', 'C) Ege ve Karadeniz', 'D) Doğu Anadolu ve Karadeniz', 'E) Akdeniz ve İç Anadolu'],
+    cevap: 3, aciklama: 'Doğu Anadolu ve Karadeniz Bölgeleri; ekonomik yetersizlikler, tarım alanlarının darlığı ve istihdam olanaklarının azlığı nedeniyle tarihsel süreçte en fazla göç veren bölgeler olmuştur. Doğru cevap D şıkkıdır.',
   },
   {
     id: 2020097, yil: 2020, ders: 'Coğrafya', seviye: 'Lisans',
@@ -692,21 +692,21 @@ export const questions2020 = [
   },
   {
     id: 2020102, yil: 2020, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Tiftik keçisi yetiştiriciliğinin daha yoğun olduğu alanlar hangileridir?',
-    secenekler: ['A) I ve II', 'B) I ve III', 'C) II ve III', 'D) II ve IV', 'E) III ve IV'],
-    cevap: 3, aciklama: 'II ve IV numaralı alanlarda tiftik keçisi yetiştiriciliği daha yoğundur. Doğru cevap D şıkkıdır.',
+    soru: 'Tiftik keçisi yetiştiriciliği Türkiye\'de en yoğun hangi illerde yapılmaktadır?',
+    secenekler: ['A) Trabzon ve Rize', 'B) Ankara ve Konya', 'C) İstanbul ve Bursa', 'D) Van ve Ağrı', 'E) İzmir ve Aydın'],
+    cevap: 1, aciklama: 'Ankara keçisi olarak da bilinen tiftik keçisi Türkiye\'de en yoğun biçimde İç Anadolu\'da, özellikle Ankara ve Konya çevresinde yetiştirilmektedir. Doğru cevap B şıkkıdır.',
   },
   {
     id: 2020103, yil: 2020, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Haritada numaralandırılan alanların hangisinde tarıma dayalı sanayi faaliyetleri daha fazla gelişmiştir?',
-    secenekler: ['A) I', 'B) II', 'C) III', 'D) IV', 'E) V'],
-    cevap: 2, aciklama: 'III numaralı alan. Doğru cevap C şıkkıdır.',
+    soru: 'Tarıma dayalı sanayi faaliyetlerinin (gıda işleme, tekstil vb.) en fazla geliştiği bölge hangisidir?',
+    secenekler: ['A) Doğu Anadolu Bölgesi', 'B) Karadeniz Bölgesi', 'C) Ege Bölgesi', 'D) Güneydoğu Anadolu Bölgesi', 'E) Doğu Karadeniz Bölümü'],
+    cevap: 2, aciklama: 'Ege Bölgesi; tütün, pamuk, üzüm, zeytin ve incir üretiminin yoğunluğu ile bu ürünlere dayalı işleme sanayisinin en geliştiği bölgedir. Doğru cevap C şıkkıdır.',
   },
   {
     id: 2020104, yil: 2020, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Haritada demir yolu ulaşımı bulunmayan alan hangisidir?',
-    secenekler: ['A) I', 'B) II', 'C) III', 'D) IV', 'E) V'],
-    cevap: 1, aciklama: 'II numaralı alanda demir yolu bulunmamaktadır. Doğru cevap B şıkkıdır.',
+    soru: 'Türkiye\'nin yedi coğrafi bölgesi arasında demir yolu uzunluğu en kısa olan bölge hangisidir?',
+    secenekler: ['A) İç Anadolu Bölgesi', 'B) Karadeniz Bölgesi', 'C) Ege Bölgesi', 'D) Marmara Bölgesi', 'E) Akdeniz Bölgesi'],
+    cevap: 1, aciklama: 'Karadeniz Bölgesi engebeli dağlık yapısı nedeniyle demir yolu yapımı güç ve maliyetlidir; bölgedeki demir yolu ağı Türkiye\'nin en kısa olanlar arasındadır. Doğru cevap B şıkkıdır.',
   },
 
   // VATANDAŞLIK (45-54)
@@ -1442,9 +1442,9 @@ export const questions2020 = [
   },
   {
     id: 2020092, yil: 2020, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Zakkum, defne, sandal, funda gibi Akdeniz makisi bitkileri hangi alanda yaygındır?',
-    secenekler: ['A) I', 'B) II', 'C) III', 'D) IV', 'E) V'],
-    cevap: 2, aciklama: 'III numaralı alan. Doğru cevap C şıkkıdır.',
+    soru: 'Zakkum, defne, sandal ve funda gibi Akdeniz makisi bitkileri Türkiye\'de hangi bölgede yaygındır?',
+    secenekler: ['A) Karadeniz Bölgesi', 'B) İç Anadolu Bölgesi', 'C) Akdeniz ve Ege kıyıları', 'D) Doğu Anadolu Bölgesi', 'E) Güneydoğu Anadolu Bölgesi'],
+    cevap: 2, aciklama: 'Bu bitkiler Akdeniz makisi topluluğuna aittir ve Türkiye\'de Akdeniz ile Ege kıyı kuşaklarında yaygın olarak bulunurlar. Doğru cevap C şıkkıdır.',
   },
   {
     id: 2020093, yil: 2020, ders: 'Coğrafya', seviye: 'Lisans',
@@ -1454,9 +1454,9 @@ export const questions2020 = [
   },
   {
     id: 2020094, yil: 2020, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Kepir (vertisoller) toprağının yaygın olduğu alan haritada hangisidir?',
-    secenekler: ['A) I', 'B) II', 'C) III', 'D) IV', 'E) V'],
-    cevap: 0, aciklama: 'I numaralı alan. Doğru cevap A şıkkıdır.',
+    soru: 'Kepir (vertisoller) olarak bilinen, killi yapısıyla kuruyunca çatlayan topraklar Türkiye\'de hangi bölgede en yaygındır?',
+    secenekler: ['A) Güneydoğu Anadolu Bölgesi', 'B) Karadeniz Bölgesi', 'C) Ege Bölgesi', 'D) Doğu Anadolu Bölgesi', 'E) İç Anadolu Bölgesi'],
+    cevap: 0, aciklama: 'Vertisoller; yaz-kış yağış farkının belirgin olduğu Güneydoğu Anadolu Bölgesi\'nde en yaygın biçimde görülür. Doğru cevap A şıkkıdır.',
   },
   {
     id: 2020095, yil: 2020, ders: 'Coğrafya', seviye: 'Lisans',
@@ -1466,9 +1466,9 @@ export const questions2020 = [
   },
   {
     id: 2020096, yil: 2020, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Haritada daha fazla göç veren alanlar hangileridir?',
-    secenekler: ['A) I ve II', 'B) I ve IV', 'C) II ve III', 'D) III ve V', 'E) IV ve V'],
-    cevap: 3, aciklama: 'III ve V. Doğru cevap D şıkkıdır.',
+    soru: 'Türkiye\'de tarihsel süreç içinde en fazla göç veren bölgeler hangileridir?',
+    secenekler: ['A) Marmara ve Ege Bölgeleri', 'B) Marmara ve Akdeniz Bölgeleri', 'C) Ege ve Karadeniz Bölgeleri', 'D) Doğu Anadolu ve Karadeniz Bölgeleri', 'E) Akdeniz ve İç Anadolu Bölgeleri'],
+    cevap: 3, aciklama: 'Doğu Anadolu ve Karadeniz Bölgeleri; ekonomik yetersizlikler ve tarım alanlarının sınırlılığı nedeniyle tarihsel süreçte en fazla göç veren bölgeler olmuştur. Doğru cevap D şıkkıdır.',
   },
   {
     id: 2020097, yil: 2020, ders: 'Coğrafya', seviye: 'Lisans',
@@ -1502,21 +1502,21 @@ export const questions2020 = [
   },
   {
     id: 2020102, yil: 2020, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Tiftik keçisi yetiştiriciliğinin daha yoğun olduğu alanlar hangileridir?',
-    secenekler: ['A) I ve II', 'B) I ve III', 'C) II ve III', 'D) II ve IV', 'E) III ve IV'],
-    cevap: 3, aciklama: 'II ve IV. Doğru cevap D şıkkıdır.',
+    soru: 'Tiftik keçisi yetiştiriciliği Türkiye\'de en yoğun hangi bölgede yapılmaktadır?',
+    secenekler: ['A) Doğu Karadeniz Bölümü', 'B) İç Anadolu Bölgesi', 'C) Ege kıyı kuşağı', 'D) Doğu Anadolu Bölgesi', 'E) Güneydoğu Anadolu Bölgesi'],
+    cevap: 1, aciklama: 'Ankara keçisi adıyla da bilinen tiftik keçisi; step alanlarının geniş yer kapladığı İç Anadolu Bölgesi\'nde, özellikle Ankara, Konya ve Kırşehir çevresinde yoğun biçimde yetiştirilmektedir. Doğru cevap B şıkkıdır.',
   },
   {
     id: 2020103, yil: 2020, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Tarıma dayalı sanayi faaliyetlerinin en fazla geliştiği alan haritada hangisidir?',
-    secenekler: ['A) I', 'B) II', 'C) III', 'D) IV', 'E) V'],
-    cevap: 2, aciklama: 'III. Doğru cevap C şıkkıdır.',
+    soru: 'Tarıma dayalı sanayi faaliyetlerinin (gıda işleme, tekstil, yağ üretimi vb.) Türkiye\'de en fazla geliştiği bölge hangisidir?',
+    secenekler: ['A) Doğu Anadolu Bölgesi', 'B) Karadeniz Bölgesi', 'C) Ege Bölgesi', 'D) Güneydoğu Anadolu Bölgesi', 'E) Doğu Karadeniz Bölümü'],
+    cevap: 2, aciklama: 'Ege Bölgesi; pamuk, tütün, zeytin, üzüm ve incir başta olmak üzere tarımsal çeşitliliğiyle tarıma dayalı işleme sanayisinin en fazla geliştiği bölgedir. Doğru cevap C şıkkıdır.',
   },
   {
     id: 2020104, yil: 2020, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Demir yolu ulaşımı bulunmayan alan haritada hangisidir?',
-    secenekler: ['A) I', 'B) II', 'C) III', 'D) IV', 'E) V'],
-    cevap: 1, aciklama: 'II. Doğru cevap B şıkkıdır.',
+    soru: 'Türkiye\'nin yedi coğrafi bölgesi içinde demir yolu ağının en az geliştiği bölge hangisidir?',
+    secenekler: ['A) İç Anadolu Bölgesi', 'B) Karadeniz Bölgesi', 'C) Ege Bölgesi', 'D) Marmara Bölgesi', 'E) Akdeniz Bölgesi'],
+    cevap: 1, aciklama: 'Karadeniz Bölgesi\'nin engebeli ve dağlık yapısı demir yolu inşaatını güçleştirmektedir; bu nedenle bölgedeki demir yolu ağı Türkiye\'nin en az gelişmiş olanları arasındadır. Doğru cevap B şıkkıdır.',
   },
 
   // VATANDAŞLIK (45-54)

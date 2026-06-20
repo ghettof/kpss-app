@@ -542,15 +542,15 @@ export const SORULAR_2018 = [
   },
   {
     id: 2018090, yil: 2018, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Haritada gösterilen alanlardan hangisi masif arazilerin bulunduğu alanlardan biri değildir?',
-    secenekler: ['A) I', 'B) II', 'C) III', 'D) IV', 'E) V'],
-    cevap: 3, aciklama: 'IV numaralı alan masif arazi değildir. Doğru cevap D şıkkıdır.',
+    soru: 'Aşağıdaki alanların hangisi Türkiye\'deki masif (yaşlı temel) arazilerden biri değildir?',
+    secenekler: ['A) Kırşehir Masifi', 'B) Menderes Masifi', 'C) Bitlis Masifi', 'D) Taurus Kıvrım Kuşağı', 'E) İstanbul Paleozoik arazisi'],
+    cevap: 3, aciklama: 'Taurus (Toros) Kıvrım Kuşağı, Alpin orojenezi sırasında oluşmuş genç kıvrımlı bir dağ sistemidir; masif arazi değildir. Doğru cevap D şıkkıdır.',
   },
   {
     id: 2018091, yil: 2018, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Haritada gösterilen kıyı hatlarının hangisinde kıyı kumulları daha az görülmektedir?',
-    secenekler: ['A) I', 'B) II', 'C) III', 'D) IV', 'E) V'],
-    cevap: 2, aciklama: 'III numaralı kıyı hattında kumullar daha azdır. Doğru cevap C şıkkıdır.',
+    soru: 'Türkiye\'nin hangi kıyısında kıyı kumullarının daha az görülmesi beklenir?',
+    secenekler: ['A) Çukurova kıyıları', 'B) Bafra kıyıları', 'C) Karadeniz\'in batı kıyıları', 'D) Karadeniz\'in doğu kıyıları', 'E) Akdeniz\'in batı kıyıları'],
+    cevap: 3, aciklama: 'Karadeniz\'in doğu kıyılarında dağlar denize yakın ve kıyı şeridi dardır; kumul oluşumu için geniş kıyı düzlüğü gerekmektedir. Bu nedenle doğu Karadeniz kıyılarında kumullar daha az görülür. Doğru cevap D şıkkıdır.',
   },
   {
     id: 2018092, yil: 2018, ders: 'Coğrafya', seviye: 'Lisans',

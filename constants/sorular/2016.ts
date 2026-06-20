@@ -530,9 +530,9 @@ export const SORULAR_2016 = [
   // COĞRAFYA
   {
     id: 2016088, yil: 2016, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Haritada numaralandırılmış alanların hangisine ait toprak özelliği verilmemiştir? (Yıkanma fazla, asit karakterli, organik madde zengin topraklar)',
-    secenekler: ['A) I', 'B) II', 'C) III', 'D) IV', 'E) V'],
-    cevap: 0, aciklama: 'I numaralı alana ait özellik verilmemiştir. Doğru cevap A şıkkıdır.',
+    soru: 'Yıkanma fazla, asit karakterli ve organik madde bakımından zengin olan bu toprak tipi hangi bölgede yaygın olarak görülür?',
+    secenekler: ['A) Karadeniz Bölgesi', 'B) Akdeniz Bölgesi', 'C) İç Anadolu Bölgesi', 'D) Güneydoğu Anadolu Bölgesi', 'E) Ege Bölgesi'],
+    cevap: 0, aciklama: 'Yıkanma fazla, asit karakterli ve organik maddece zengin podsol tipi topraklar yüksek yağışlı Karadeniz Bölgesi\'nde yaygındır. Doğru cevap A şıkkıdır.',
   },
   {
     id: 2016089, yil: 2016, ders: 'Coğrafya', seviye: 'Lisans',
@@ -542,15 +542,15 @@ export const SORULAR_2016 = [
   },
   {
     id: 2016090, yil: 2016, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Türkiye\'de deprem riski en az olan bölge haritada hangi numara ile gösterilmektedir?',
-    secenekler: ['A) I', 'B) II', 'C) III', 'D) IV', 'E) V'],
-    cevap: 1, aciklama: 'II numaralı alan. Doğru cevap B şıkkıdır.',
+    soru: 'Türkiye\'de deprem riski en az olan bölge hangisidir?',
+    secenekler: ['A) Marmara Bölgesi', 'B) Karadeniz Bölgesi', 'C) Ege Bölgesi', 'D) Doğu Anadolu Bölgesi', 'E) Güneydoğu Anadolu Bölgesi'],
+    cevap: 4, aciklama: 'Güneydoğu Anadolu Bölgesi aktif fay hatlarından uzak olduğundan Türkiye\'nin deprem riski en düşük bölgesidir. Doğru cevap E şıkkıdır.',
   },
   {
     id: 2016091, yil: 2016, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Yaz-kış sıcaklık farkının en fazla olduğu (karasallığın en yüksek) bölge haritada hangi numara ile gösterilmiştir?',
-    secenekler: ['A) I', 'B) II', 'C) III', 'D) IV', 'E) V'],
-    cevap: 4, aciklama: 'V numaralı alan. Doğru cevap E şıkkıdır.',
+    soru: 'Türkiye\'de yaz-kış sıcaklık farkının (karasallık) en fazla olduğu bölge hangisidir?',
+    secenekler: ['A) Marmara Bölgesi', 'B) Ege Bölgesi', 'C) Akdeniz Bölgesi', 'D) Karadeniz Bölgesi', 'E) Doğu Anadolu Bölgesi'],
+    cevap: 4, aciklama: 'Doğu Anadolu Bölgesi denizden uzak ve yüksek rakımda olduğundan karasallık en yüksek, yaz-kış sıcaklık farkı en fazla olan bölgedir. Doğru cevap E şıkkıdır.',
   },
   {
     id: 2016092, yil: 2016, ders: 'Coğrafya', seviye: 'Lisans',
@@ -602,9 +602,9 @@ export const SORULAR_2016 = [
   },
   {
     id: 2016100, yil: 2016, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Türkiye\'de jeotermal enerjiden elektrik üretilen alan haritada hangi numara ile gösterilmiştir?',
-    secenekler: ['A) I', 'B) II', 'C) III', 'D) IV', 'E) V'],
-    cevap: 1, aciklama: 'II numaralı alan. Doğru cevap B şıkkıdır.',
+    soru: 'Türkiye\'de jeotermal enerjiden elektrik üretimi en fazla hangi bölgede gerçekleştirilmektedir?',
+    secenekler: ['A) Karadeniz Bölgesi', 'B) Ege Bölgesi', 'C) İç Anadolu Bölgesi', 'D) Güneydoğu Anadolu Bölgesi', 'E) Doğu Anadolu Bölgesi'],
+    cevap: 1, aciklama: 'Ege Bölgesi; özellikle Denizli (Sarayköy), Aydın ve İzmir çevresinde yoğunlaşan jeotermal kaynaklar sayesinde Türkiye\'nin jeotermal elektrik üretiminde birinci bölgesidir. Doğru cevap B şıkkıdır.',
   },
   {
     id: 2016101, yil: 2016, ders: 'Coğrafya', seviye: 'Lisans',
@@ -620,9 +620,9 @@ export const SORULAR_2016 = [
   },
   {
     id: 2016103, yil: 2016, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Türkiye\'de I, II ve III numaralı alanlarda çıkarılan madenler sırasıyla hangilerinde doğru verilmiştir?',
-    secenekler: ['A) Bor - Demir - Bakır', 'B) Mermer - Krom - Boksit', 'C) Demir - Bakır - Fosfat', 'D) Bakır - Boksit - Demir', 'E) Linyit - Demir - Mermer'],
-    cevap: 0, aciklama: 'I-Bor, II-Demir, III-Bakır. Doğru cevap A şıkkıdır.',
+    soru: 'Türkiye\'nin dünya bor rezervlerinin yaklaşık %70\'ine sahip olması ve bu madenin en yoğun çıkarıldığı iller arasında Kütahya ile Balıkesir\'in yer alması aşağıdakilerden hangisiyle açıklanır?',
+    secenekler: ['A) Bor yalnızca volkanik arazilerde oluşur', 'B) Bor rezervleri jeolojik açıdan Batı Anadolu\'da yoğunlaşmıştır', 'C) Kütahya ve Balıkesir\'de madencilik tarih boyunca yapılmamıştır', 'D) Bor Türkiye\'nin tek önemli maden kaynağıdır', 'E) Bor yalnızca dağlık alanlarda bulunur'],
+    cevap: 1, aciklama: 'Türkiye\'deki bor yatakları Üçüncü Jeolojik Zaman\'da oluşan tortul havzalarda yer almakta olup Batı Anadolu\'da özellikle Kütahya-Bigadiç ve Balıkesir-Bigadiç çevresinde yoğunlaşmıştır. Doğru cevap B şıkkıdır.',
   },
 
   // VATANDAŞLIK

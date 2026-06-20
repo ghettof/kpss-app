@@ -560,9 +560,9 @@ export const SORULAR_2017 = [
   },
   {
     id: 2017093, yil: 2017, ders: 'Coğrafya', seviye: 'Lisans',
-    soru: 'Haritada koyu renkli alanlara ait ortak özellik hangisidir?',
-    secenekler: ['A) Karstik alanlardır.', 'B) Volkanik alanlardır.', 'C) Yaşlı temel arazilerdir.', 'D) Doğa koruma alanlarıdır.', 'E) Önemli linyit havzalarıdır.'],
-    cevap: 2, aciklama: 'Bu alanlar yaşlı temel arazilerdir. Doğru cevap C şıkkıdır.',
+    soru: 'Türkiye\'deki yaşlı temel (masif) arazilerle ilgili hangisi doğrudur?',
+    secenekler: ['A) Yalnızca Doğu Anadolu\'da bulunurlar.', 'B) Tümü kıvrımlı dağ kuşaklarında yer alır.', 'C) Kuzey Anadolu Dağları ve Torosların oluşmasından önce var olan eski kara kütleleridir.', 'D) Türkiye\'nin en genç jeolojik birimleridir.', 'E) Volkanik kökenlidirler.'],
+    cevap: 2, aciklama: 'Yaşlı temel araziler (masifler), Alpin orojenezinden önce var olan eski kara parçalarıdır; Türkiye\'de Kırşehir, Menderes ve Bitlis masiflerinde gözlemlenir. Doğru cevap C şıkkıdır.',
   },
   {
     id: 2017094, yil: 2017, ders: 'Coğrafya', seviye: 'Lisans',

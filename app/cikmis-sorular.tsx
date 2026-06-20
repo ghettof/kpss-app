@@ -3,16 +3,19 @@ import { useState } from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { TUM_SORULAR as SORULAR } from '../constants/sorular';
 import { useProgress } from '../hooks/useProgress';
+import { useRozetler } from '../hooks/useRozetler';
 
 const DERSLER = ['Tümü', 'Türkçe', 'Matematik', 'Tarih', 'Coğrafya', 'Vatandaşlık', 'Güncel Bilgiler'];
 
 export default function CikmisSorular() {
   const { cevapKaydet } = useProgress();
+  const { rozetleriKontrolEt } = useRozetler();
   const YILLAR = Array.from(new Set(SORULAR.map(s => s.yil))).sort((a, b) => b - a);
 
   const [secilenYil, setSecilenYil] = useState<number | null>(null);
   const [secilenDers, setSecilenDers] = useState('Tümü');
   const [secilen, setSecilen] = useState<number | null>(null);
+  const [cevapVerildi, setCevapVerildi] = useState(false);
   const [soruIndex, setSoruIndex] = useState(0);
   const [dogru, setDogru] = useState(0);
   const [yanlis, setYanlis] = useState(0);
@@ -32,40 +35,64 @@ export default function CikmisSorular() {
     setSecilenDers('Tümü');
     setSoruIndex(0);
     setSecilen(null);
+    setCevapVerildi(false);
     setDogru(0);
     setYanlis(0);
     setBitti(false);
     setCevaplar(new Array(SORULAR.filter(s => s.yil === yil).length).fill(null));
   };
 
-  const sonrakiSoru = () => {
-    if (secilen === null) return;
-    const dogruMu = secilen === soru.cevap;
+  const secenekSec = (i: number) => {
+    if (cevapVerildi) return;
+    setSecilen(i);
+    setCevapVerildi(true);
+    const dogruMu = i === soru.cevap;
     const yeniCevaplar = [...cevaplar];
-    yeniCevaplar[soruIndex] = secilen;
+    yeniCevaplar[soruIndex] = i;
     setCevaplar(yeniCevaplar);
     cevapKaydet(soru.id, dogruMu, soru.ders, soru.yil);
+    rozetleriKontrolEt();
     if (dogruMu) setDogru(d => d + 1);
     else setYanlis(y => y + 1);
+  };
 
+  const sonrakiSoru = () => {
+    if (!cevapVerildi) return;
     if (soruIndex + 1 >= filtreliSorular.length) {
       setBitti(true);
     } else {
       setSoruIndex(i => i + 1);
       setSecilen(null);
+      setCevapVerildi(false);
     }
   };
 
   const resetle = () => {
     setSoruIndex(0);
     setSecilen(null);
+    setCevapVerildi(false);
     setDogru(0);
     setYanlis(0);
     setBitti(false);
     setCevaplar(new Array(filtreliSorular.length).fill(null));
   };
 
-  // Yıl seçim ekranı
+  const getSecenekStyle = (i: number) => {
+    if (!cevapVerildi) {
+      return secilen === i ? styles.secenekSecili : styles.secenek;
+    }
+    if (i === soru.cevap) return styles.secenekDogru;
+    if (i === secilen && secilen !== soru.cevap) return styles.secenekYanlis;
+    return styles.secenek;
+  };
+
+  const getSecenekTextStyle = (i: number) => {
+    if (!cevapVerildi) return styles.secenekText;
+    if (i === soru.cevap) return styles.secenekTextDogru;
+    if (i === secilen && secilen !== soru.cevap) return styles.secenekTextYanlis;
+    return styles.secenekText;
+  };
+
   if (!secilenYil) {
     return (
       <SafeAreaView style={styles.container}>
@@ -82,11 +109,7 @@ export default function CikmisSorular() {
             {YILLAR.map(yil => {
               const soruSayisi = SORULAR.filter(s => s.yil === yil).length;
               return (
-                <TouchableOpacity
-                  key={yil}
-                  style={styles.yilKart}
-                  onPress={() => basla(yil)}
-                >
+                <TouchableOpacity key={yil} style={styles.yilKart} onPress={() => basla(yil)}>
                   <Text style={styles.yilText}>{yil}</Text>
                   <Text style={styles.yilAlt}>{soruSayisi} soru</Text>
                 </TouchableOpacity>
@@ -98,7 +121,6 @@ export default function CikmisSorular() {
     );
   }
 
-  // Sonuç ekranı
   if (bitti) {
     const bos = filtreliSorular.length - dogru - yanlis;
     const net = (dogru - yanlis * 0.25).toFixed(2);
@@ -106,36 +128,21 @@ export default function CikmisSorular() {
     return (
       <SafeAreaView style={styles.container}>
         <ScrollView contentContainerStyle={styles.sonucContainer}>
-          <Text style={styles.sonucEmoji}>
-            {basari >= 70 ? '🏆' : basari >= 50 ? '👍' : '📚'}
-          </Text>
+          <Text style={styles.sonucEmoji}>{basari >= 70 ? '🏆' : basari >= 50 ? '👍' : '📚'}</Text>
           <Text style={styles.sonucBaslik}>Sınav Bitti!</Text>
-          <Text style={styles.sonucYil}>{secilenYil} • {secilenDers === 'Tümü' ? 'Tüm Dersler' : secilenDers}</Text>
-
+          <Text style={styles.sonucYilText}>{secilenYil} • {secilenDers === 'Tümü' ? 'Tüm Dersler' : secilenDers}</Text>
           <View style={styles.sonucKart}>
             <Text style={styles.netPuan}>{net}</Text>
             <Text style={styles.netLabel}>Net Puan</Text>
           </View>
-
           <View style={styles.sonucDetay}>
-            <View style={styles.sonucItem}>
-              <Text style={styles.sonucDogru}>{dogru}</Text>
-              <Text style={styles.sonucLabel}>Doğru</Text>
-            </View>
+            <View style={styles.sonucItem}><Text style={styles.sonucDogru}>{dogru}</Text><Text style={styles.sonucLabel}>Doğru</Text></View>
             <View style={styles.sonucAyirac} />
-            <View style={styles.sonucItem}>
-              <Text style={styles.sonucYanlis}>{yanlis}</Text>
-              <Text style={styles.sonucLabel}>Yanlış</Text>
-            </View>
+            <View style={styles.sonucItem}><Text style={styles.sonucYanlisText}>{yanlis}</Text><Text style={styles.sonucLabel}>Yanlış</Text></View>
             <View style={styles.sonucAyirac} />
-            <View style={styles.sonucItem}>
-              <Text style={styles.sonucBos}>{bos}</Text>
-              <Text style={styles.sonucLabel}>Boş</Text>
-            </View>
+            <View style={styles.sonucItem}><Text style={styles.sonucBos}>{bos}</Text><Text style={styles.sonucLabel}>Boş</Text></View>
           </View>
-
           <Text style={styles.sonucBasari}>%{basari} Başarı</Text>
-
           <TouchableOpacity style={styles.tekrarBtn} onPress={resetle}>
             <Text style={styles.tekrarBtnText}>🔄 Tekrar Çöz</Text>
           </TouchableOpacity>
@@ -147,7 +154,6 @@ export default function CikmisSorular() {
     );
   }
 
-  // Soru ekranı
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView stickyHeaderIndices={[0]}>
@@ -162,7 +168,6 @@ export default function CikmisSorular() {
               <Text style={styles.yanlisText}>✗{yanlis}</Text>
             </View>
           </View>
-
           <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.filtreSatir}>
             {DERSLER.map(d => (
               <TouchableOpacity
@@ -193,19 +198,32 @@ export default function CikmisSorular() {
               {soru.secenekler.map((s: string, i: number) => (
                 <TouchableOpacity
                   key={i}
-                  style={[styles.secenek, secilen === i && styles.secenekSecili]}
-                  onPress={() => setSecilen(i)}
+                  style={getSecenekStyle(i)}
+                  onPress={() => secenekSec(i)}
+                  disabled={cevapVerildi}
                 >
-                  <Text style={styles.secenekText}>{s}</Text>
+                  <Text style={getSecenekTextStyle(i)}>{s}</Text>
                 </TouchableOpacity>
               ))}
+
+              {cevapVerildi && (
+                <View style={[
+                  styles.aciklamaKutu,
+                  secilen === soru.cevap ? styles.aciklamaKutuDogru : styles.aciklamaKutuYanlis
+                ]}>
+                  <Text style={styles.aciklamaBaslik}>
+                    {secilen === soru.cevap ? '✅ Doğru!' : '❌ Yanlış!'}
+                  </Text>
+                  <Text style={styles.aciklamaMetin}>{soru.aciklama}</Text>
+                </View>
+              )}
             </View>
 
             <View style={styles.butonlar}>
               <TouchableOpacity
-                style={[styles.onaylaBtn, secilen === null && styles.btnDisabled]}
+                style={[styles.onaylaBtn, !cevapVerildi && styles.btnDisabled]}
                 onPress={sonrakiSoru}
-                disabled={secilen === null}
+                disabled={!cevapVerildi}
               >
                 <Text style={styles.onaylaText}>
                   {soruIndex + 1 >= filtreliSorular.length ? 'Sonuçları Gör' : 'Sonraki Soru →'}
@@ -245,8 +263,17 @@ const styles = StyleSheet.create({
   soruBilgiText: { color: '#8899AA', fontSize: 13 },
   soruMetin: { color: '#fff', fontSize: 16, lineHeight: 26, marginBottom: 18 },
   secenek: { borderRadius: 10, padding: 14, marginBottom: 10, borderWidth: 1, borderColor: '#2A3F55', backgroundColor: '#1E2D3D' },
-  secenekSecili: { backgroundColor: '#1A3A6B', borderColor: '#4A90D9' },
+  secenekSecili: { borderRadius: 10, padding: 14, marginBottom: 10, borderWidth: 1, borderColor: '#4A90D9', backgroundColor: '#1A3A6B' },
+  secenekDogru: { borderRadius: 10, padding: 14, marginBottom: 10, borderWidth: 2, borderColor: '#27AE60', backgroundColor: '#1A3A2A' },
+  secenekYanlis: { borderRadius: 10, padding: 14, marginBottom: 10, borderWidth: 2, borderColor: '#E74C3C', backgroundColor: '#3A1A1A' },
   secenekText: { color: '#fff', fontSize: 14, lineHeight: 20 },
+  secenekTextDogru: { color: '#2ECC71', fontSize: 14, lineHeight: 20, fontWeight: 'bold' },
+  secenekTextYanlis: { color: '#E74C3C', fontSize: 14, lineHeight: 20, fontWeight: 'bold' },
+  aciklamaKutu: { marginTop: 14, borderRadius: 12, padding: 16, borderWidth: 1 },
+  aciklamaKutuDogru: { backgroundColor: '#1A3A2A', borderColor: '#27AE60' },
+  aciklamaKutuYanlis: { backgroundColor: '#2A1A1A', borderColor: '#E74C3C' },
+  aciklamaBaslik: { color: '#fff', fontSize: 15, fontWeight: 'bold', marginBottom: 8 },
+  aciklamaMetin: { color: '#CCC', fontSize: 14, lineHeight: 22 },
   butonlar: { marginHorizontal: 12, marginBottom: 24 },
   onaylaBtn: { backgroundColor: '#4A90D9', borderRadius: 12, padding: 16, alignItems: 'center' },
   btnDisabled: { backgroundColor: '#2A3F55' },
@@ -256,14 +283,14 @@ const styles = StyleSheet.create({
   sonucContainer: { alignItems: 'center', padding: 24, paddingTop: 60 },
   sonucEmoji: { fontSize: 72, marginBottom: 12 },
   sonucBaslik: { color: '#fff', fontSize: 28, fontWeight: 'bold', marginBottom: 4 },
-  sonucYil: { color: '#8899AA', fontSize: 14, marginBottom: 24 },
+  sonucYilText: { color: '#8899AA', fontSize: 14, marginBottom: 24 },
   sonucKart: { backgroundColor: '#1A2635', borderRadius: 20, padding: 32, alignItems: 'center', width: '100%', marginBottom: 20 },
   netPuan: { color: '#4A90D9', fontSize: 64, fontWeight: 'bold' },
   netLabel: { color: '#8899AA', fontSize: 16, marginTop: 4 },
   sonucDetay: { flexDirection: 'row', alignItems: 'center', backgroundColor: '#1A2635', borderRadius: 16, padding: 20, width: '100%', marginBottom: 16 },
   sonucItem: { flex: 1, alignItems: 'center' },
   sonucDogru: { color: '#2ECC71', fontSize: 32, fontWeight: 'bold' },
-  sonucYanlis: { color: '#E74C3C', fontSize: 32, fontWeight: 'bold' },
+  sonucYanlisText: { color: '#E74C3C', fontSize: 32, fontWeight: 'bold' },
   sonucBos: { color: '#8899AA', fontSize: 32, fontWeight: 'bold' },
   sonucLabel: { color: '#8899AA', fontSize: 13, marginTop: 4 },
   sonucAyirac: { width: 1, height: 50, backgroundColor: '#2A3F55' },

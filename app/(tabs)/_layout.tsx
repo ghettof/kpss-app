@@ -1,42 +1,45 @@
+import { Ionicons } from '@expo/vector-icons';
 import { Tabs } from 'expo-router';
-import React from 'react';
-
-import { HapticTab } from '@/components/haptic-tab';
-import { IconSymbol } from '@/components/ui/icon-symbol';
-import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
-import { useNotification } from '@/hooks/useNotification';
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
-  useNotification();
-
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
-        tabBarButton: HapticTab,
-      }}>
+        tabBarActiveTintColor: '#4A90D9',
+        tabBarInactiveTintColor: '#8899AA',
+        tabBarStyle: {
+          backgroundColor: '#0F1923',
+          borderTopColor: '#1E2A36',
+        },
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: 'Ana Sayfa',
+          tabBarIcon: ({ color, size }) => <Ionicons name="home-outline" color={color} size={size} />,
         }}
       />
       <Tabs.Screen
-        name="explore"
-        options={{ href: null }}
-      />
-      <Tabs.Screen
         name="konu-calis"
-        options={{ href: null }}
+        options={{
+          title: 'Konular',
+          tabBarIcon: ({ color, size }) => <Ionicons name="book-outline" color={color} size={size} />,
+        }}
       />
       <Tabs.Screen
         name="istatistik"
-        options={{ href: null }}
+        options={{
+          title: 'Ýstatistik',
+          tabBarIcon: ({ color, size }) => <Ionicons name="stats-chart-outline" color={color} size={size} />,
+        }}
       />
+      <Tabs.Screen name="explore" options={{ href: null }} />
+      <Tabs.Screen name="cografya-notlar" options={{ href: null }} />
+      <Tabs.Screen name="tarih-notlar" options={{ href: null }} />
+      <Tabs.Screen name="turkce-notlar" options={{ href: null }} />
+      <Tabs.Screen name="vatandaslik-notlar" options={{ href: null }} />
     </Tabs>
   );
 }

@@ -1,4 +1,4 @@
-import { router } from 'expo-router';
+﻿import { router } from 'expo-router';
 import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function HomeScreen() {
@@ -34,6 +34,12 @@ export default function HomeScreen() {
           <Text style={styles.cardDesc}>Yapay zeka soruları</Text>
         </TouchableOpacity>
 
+        <TouchableOpacity style={[styles.cardWide, { backgroundColor: '#6C63FF' }]} onPress={() => router.push('/flashcard')}>
+          <Text style={styles.cardEmoji}>🃏</Text>
+          <Text style={styles.cardTitle}>Bilgi Kartları</Text>
+          <Text style={styles.cardDesc}>Swipe ile hızlı tekrar</Text>
+        </TouchableOpacity>
+
         <TouchableOpacity style={[styles.card, { backgroundColor: '#16A085' }]} onPress={() => router.push('/istatistik')}>
           <Text style={styles.cardEmoji}>📊</Text>
           <Text style={styles.cardTitle}>İstatistikler</Text>
@@ -44,12 +50,6 @@ export default function HomeScreen() {
           <Text style={styles.cardEmoji}>🏆</Text>
           <Text style={styles.cardTitle}>Rozetler</Text>
           <Text style={styles.cardDesc}>Başarılarını gör</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={[styles.card, { backgroundColor: '#C0392B' }]} onPress={() => router.push('/spk')}>
-          <Text style={styles.cardEmoji}>📈</Text>
-          <Text style={styles.cardTitle}>SPK Hazırlık</Text>
-          <Text style={styles.cardDesc}>Sermaye piyasası</Text>
         </TouchableOpacity>
       </View>
     </ScrollView>
@@ -63,6 +63,7 @@ const styles = StyleSheet.create({
   subtitle: { fontSize: 16, color: '#8899AA', marginTop: 6 },
   grid: { flexDirection: 'row', flexWrap: 'wrap', padding: 16, gap: 16 },
   card: { width: '45%', borderRadius: 16, padding: 20, alignItems: 'center' },
+  cardWide: { width: '45%', borderRadius: 16, padding: 20, alignItems: 'center' },
   cardEmoji: { fontSize: 36, marginBottom: 10 },
   cardTitle: { fontSize: 16, fontWeight: 'bold', color: '#fff', textAlign: 'center' },
   cardDesc: { fontSize: 12, color: 'rgba(255,255,255,0.8)', marginTop: 4, textAlign: 'center' },

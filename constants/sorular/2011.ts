@@ -1156,10 +1156,10 @@ fotoğraf makinemi yanıma aldım."
   // COĞRAFYA
   {
     id: 20110091,
-    soru: "Hava durumunda karayel ve poyrazdan esen rüzgârların belirtildiği haritada hangi rüzgârın esiş yönü yanlış verilmiştir?",
-    secenekler: ["I", "II", "III", "IV", "V"],
+    soru: "Türkiye'de esen yerel rüzgârlardan poyrazın esiş yönü hangisidir?",
+    secenekler: ["Kuzeydoğu", "Kuzeybatı", "Güneydoğu", "Güneybatı", "Güney"],
     cevap: 0,
-    aciklama: "Harita analizi yapıldığında I. rüzgârın esiş yönünün yanlış gösterildiği görülür.",
+    aciklama: "Poyraz, kuzeydoğu yönünden esen soğuk ve kuru bir rüzgârdır. Karayel ise kuzeybatıdan eser.",
     ders: "Coğrafya",
     yil: 2011
   },
@@ -1357,10 +1357,10 @@ fotoğraf makinemi yanıma aldım."
   },
   {
     id: 20110108,
-    soru: "Haritadaki liman kentlerinin hangisinde endüstrileşmeye bağlı olarak hava kirliliğinin daha fazla olması beklenir?",
-    secenekler: ["I", "II", "III", "IV", "V"],
+    soru: "Aşağıdaki liman kentlerinden hangisinde endüstrileşmeye bağlı hava kirliliği daha fazladır?",
+    secenekler: ["Marmaris", "Kuşadası", "Fethiye", "İzmit", "Bodrum"],
     cevap: 3,
-    aciklama: "IV. konumdaki liman kenti en yoğun sanayi bölgesinde yer almaktadır.",
+    aciklama: "İzmit, yoğun petrokimya ve ağır sanayi kuruluşları nedeniyle endüstrileşmeye bağlı hava kirliliğinin en fazla görüldüğü liman kentidir; diğerleri turizm ağırlıklı kıyı kentleridir.",
     ders: "Coğrafya",
     yil: 2011
   },
