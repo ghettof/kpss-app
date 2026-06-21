@@ -16,22 +16,22 @@ export default function HomeScreen() {
           <Text style={styles.cardDesc}>Yıllara göre sorular</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={[styles.card, { backgroundColor: '#E67E22' }]} onPress={() => router.push('/deneme-sinavi')}>
-          <Text style={styles.cardEmoji}>📝</Text>
-          <Text style={styles.cardTitle}>Deneme Sınavı</Text>
-          <Text style={styles.cardDesc}>120 soruluk deneme</Text>
-        </TouchableOpacity>
-
         <TouchableOpacity style={[styles.card, { backgroundColor: '#27AE60' }]} onPress={() => router.push('/konu-calis')}>
           <Text style={styles.cardEmoji}>🎯</Text>
           <Text style={styles.cardTitle}>Konu Çalış</Text>
           <Text style={styles.cardDesc}>Konuya göre sorular</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={[styles.card, { backgroundColor: '#8E44AD' }]} onPress={() => router.push('/ai-soru')}>
-          <Text style={styles.cardEmoji}>🤖</Text>
-          <Text style={styles.cardTitle}>AI Soru Üret</Text>
-          <Text style={styles.cardDesc}>Yapay zeka soruları</Text>
+        <TouchableOpacity style={[styles.card, { backgroundColor: '#E67E22' }]} onPress={() => router.push('/deneme-sinavi')}>
+          <Text style={styles.cardEmoji}>📝</Text>
+          <Text style={styles.cardTitle}>Deneme Sınavı</Text>
+          <Text style={styles.cardDesc}>120 soruluk deneme</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={[styles.card, { backgroundColor: '#C0392B' }]} onPress={() => router.push('/guncel-bilgiler')}>
+          <Text style={styles.cardEmoji}>📰</Text>
+          <Text style={styles.cardTitle}>Güncel Bilgiler 2026</Text>
+          <Text style={styles.cardDesc}>2026 gündem bilgileri</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={[styles.cardWide, { backgroundColor: '#6C63FF' }]} onPress={() => router.push('/flashcard')}>
@@ -40,13 +40,19 @@ export default function HomeScreen() {
           <Text style={styles.cardDesc}>Swipe ile hızlı tekrar</Text>
         </TouchableOpacity>
 
+        <TouchableOpacity style={[styles.card, { backgroundColor: '#8E44AD' }]} onPress={() => router.push('/ai-soru')}>
+          <Text style={styles.cardEmoji}>🤖</Text>
+          <Text style={styles.cardTitle}>AI Soru Üret</Text>
+          <Text style={styles.cardDesc}>Yapay zeka soruları</Text>
+        </TouchableOpacity>
+
         <TouchableOpacity style={[styles.card, { backgroundColor: '#16A085' }]} onPress={() => router.push('/istatistik')}>
           <Text style={styles.cardEmoji}>📊</Text>
           <Text style={styles.cardTitle}>İstatistikler</Text>
           <Text style={styles.cardDesc}>Performans analizi</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={[styles.card, { backgroundColor: '#F39C12' }]} onPress={() => router.push('/rozetler')}>
+        <TouchableOpacity style={[styles.card, { backgroundColor: '#D63384' }]} onPress={() => router.push('/rozetler')}>
           <Text style={styles.cardEmoji}>🏆</Text>
           <Text style={styles.cardTitle}>Rozetler</Text>
           <Text style={styles.cardDesc}>Başarılarını gör</Text>

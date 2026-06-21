@@ -1,0 +1,172 @@
+export interface GuncelBilgi {
+  id: string;
+  kategori: string;
+  on_yuz: string;
+  arka_yuz: string;
+  zorluk: string;
+  aktif: boolean;
+}
+
+export const guncelBilgilerData: GuncelBilgi[] = [
+  // ── BİLİM / NOBEL ÖDÜLLERİ ──────────────────────────────
+  { id: "gb001", kategori: "Bilim", on_yuz: "2025 Nobel Kimya Ödülü", arka_yuz: "Susumu Kitagawa, Richard Robson ve Omar Yaghi, \"metal-organik çerçevelerin geliştirilmesi\" çalışmasıyla kazandı.", zorluk: "orta", aktif: true },
+  { id: "gb002", kategori: "Bilim", on_yuz: "2025 Nobel Fizik Ödülü", arka_yuz: "John Clarke, Michel Devoret ve John Martinis, elektrik devrelerinde makroskopik kuantum mekanik tünelleme keşfiyle kazandı.", zorluk: "zor", aktif: true },
+  { id: "gb003", kategori: "Bilim", on_yuz: "2025 Nobel Tıp Ödülü", arka_yuz: "Mary Brunkow, Fred Ramsdell ve Shimon Sakaguchi, \"periferik bağışıklık toleransı\" keşifleriyle kazandı.", zorluk: "orta", aktif: true },
+  { id: "gb004", kategori: "Bilim", on_yuz: "Türkiye'nin son Nobel sahibi kimdir?", arka_yuz: "2015 yılında Kimya dalında ödül alan Prof. Dr. Aziz Sancar'dır (DNA onarım mekanizmaları).", zorluk: "kolay", aktif: true },
+  { id: "gb005", kategori: "Bilim", on_yuz: "Nobel Edebiyat Ödülü'nü kazanan ilk Türk yazar", arka_yuz: "2006 yılında Nobel Edebiyat Ödülü'nü kazanan ilk Türk yazar Orhan Pamuk'tur.", zorluk: "kolay", aktif: true },
+  { id: "gb006", kategori: "Bilim", on_yuz: "Cahit Arf kimdir?", arka_yuz: "10 TL banknotun arkasında resmi bulunan, kendi adıyla anılan matematiksel teoremleri olan Türk matematikçidir.", zorluk: "orta", aktif: true },
+
+  // ── TÜRKİYE GÜNDEMİ ─────────────────────────────────────
+  { id: "gb007", kategori: "Türkiye Gündemi", on_yuz: "Emniyet Genel Atama Dönemi 2026", arka_yuz: "İçişleri Bakanı Mustafa Çiftçi, 19.096 personelin (1.528 amir, 17.568 polis memuru) görev yerini değiştirdi.", zorluk: "orta", aktif: true },
+  { id: "gb008", kategori: "Türkiye Gündemi", on_yuz: "HSK 2026 Ana Kararnamesi", arka_yuz: "Ankara Cumhuriyet Başsavcılığı'na Aykut Çelik atandı.", zorluk: "zor", aktif: true },
+  { id: "gb009", kategori: "Türkiye Gündemi", on_yuz: "Anayasa Mahkemesi Başkanı kimdir?", arka_yuz: "Kadir Özkaya, AYM Başkanı olarak görevini sürdürmektedir.", zorluk: "kolay", aktif: true },
+  { id: "gb010", kategori: "Türkiye Gündemi", on_yuz: "TCMB Başkanı kimdir?", arka_yuz: "Dr. Fatih Karahan, Türkiye Cumhuriyet Merkez Bankası Başkanı olarak görev yapmaktadır.", zorluk: "kolay", aktif: true },
+  { id: "gb011", kategori: "Türkiye Gündemi", on_yuz: "2026 NATO Zirvesi nerede yapılacak?", arka_yuz: "7-8 Temmuz 2026'da Ankara'da (Cumhurbaşkanlığı Külliyesi) yapılacak. Türkiye, 2004 İstanbul Zirvesi'nden sonra ikinci kez ev sahipliği yapıyor.", zorluk: "orta", aktif: true },
+
+  // ── EKONOMİ ─────────────────────────────────────────────
+  { id: "gb012", kategori: "Ekonomi", on_yuz: "TCMB'nin 2026 enflasyon tahmini", arka_yuz: "TCMB, 2026 yıl sonu enflasyon tahminini %18'den %26'ya yükseltti.", zorluk: "orta", aktif: true },
+  { id: "gb013", kategori: "Ekonomi", on_yuz: "TCMB politika faizi (Haziran 2026)", arka_yuz: "Haziran 2026 itibarıyla TCMB politika faizi %37 seviyesinde sabit tutuluyor.", zorluk: "orta", aktif: true },
+  { id: "gb014", kategori: "Ekonomi", on_yuz: "2026 G20 Dönem Başkanı hangi ülke?", arka_yuz: "ABD, G20 dönem başkanlığını yürütüyor; zirve Aralık 2026'da Miami'de yapılacak.", zorluk: "orta", aktif: true },
+
+  // ── OTOMOTİV / SAVUNMA SANAYİİ ──────────────────────────
+  { id: "gb015", kategori: "Otomotiv/Teknoloji", on_yuz: "TOGG T10F nedir?", arka_yuz: "Togg'un ikinci modeli, fastback sedan T10F, 15 Eylül 2025'te Türkiye ve Avrupa'da aynı anda satışa sunuldu (WLTP'ye göre 623 km menzil).", zorluk: "kolay", aktif: true },
+  { id: "gb016", kategori: "Otomotiv/Teknoloji", on_yuz: "Türkiye'nin ilk yerli otomobili", arka_yuz: "TOGG (Türkiye'nin Otomobili Girişim Grubu); ilk üretilen modeli T10X'tir.", zorluk: "kolay", aktif: true },
+  { id: "gb017", kategori: "Otomotiv/Teknoloji", on_yuz: "Türkiye'nin ilk astronotu kimdir?", arka_yuz: "Alper Gezeravcı, Axiom-3 misyonuyla ISS'e gitti. Uzayda söylediği ilk söz: \"İstikbal göklerdedir.\"", zorluk: "kolay", aktif: true },
+  { id: "gb018", kategori: "Otomotiv/Teknoloji", on_yuz: "Türkiye'nin ilk yerli haberleşme uydusu", arka_yuz: "SpaceX roketiyle fırlatılan TÜRKSAT 6A'dır.", zorluk: "orta", aktif: true },
+  { id: "gb019", kategori: "Otomotiv/Teknoloji", on_yuz: "Türkiye'nin ilk yerli gözlem uydusu", arka_yuz: "Yüksek çözünürlüklü yerli gözlem uydumuz İMECE'dir.", zorluk: "orta", aktif: true },
+  { id: "gb020", kategori: "Otomotiv/Teknoloji", on_yuz: "TCG Anadolu nedir?", arka_yuz: "Türkiye'nin ilk yerli amfibi hücum gemisi; İHA/SİHA'ların iniş yapabildiği \"dünyanın ilk SİHA gemisi\" olarak bilinir.", zorluk: "orta", aktif: true },
+  { id: "gb021", kategori: "Otomotiv/Teknoloji", on_yuz: "KAAN nedir?", arka_yuz: "Türkiye'nin 5. nesil yerli savaş uçağı; ilk uçuşunu başarıyla gerçekleştirdi.", zorluk: "kolay", aktif: true },
+  { id: "gb022", kategori: "Otomotiv/Teknoloji", on_yuz: "Bayraktar Kızılelma nedir?", arka_yuz: "Baykar tarafından geliştirilen, Türkiye'nin ilk jet motorlu insansız savaş uçağıdır.", zorluk: "kolay", aktif: true },
+  { id: "gb023", kategori: "Otomotiv/Teknoloji", on_yuz: "HÜRJET nedir?", arka_yuz: "TUSAŞ tarafından geliştirilen, Türkiye'nin ilk insanlı süpersonik jet eğitim uçağıdır.", zorluk: "orta", aktif: true },
+  { id: "gb024", kategori: "Otomotiv/Teknoloji", on_yuz: "TEKNOFEST nedir?", arka_yuz: "Dünyanın en büyük havacılık, uzay ve teknoloji festivali olarak Türkiye'de düzenlenmektedir.", zorluk: "kolay", aktif: true },
+  { id: "gb025", kategori: "Otomotiv/Teknoloji", on_yuz: "Türkiye'nin en yüksek barajı", arka_yuz: "Artvin Çoruh Nehri üzerinde inşa edilen Yusufeli Barajı'dır.", zorluk: "orta", aktif: true },
+  { id: "gb026", kategori: "Otomotiv/Teknoloji", on_yuz: "GAP'ın en büyük barajı", arka_yuz: "Gövde hacmi bakımından Türkiye'nin en büyük barajı olan Atatürk Barajı'dır.", zorluk: "kolay", aktif: true },
+  { id: "gb027", kategori: "Otomotiv/Teknoloji", on_yuz: "Avrupa'nın en uzun çift tüplü karayolu tüneli", arka_yuz: "Trabzon ile Gümüşhane'yi birbirine bağlayan Yeni Zigana Tüneli'dir.", zorluk: "zor", aktif: true },
+
+  // ── SPOR ────────────────────────────────────────────────
+  { id: "gb028", kategori: "Spor", on_yuz: "Türkiye 2026 Dünya Kupası'na kaç yıl aradan sonra katıldı?", arka_yuz: "A Milli Futbol Takımı, 2002'deki dünya üçüncülüğünden 24 yıl sonra ilk kez 2026 FIFA Dünya Kupası'na katıldı.", zorluk: "kolay", aktif: true },
+  { id: "gb029", kategori: "Spor", on_yuz: "2026 Dünya Kupası formatı", arka_yuz: "Tarihte ilk kez 48 takımla ve ABD-Kanada-Meksika ortak ev sahipliğinde düzenleniyor; toplam 104 maç oynanacak.", zorluk: "orta", aktif: true },
+  { id: "gb030", kategori: "Spor", on_yuz: "Türkiye'nin 2026 Dünya Kupası grubu", arka_yuz: "D Grubu'nda Türkiye, ABD, Avustralya ve Paraguay ile eşleşti.", zorluk: "kolay", aktif: true },
+  { id: "gb031", kategori: "Spor", on_yuz: "2024 Paris Olimpiyatları - atıcılık madalyası", arka_yuz: "Yusuf Dikeç ve Şevval İlayda Tarhan, Türkiye'ye olimpiyat tarihinde atıcılıkta ilk madalyayı (gümüş) kazandırdı.", zorluk: "orta", aktif: true },
+  { id: "gb032", kategori: "Spor", on_yuz: "Mete Gazoz kimdir?", arka_yuz: "Milli okçu, Tokyo ve Paris olimpiyatlarında madalya kazanan sporcularımızdandır.", zorluk: "kolay", aktif: true },
+  { id: "gb033", kategori: "Spor", on_yuz: "\"Filenin Sultanları\" kimdir?", arka_yuz: "A Milli Kadın Voleybol Takımı'nın, dünya ve Avrupa şampiyonluklarının ardından kazandığı unvandır.", zorluk: "kolay", aktif: true },
+  { id: "gb034", kategori: "Spor", on_yuz: "Dünyanın en eski spor organizasyonu", arka_yuz: "Edirne'de düzenlenen Kırkpınar Yağlı Güreşleri'dir.", zorluk: "orta", aktif: true },
+
+  // ── EDEBİYAT / SANAT / KÜLTÜR ───────────────────────────
+  { id: "gb035", kategori: "Edebiyat/Sanat", on_yuz: "\"Yüzyılın Tarihçisi\" kimdir?", arka_yuz: "2016'da vefat eden, Osmanlı tarihi üzerine dünyaca tanınan tarihçimiz Halil İnalcık'tır.", zorluk: "zor", aktif: true },
+  { id: "gb036", kategori: "Edebiyat/Sanat", on_yuz: "İlk realist roman kabul edilen eser", arka_yuz: "Araba Sevdası, Recaizade Mahmut Ekrem tarafından yazılmıştır.", zorluk: "orta", aktif: true },
+  { id: "gb037", kategori: "Edebiyat/Sanat", on_yuz: "Dede Korkut'un yeni nüshası", arka_yuz: "Kazakistan'da bulunan üçüncü nüshaya \"Türkistan (Bursa) Nüshası\" adı verilmiştir.", zorluk: "zor", aktif: true },
+  { id: "gb038", kategori: "Edebiyat/Sanat", on_yuz: "Kutadgu Bilig ne anlama gelir?", arka_yuz: "Yusuf Has Hacib tarafından yazılan eserin anlamı \"Mutluluk Veren Bilgi\"dir.", zorluk: "orta", aktif: true },
+  { id: "gb039", kategori: "Edebiyat/Sanat", on_yuz: "Düşünen Adam heykelinin sanatçısı", arka_yuz: "Fransız heykeltıraş Auguste Rodin'e aittir.", zorluk: "kolay", aktif: true },
+  { id: "gb040", kategori: "Edebiyat/Sanat", on_yuz: "Guernica tablosunun ressamı", arka_yuz: "İspanyol İç Savaşı'nı anlatan, kübizmin öncüsü Pablo Picasso'nun eseridir.", zorluk: "kolay", aktif: true },
+  { id: "gb041", kategori: "Edebiyat/Sanat", on_yuz: "İlahi Komedya'nın yazarı", arka_yuz: "İtalyan edebiyatının babası kabul edilen Dante Alighieri'nin eseridir.", zorluk: "orta", aktif: true },
+  { id: "gb042", kategori: "Edebiyat/Sanat", on_yuz: "Savaş ve Barış / Anna Karenina'nın yazarı", arka_yuz: "Rus yazar Lev Tolstoy'a aittir.", zorluk: "kolay", aktif: true },
+  { id: "gb043", kategori: "Edebiyat/Sanat", on_yuz: "Kaplumbağa Terbiyecisi tablosunun ressamı", arka_yuz: "Türk müzeciliğinin kurucusu olan Osman Hamdi Bey'in tablosudur.", zorluk: "kolay", aktif: true },
+  { id: "gb044", kategori: "Edebiyat/Sanat", on_yuz: "Mona Lisa / Son Akşam Yemeği'nin ressamı", arka_yuz: "Rönesans dâhisi Leonardo da Vinci'ye aittir.", zorluk: "kolay", aktif: true },
+  { id: "gb045", kategori: "Edebiyat/Sanat", on_yuz: "Sinekli Bakkal / Ateşten Gömlek'in yazarı", arka_yuz: "Kurtuluş Savaşı dönemini anlatan Halide Edib Adıvar'ın romanlarıdır.", zorluk: "orta", aktif: true },
+
+  // ── DÜNYA GÜNDEMİ ────────────────────────────────────────
+  { id: "gb046", kategori: "Dünya Gündemi", on_yuz: "AI Act (Yapay Zeka Yasası) nedir?", arka_yuz: "Avrupa Birliği tarafından kabul edilen, yapay zeka alanında dünyadaki ilk kapsamlı yasal düzenlemedir.", zorluk: "orta", aktif: true },
+  { id: "gb047", kategori: "Dünya Gündemi", on_yuz: "İlk ticari uzay yürüyüşü", arka_yuz: "SpaceX'in Polaris Dawn göreviyle siviller tarafından gerçekleştirildi.", zorluk: "zor", aktif: true },
+  { id: "gb048", kategori: "Dünya Gündemi", on_yuz: "BM Genel Sekreteri kimdir?", arka_yuz: "Portekizli diplomat Antonio Guterres, görevine devam etmektedir.", zorluk: "kolay", aktif: true },
+  { id: "gb049", kategori: "Dünya Gündemi", on_yuz: "NATO Genel Sekreteri kimdir?", arka_yuz: "Hollanda eski Başbakanı Mark Rutte, Jens Stoltenberg'den görevi devralmıştır.", zorluk: "orta", aktif: true },
+  { id: "gb050", kategori: "Dünya Gündemi", on_yuz: "AB Komisyonu Başkanı kimdir?", arka_yuz: "Ursula von der Leyen, ikinci kez bu göreve seçilmiştir.", zorluk: "orta", aktif: true },
+  { id: "gb051", kategori: "Dünya Gündemi", on_yuz: "ECB Başkanı kimdir?", arka_yuz: "Christine Lagarde, Avrupa Merkez Bankası'nın ilk kadın başkanıdır.", zorluk: "orta", aktif: true },
+
+  // ── TÜRKİYE - İLKLER VE TARİH ────────────────────────────
+  { id: "gb052", kategori: "Türkiye İlkleri", on_yuz: "Türkiye'nin en son ili", arka_yuz: "1999 yılında il yapılan 81. ilimiz Düzce'dir.", zorluk: "kolay", aktif: true },
+  { id: "gb053", kategori: "Türkiye İlkleri", on_yuz: "Türkiye'nin en son büyükşehiri", arka_yuz: "2012 yılındaki kanunla büyükşehir statüsü kazanan 30. ilimiz Ordu'dur.", zorluk: "orta", aktif: true },
+  { id: "gb054", kategori: "Türkiye İlkleri", on_yuz: "Nüfusu en az olan ilimiz", arka_yuz: "TÜİK verilerine göre Türkiye'nin nüfus bakımından en küçük ili Bayburt'tur.", zorluk: "kolay", aktif: true },
+  { id: "gb055", kategori: "Türkiye İlkleri", on_yuz: "İstiklal Madalyası alan ilk il", arka_yuz: "1925 yılında bu madalyayı alan ilk il Kahramanmaraş'tır.", zorluk: "orta", aktif: true },
+  { id: "gb056", kategori: "Türkiye İlkleri", on_yuz: "\"Gazi\" unvanı alan ilk şehir", arka_yuz: "1921 yılında bu unvanı alan Gaziantep'tir.", zorluk: "kolay", aktif: true },
+  { id: "gb057", kategori: "Türkiye İlkleri", on_yuz: "\"Şanlı\" unvanı alan şehir", arka_yuz: "1984 yılında bu unvanı alan Şanlıurfa'dır.", zorluk: "kolay", aktif: true },
+  { id: "gb058", kategori: "Türkiye İlkleri", on_yuz: "\"Kahraman\" unvanı alan şehir", arka_yuz: "1973 yılında bu unvanı alan Kahramanmaraş'tır.", zorluk: "kolay", aktif: true },
+  { id: "gb059", kategori: "Türkiye İlkleri", on_yuz: "Türkiye'nin ilk Cittaslow'u (Sakin Şehir)", arka_yuz: "İzmir'in Seferihisar ilçesidir.", zorluk: "orta", aktif: true },
+  { id: "gb060", kategori: "Türkiye İlkleri", on_yuz: "Türkiye'nin ilk sakin adası", arka_yuz: "Çanakkale'ye bağlı Gökçeada'dır.", zorluk: "orta", aktif: true },
+  { id: "gb061", kategori: "Türkiye İlkleri", on_yuz: "UNESCO Dünya Miras Listesi'ndeki 20. varlığımız", arka_yuz: "Ankara'da yer alan Gordion Antik Kenti'dir.", zorluk: "zor", aktif: true },
+  { id: "gb062", kategori: "Türkiye İlkleri", on_yuz: "Türkiye'nin ilk UNESCO kültür mirası", arka_yuz: "1985 yılında listeye giren Divriği Ulu Camii ve Darüşşifası'dır.", zorluk: "orta", aktif: true },
+  { id: "gb063", kategori: "Türkiye İlkleri", on_yuz: "Türkiye'nin ilk biyosfer rezerv alanı", arka_yuz: "Artvin'de bulunan Macahel (Camili) Havzası'dır.", zorluk: "zor", aktif: true },
+  { id: "gb064", kategori: "Türkiye İlkleri", on_yuz: "Cumhuriyet'in ilk Başbakanı", arka_yuz: "İsmet İnönü'dür.", zorluk: "kolay", aktif: true },
+  { id: "gb065", kategori: "Türkiye İlkleri", on_yuz: "Cumhuriyet'in ilk Meclis Başkanı", arka_yuz: "Fethi Okyar'dır.", zorluk: "orta", aktif: true },
+  { id: "gb066", kategori: "Türkiye İlkleri", on_yuz: "Cumhuriyet döneminin ilk kadın bakanı", arka_yuz: "Prof. Dr. Türkan Akyol'dur.", zorluk: "orta", aktif: true },
+  { id: "gb067", kategori: "Türkiye İlkleri", on_yuz: "Türkiye'nin ilk kadın başbakanı", arka_yuz: "Tansu Çiller'dir.", zorluk: "kolay", aktif: true },
+  { id: "gb068", kategori: "Türkiye İlkleri", on_yuz: "Türkiye'nin ilk kadın valisi", arka_yuz: "Muğla ve Aydın valiliği yapmış olan Lale Aytaman'dır.", zorluk: "orta", aktif: true },
+  { id: "gb069", kategori: "Türkiye İlkleri", on_yuz: "Türkiye'nin ilk kadın doktoru", arka_yuz: "Safiye Ali'dir.", zorluk: "orta", aktif: true },
+  { id: "gb070", kategori: "Türkiye İlkleri", on_yuz: "Türkiye'nin ilk kadın pilotu", arka_yuz: "Sabiha Gökçen'dir; ilk kadın jet pilotu ise Leman Bozkurt Altınçekiç'tir.", zorluk: "kolay", aktif: true },
+
+  // ── COĞRAFYA - GÜNCEL "EN"LER ────────────────────────────
+  { id: "gb071", kategori: "Coğrafya", on_yuz: "Dünyanın en büyük adası", arka_yuz: "Danimarka'ya bağlı özerk bölge Grönland'dır.", zorluk: "kolay", aktif: true },
+  { id: "gb072", kategori: "Coğrafya", on_yuz: "Türkiye'nin en büyük gölü", arka_yuz: "Tektonik-volkanik set oluşumlu Van Gölü'dür.", zorluk: "kolay", aktif: true },
+  { id: "gb073", kategori: "Coğrafya", on_yuz: "Türkiye'nin en büyük tatlı su gölü", arka_yuz: "Göller Yöresi'nde bulunan Beyşehir Gölü'dür.", zorluk: "orta", aktif: true },
+  { id: "gb074", kategori: "Coğrafya", on_yuz: "Türkiye'nin en büyük adası", arka_yuz: "Çanakkale sınırlarında yer alan Gökçeada'dır.", zorluk: "kolay", aktif: true },
+  { id: "gb075", kategori: "Coğrafya", on_yuz: "Dünyanın en uzun orta açıklıklı asma köprüsü", arka_yuz: "Çanakkale Boğazı üzerine inşa edilen 1915 Çanakkale Köprüsü'dür (2023 m orta açıklık).", zorluk: "orta", aktif: true },
+  { id: "gb076", kategori: "Coğrafya", on_yuz: "Türkiye'nin en yüksek zirvesi", arka_yuz: "5137 metre yüksekliğindeki Ağrı Dağı'dır.", zorluk: "kolay", aktif: true },
+  { id: "gb077", kategori: "Coğrafya", on_yuz: "Türkiye'nin en uzun iç akarsuyu", arka_yuz: "Sınırlarımız içinde doğup yine sınırlarımız içinde denize dökülen Kızılırmak'tır.", zorluk: "kolay", aktif: true },
+  { id: "gb078", kategori: "Coğrafya", on_yuz: "Türkiye'nin en fazla yağış alan yeri", arka_yuz: "Doğu Karadeniz Bölümü'nde bulunan Rize'dir.", zorluk: "kolay", aktif: true },
+
+  // ── EKLENTİ 2: HAZİRAN 2026 GÜNCEL GELİŞMELER ────────────
+  { id: "gb079", kategori: "Dünya Gündemi", on_yuz: "COP31 İklim Zirvesi nerede yapılacak?", arka_yuz: "Türkiye, Kasım 2026'da Antalya'da COP31'e (31. BM İklim Değişikliği Konferansı) ev sahipliği ve dönem başkanlığı yapacak.", zorluk: "orta", aktif: true },
+  { id: "gb080", kategori: "Dünya Gündemi", on_yuz: "COP31 Liderler Zirvesi nerede yapılacak?", arka_yuz: "COP31 kapsamındaki Dünya Liderler Zirvesi, Cumhurbaşkanı'nın ev sahipliğinde İstanbul'da gerçekleştirilecek.", zorluk: "orta", aktif: true },
+  { id: "gb081", kategori: "Türkiye Gündemi", on_yuz: "Halkalı-İstanbul Havalimanı Metro Hattı (M11)", arka_yuz: "Hattın son kesimi olan 22 km'lik Halkalı-Arnavutköy bölümü 19 Haziran 2026'da hizmete açıldı.", zorluk: "orta", aktif: true },
+  { id: "gb082", kategori: "Türkiye Gündemi", on_yuz: "Türkiye'nin en uzun metro hattı", arka_yuz: "Halkalı-Arnavutköy kesiminin açılmasıyla Gayrettepe-İstanbul Havalimanı-Halkalı hattı toplam 69 km'ye ulaşarak Türkiye'nin en uzun metro hattı oldu.", zorluk: "orta", aktif: true },
+  { id: "gb083", kategori: "Türkiye Gündemi", on_yuz: "Yenilenen Ankara Havalimanı", arka_yuz: "1933 yılında yapılan ve uzun yıllar askeri havalimanı olarak kullanılan Ankara Havalimanı yenilendi; pisti 3000 metreye uzatıldı, 44 uçak eş zamanlı park kapasitesine kavuştu.", zorluk: "zor", aktif: true },
+  { id: "gb084", kategori: "Türkiye Gündemi", on_yuz: "NATO Parlamenter Zirvesi 2026", arka_yuz: "28-29 Haziran 2026'da İstanbul'da yapılacak; ardından 7-8 Temmuz'da NATO Liderler Zirvesi Türkiye'de gerçekleşecek.", zorluk: "orta", aktif: true },
+  { id: "gb085", kategori: "Otomotiv/Teknoloji", on_yuz: "SİPER nedir?", arka_yuz: "Türkiye'nin yerli geliştirilen uzun menzilli hava ve füze savunma sistemidir.", zorluk: "orta", aktif: true },
+  { id: "gb086", kategori: "Otomotiv/Teknoloji", on_yuz: "ALTAY nedir?", arka_yuz: "Türkiye'nin yerli ana muharebe tankıdır; Türk Silahlı Kuvvetleri'ne teslimatları başlamıştır.", zorluk: "kolay", aktif: true },
+  { id: "gb087", kategori: "Otomotiv/Teknoloji", on_yuz: "ATMACA nedir?", arka_yuz: "Türkiye'nin yerli geliştirilen gemi savar (anti-gemi) güdümlü füzesidir.", zorluk: "orta", aktif: true },
+
+  // ── EKLENTİ 3: DÜNYA GÜNDEMİ (HAZİRAN 2026) ──────────────
+  { id: "gb088", kategori: "Dünya Gündemi", on_yuz: "İslamabad Mutabakat Anlaşması nedir?", arka_yuz: "18 Haziran 2026'da ABD Başkanı Donald Trump ile İran Cumhurbaşkanı Mesud Pezeşkiyan arasında dijital olarak imzalanan, Orta Doğu'daki çatışmaları sona erdiren anlaşmadır. Pakistan ve Katar arabuluculuk yaptı.", zorluk: "zor", aktif: true },
+  { id: "gb089", kategori: "Dünya Gündemi", on_yuz: "İslamabad Mutabakatı'nın temel maddeleri", arka_yuz: "Anlaşma kapsamında İran, Hürmüz Boğazı'nı yeniden açtı; ABD ise İran'a uyguladığı deniz ablukasını kaldırdı. Nükleer program ve yaptırımlar konusunda taraflar 60 gün içinde nihai anlaşmayı müzakere edecek.", zorluk: "zor", aktif: true },
+  { id: "gb090", kategori: "Dünya Gündemi", on_yuz: "Yeni FED (ABD Merkez Bankası) Başkanı kimdir?", arka_yuz: "Kevin Warsh, ABD Merkez Bankası'nın (Federal Reserve) yeni başkanı olarak göreve başlamıştır.", zorluk: "orta", aktif: true },
+
+  // ── EKLENTİ 4: EĞİTİM GÜNDEMİ (2026) ──────────────────────
+  { id: "gb091", kategori: "Türkiye Gündemi", on_yuz: "2026 LGS sınav tarihi neden değişti?", arka_yuz: "Milli Eğitim Bakanı Yusuf Tekin, A Milli Takımı'nın 2026 Dünya Kupası'ndaki Avustralya maçıyla çakışmaması için LGS sınavını 14 Haziran'dan 13 Haziran 2026 Cumartesi'ye aldı.", zorluk: "kolay", aktif: true },
+  { id: "gb092", kategori: "Türkiye Gündemi", on_yuz: "Milli Eğitim Bakanı kimdir?", arka_yuz: "Yusuf Tekin, Milli Eğitim Bakanı olarak görev yapmaktadır.", zorluk: "kolay", aktif: true },
+  { id: "gb093", kategori: "Türkiye Gündemi", on_yuz: "Türkiye Yüzyılı Maarif Modeli nedir?", arka_yuz: "MEB'in yeni müfredat reformudur; LGS ve YKS'de \"beceri temelli\" yeni soru modeli, 2026/2027'yi etkilemeden ilk kez 2028 yılında uygulanacaktır.", zorluk: "orta", aktif: true },
+  { id: "gb094", kategori: "Türkiye Gündemi", on_yuz: "2026 LGS ve YKS'de yapısal değişiklik var mı?", arka_yuz: "Hayır; MEB'e göre sınav oturumları, süreler ve puanlama sistemi 2026'da aynı şekilde devam ediyor, kökten değişiklik 2028'e ertelendi.", zorluk: "orta", aktif: true },
+
+  // ── EKLENTİ 5: ÖDÜLLER, ULUSLARARASI ÖRGÜTLER, EK BİLGİLER ──
+  { id: "gb095", kategori: "Otomotiv/Teknoloji", on_yuz: "Türkiye'nin ikinci astronotu kimdir?", arka_yuz: "Tuva Cihangir Atasever, 8 Haziran 2024'te Virgin Galactic'in VSS Unity aracıyla yörünge altı araştırma uçuşu gerçekleştirdi.", zorluk: "orta", aktif: true },
+  { id: "gb096", kategori: "Edebiyat/Sanat", on_yuz: "76. Berlin Film Festivali Altın Ayı ödülü", arka_yuz: "İlker Çatak'ın yönettiği \"Sarı Zarflar\" (Yellow Letters) filmi, 2026'da festivalin en büyük ödülü olan Altın Ayı'yı kazandı.", zorluk: "orta", aktif: true },
+  { id: "gb097", kategori: "Edebiyat/Sanat", on_yuz: "76. Berlin Film Festivali Gümüş Ayı (Jüri Büyük Ödülü)", arka_yuz: "Emin Alper'in yönettiği \"Kurtuluş\" (Salvation) filmi, 2026'da Gümüş Ayı Jüri Büyük Ödülü'nü kazandı.", zorluk: "orta", aktif: true },
+  { id: "gb098", kategori: "Dünya Gündemi", on_yuz: "NATO'nun en yeni üyesi hangi ülke?", arka_yuz: "İsveç, 2024 yılında NATO'ya 32. üye olarak katılmıştır.", zorluk: "kolay", aktif: true },
+  { id: "gb099", kategori: "Dünya Gündemi", on_yuz: "Şanghay İşbirliği Örgütü'nün (ŞİÖ) en yeni tam üyesi", arka_yuz: "Belarus, 2024'te ŞİÖ'ye tam üye olarak kabul edilmiştir.", zorluk: "orta", aktif: true },
+  { id: "gb100", kategori: "Dünya Gündemi", on_yuz: "BRICS'e 2024'te katılan ülkeler", arka_yuz: "Mısır, Etiyopya, İran ve Birleşik Arap Emirlikleri, 2024'te BRICS topluluğuna resmen katılmıştır.", zorluk: "orta", aktif: true },
+  { id: "gb101", kategori: "Edebiyat/Sanat", on_yuz: "2024 Eurovision Şarkı Yarışması birincisi", arka_yuz: "İsviçre adına yarışan Nemo, \"The Code\" şarkısıyla birinci oldu.", zorluk: "kolay", aktif: true },
+  { id: "gb102", kategori: "Spor", on_yuz: "2026 Kış Olimpiyatları nerede yapılacak?", arka_yuz: "İtalya'nın Milano ve Cortina d'Ampezzo şehirlerinde ortaklaşa düzenlenecektir.", zorluk: "kolay", aktif: true },
+  { id: "gb103", kategori: "Spor", on_yuz: "2026 Akdeniz Oyunları nerede yapılacak?", arka_yuz: "20. Akdeniz Oyunları'na İtalya'nın Taranto şehri ev sahipliği yapacaktır.", zorluk: "orta", aktif: true },
+  { id: "gb104", kategori: "Bilim", on_yuz: "2024 Nobel Edebiyat Ödülü", arka_yuz: "Güney Koreli yazar Han Kang kazandı.", zorluk: "kolay", aktif: true },
+  { id: "gb105", kategori: "Bilim", on_yuz: "2024 Nobel Barış Ödülü", arka_yuz: "Nükleer silahsızlanma çabalarından dolayı Japon organizasyon Nihon Hidankyo'ya verildi.", zorluk: "orta", aktif: true },
+  { id: "gb106", kategori: "Bilim", on_yuz: "2024 Nobel Ekonomi Ödülü", arka_yuz: "Kurumların refah üzerindeki etkilerini inceleyen Türk asıllı bilim insanı Daron Acemoğlu, Simon Johnson ve James A. Robinson'a verildi.", zorluk: "orta", aktif: true },
+  { id: "gb107", kategori: "Edebiyat/Sanat", on_yuz: "2024 Oscar En İyi Film Ödülü", arka_yuz: "Christopher Nolan'ın yönettiği \"Oppenheimer\" filmi kazandı.", zorluk: "kolay", aktif: true },
+  { id: "gb108", kategori: "Edebiyat/Sanat", on_yuz: "2024 Oscar En İyi Yönetmen Ödülü", arka_yuz: "\"Oppenheimer\" filmiyle Christopher Nolan kazandı.", zorluk: "kolay", aktif: true },
+  { id: "gb109", kategori: "Edebiyat/Sanat", on_yuz: "2024 Pritzker Mimarlık Ödülü", arka_yuz: "\"Mimarlığın Nobel'i\" kabul edilen ödülü Japon mimar Riken Yamamoto kazandı.", zorluk: "zor", aktif: true },
+  { id: "gb110", kategori: "Dünya Gündemi", on_yuz: "Birleşmiş Milletler'in merkezi nerededir?", arka_yuz: "ABD'nin New York şehrindedir.", zorluk: "kolay", aktif: true },
+  { id: "gb111", kategori: "Dünya Gündemi", on_yuz: "NATO'nun genel merkezi nerededir?", arka_yuz: "Belçika'nın başkenti Brüksel'dedir.", zorluk: "kolay", aktif: true },
+  { id: "gb112", kategori: "Dünya Gündemi", on_yuz: "UNESCO'nun merkezi nerededir?", arka_yuz: "Fransa'nın başkenti Paris'tedir.", zorluk: "kolay", aktif: true },
+  { id: "gb113", kategori: "Dünya Gündemi", on_yuz: "Dünya Sağlık Örgütü'nün (WHO) merkezi nerededir?", arka_yuz: "İsviçre'nin Cenevre kentindedir.", zorluk: "kolay", aktif: true },
+  { id: "gb114", kategori: "Dünya Gündemi", on_yuz: "Uluslararası Adalet Divanı nerededir?", arka_yuz: "Hollanda'nın Lahey kentindedir.", zorluk: "orta", aktif: true },
+  { id: "gb115", kategori: "Dünya Gündemi", on_yuz: "İslam İşbirliği Teşkilatı'nın (İİT) merkezi nerededir?", arka_yuz: "Suudi Arabistan'ın Cidde şehrindedir.", zorluk: "orta", aktif: true },
+  { id: "gb116", kategori: "Dünya Gündemi", on_yuz: "Avrupa Merkez Bankası'nın (ECB) merkezi nerededir?", arka_yuz: "Almanya'nın Frankfurt kentindedir.", zorluk: "orta", aktif: true },
+  { id: "gb117", kategori: "Dünya Gündemi", on_yuz: "Interpol'ün merkezi nerededir?", arka_yuz: "Fransa'nın Lyon şehrindedir.", zorluk: "orta", aktif: true },
+  { id: "gb118", kategori: "Spor", on_yuz: "Uluslararası Olimpiyat Komitesi'nin (IOC) merkezi nerededir?", arka_yuz: "İsviçre'nin Lozan kentindedir.", zorluk: "orta", aktif: true },
+  { id: "gb119", kategori: "Ekonomi", on_yuz: "IMF ve Dünya Bankası'nın merkezleri nerededir?", arka_yuz: "İkisinin de genel merkezi ABD'nin Washington D.C. şehrindedir.", zorluk: "kolay", aktif: true },
+  { id: "gb120", kategori: "Edebiyat/Sanat", on_yuz: "İstiklal Marşı'nın şairi kimdir?", arka_yuz: "Mehmet Akif Ersoy'dur; aldığı ödülü Darülmesai vakfına bağışlamıştır.", zorluk: "kolay", aktif: true },
+  { id: "gb121", kategori: "Edebiyat/Sanat", on_yuz: "\"Tutunamayanlar\" romanının yazarı", arka_yuz: "Türk edebiyatında postmodernizmin ilk örneklerinden olan eser Oğuz Atay'a aittir.", zorluk: "orta", aktif: true },
+  { id: "gb122", kategori: "Edebiyat/Sanat", on_yuz: "\"Devlet Ana\" ve \"Yorgun Savaşçı\" romanlarının yazarı", arka_yuz: "Kemal Tahir'e aittir.", zorluk: "orta", aktif: true },
+  { id: "gb123", kategori: "Edebiyat/Sanat", on_yuz: "\"Kuyucaklı Yusuf\" romanının yazarı", arka_yuz: "Sabahattin Ali'ye aittir.", zorluk: "kolay", aktif: true },
+  { id: "gb124", kategori: "Türkiye İlkleri", on_yuz: "Şerife Bacı kimdir?", arka_yuz: "Kurtuluş Savaşı'nda İnebolu'dan Kastamonu'ya cephane taşırken donarak şehit olan milli mücadele kahramanıdır.", zorluk: "orta", aktif: true },
+  { id: "gb125", kategori: "Türkiye İlkleri", on_yuz: "Yörük Ali Efe kimdir?", arka_yuz: "Batı Anadolu'da Yunan işgaline karşı ilk düzenli halk direnişini başlatan Kuva-yi Milliye reisidir.", zorluk: "orta", aktif: true },
+  { id: "gb126", kategori: "Türkiye İlkleri", on_yuz: "Türkiye'nin ilk kadın muhtarı kimdir?", arka_yuz: "Aydın'ın Çine ilçesine bağlı Demircidere köyünde seçilen Gül Esin'dir.", zorluk: "zor", aktif: true },
+  { id: "gb127", kategori: "Coğrafya", on_yuz: "\"Tarihin Sıfır Noktası\" olarak bilinen yer", arka_yuz: "Şanlıurfa'da bulunan, insanlık tarihinin bilinen en eski kült yapılar topluluğu Göbeklitepe'dir.", zorluk: "kolay", aktif: true },
+  { id: "gb128", kategori: "Otomotiv/Teknoloji", on_yuz: "Akkuyu Nükleer Güç Santrali", arka_yuz: "Mersin'de inşaatı süren, Türkiye'nin ilk nükleer güç santralidir.", zorluk: "kolay", aktif: true },
+  { id: "gb129", kategori: "Otomotiv/Teknoloji", on_yuz: "Sakarya Gaz Sahası nedir?", arka_yuz: "Karadeniz'de bulunan, Türkiye tarihinin en büyük deniz altı doğal gaz keşif bölgesidir.", zorluk: "orta", aktif: true },
+  { id: "gb130", kategori: "Otomotiv/Teknoloji", on_yuz: "PARDUS nedir?", arka_yuz: "TÜBİTAK bünyesinde geliştirilen, yerli ve milli işletim sistemidir.", zorluk: "kolay", aktif: true },
+  { id: "gb131", kategori: "Otomotiv/Teknoloji", on_yuz: "Doğu Anadolu Gözlemevi (DAG) nerededir?", arka_yuz: "Erzurum'da yer alır; Avrupa'nın en büyük aynalı teleskoplarından birine sahiptir.", zorluk: "orta", aktif: true },
+  { id: "gb132", kategori: "Otomotiv/Teknoloji", on_yuz: "Karapınar Güneş Enerjisi Santrali", arka_yuz: "Konya'da kurulan, Avrupa'nın tek alana kurulu en büyük güneş enerjisi santrallerinden biridir.", zorluk: "orta", aktif: true },
+  { id: "gb133", kategori: "Otomotiv/Teknoloji", on_yuz: "GÖKBEY nedir?", arka_yuz: "Türkiye'nin özgün tasarımlı, genel maksat milli helikopteridir.", zorluk: "kolay", aktif: true },
+  { id: "gb134", kategori: "Otomotiv/Teknoloji", on_yuz: "TEI-TS1400 nedir?", arka_yuz: "TUSAŞ Motor Sanayii (TEI) tarafından geliştirilen Türkiye'nin ilk yerli helikopter motorudur.", zorluk: "zor", aktif: true },
+  { id: "gb135", kategori: "Otomotiv/Teknoloji", on_yuz: "Abdülhamid Han nedir?", arka_yuz: "Türkiye'nin filosuna katılan 7. nesil derin deniz sondaj gemisidir (diğerleri: Fatih, Yavuz, Kanuni).", zorluk: "zor", aktif: true },
+  { id: "gb136", kategori: "Coğrafya", on_yuz: "Dünyanın en derin noktası", arka_yuz: "Pasifik Okyanusu'nda yer alan, derinliği yaklaşık 11.000 metreyi bulan Mariana Çukuru'dur.", zorluk: "kolay", aktif: true },
+];
