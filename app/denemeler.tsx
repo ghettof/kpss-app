@@ -2,11 +2,11 @@ import { router } from 'expo-router';
 import { useState } from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
-import { DENEME1, DENEME1_BASLIK, DENEME1_KONU, Soru } from '../constants/sorular/spk/deneme1';
-import { DENEME2, DENEME2_BASLIK, DENEME2_KONU } from '../constants/sorular/spk/deneme2';
-import { DENEME3, DENEME3_BASLIK, DENEME3_KONU } from '../constants/sorular/spk/deneme3';
-import { DENEME4, DENEME4_BASLIK, DENEME4_KONU } from '../constants/sorular/spk/deneme4';
-import { DENEME5, DENEME5_BASLIK, DENEME5_KONU } from '../constants/sorular/spk/deneme5';
+import { DENEME1, DENEME1_BASLIK, DENEME1_KONU, Soru } from '../constants/sorular/denemeler/deneme1';
+import { DENEME2, DENEME2_BASLIK, DENEME2_KONU } from '../constants/sorular/denemeler/deneme2';
+import { DENEME3, DENEME3_BASLIK, DENEME3_KONU } from '../constants/sorular/denemeler/deneme3';
+import { DENEME4, DENEME4_BASLIK, DENEME4_KONU } from '../constants/sorular/denemeler/deneme4';
+import { DENEME5, DENEME5_BASLIK, DENEME5_KONU } from '../constants/sorular/denemeler/deneme5';
 
 const DENEMELER = [
   { id: 1, baslik: DENEME1_BASLIK, konu: DENEME1_KONU, sorular: DENEME1, renk: '#4A90D9' },

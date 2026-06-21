@@ -22,7 +22,7 @@ export default function RootLayout() {
         <Stack.Screen name="ai-soru" options={{ headerShown: false }} />
         <Stack.Screen name="istatistik" options={{ headerShown: false }} />
         <Stack.Screen name="rozetler" options={{ headerShown: false }} />
-        <Stack.Screen name="spk" options={{ headerShown: false }} />
+        <Stack.Screen name="denemeler" options={{ headerShown: false }} />
         <Stack.Screen name="flashcard" options={{ headerShown: false }} />
       </Stack>
       <StatusBar style="auto" />
