@@ -1,0 +1,117 @@
+import { DenemeSorusu } from './deneme1';
+
+export const denemeCog2Baslik = "Jeo-Yapı & Yer Şekilleri (Dağlar ve Jeolojik Zamanlar)";
+
+export const denemeCog2: DenemeSorusu[] = [
+  {
+    id: 1,
+    soru: "Türkiye'de \"Sert, yaşlı ve deprem riski düşük\" olan Masif araziler ile zengin \"Taş kömürü\" yatakları hangi jeolojik zamanda oluşmuştur?",
+    secenekler: ["A) I. Zaman (Paleozoik)", "B) II. Zaman (Mezozoik)", "C) III. Zaman (Tersiyer)", "D) IV. Zaman (Kuvaterner)", "E) Prekambriyen (İlkel Zaman)"],
+    cevap: 0,
+    aciklama: "Yaşlı, sert ve oturan masif araziler ile yüksek kaloriye sahip taş kömürü yatakları Türkiye'de I. Jeolojik Zaman'da (Paleozoik) oluşmuştur.",
+  },
+  {
+    id: 2,
+    soru: "Aşağıdakilerden hangisi Türkiye'de I. Jeolojik Zaman'da (Paleozoik) oluşmuş \"Masif\" araziler arasında yer almaz?",
+    secenekler: ["A) Zonguldak Masifi", "B) Menteşe Masifi", "C) Kastamonu Masifi", "D) Bitlis Masifi", "E) Erzurum-Kars Masifi"],
+    cevap: 4,
+    aciklama: "Zonguldak, Menteşe, Kastamonu ve Bitlis masifleri I. zaman arazileridir. Erzurum-Kars ise III. ve IV. zamanda volkanik örtüyle kaplanmış genç bir platodur.",
+  },
+  {
+    id: 3,
+    soru: "Türkiye arazisinin büyük bir kısmının \"Tetis Denizi\" adı verilen derin bir deniz tabanında olduğu, tortullanma ve birikimlerin yaşandığı, bir sonraki büyük hareket için \"durgun hazırlık dönemi\" olarak kabul edilen jeolojik zaman aşağıdakilerden hangisidir?",
+    secenekler: ["A) I. Zaman (Paleozoik)", "B) II. Zaman (Mezozoik)", "C) III. Zaman (Tersiyer)", "D) IV. Zaman (Kuvaterner)", "E) Neojen Dönemi"],
+    cevap: 1,
+    aciklama: "II. Jeolojik Zaman (Mezozoik), Tetis Denizi tabanında tortullanmanın ve birikimlerin yaşandığı büyük Alp-Himalaya orojenezine hazırlık evresidir.",
+  },
+  {
+    id: 4,
+    soru: "I. Levha hareketleriyle Alp-Himalaya kıvrım sisteminin tetiklenmesi, Kuzey Anadolu Dağları ve Toroslar'ın oluşması\nII. Kuzey Anadolu (KAF), Doğu Anadolu (DAF) ve Batı Anadolu (BAF) fay hatlarının ana hatlarıyla belirmesi\nIII. Linyit, Bor, Petrol ve Kaya Tuzu yataklarının oluşması\nYukarıda verilen gelişmelerin tamamı hangi jeolojik zamanda gerçekleşmiştir?",
+    secenekler: ["A) I. Zaman (Paleozoik)", "B) II. Zaman (Mezozoik)", "C) III. Zaman (Tersiyer)", "D) IV. Zaman (Kuvaterner)", "E) Günümüz Kuşak Dönemi"],
+    cevap: 2,
+    aciklama: "Alp-Himalaya kıvrım sisteminin oluşumu, fay hatlarımızın belirmesi, linyit, bor, petrol ve kaya tuzu yataklarının oluşumu net olarak III. Zaman (Tersiyer) ürünüdür.",
+  },
+  {
+    id: 5,
+    soru: "IV. Zaman'da (Kuvaterner) meydana gelen gelişmeler incelendiğinde, aşağıdakilerden hangisi bu dönemde gerçekleşen olaylardan biri değildir?",
+    secenekler: [
+      "A) Egeid karasının çökmesi ve Ege Denizi'nin oluşması",
+      "B) İstanbul ve Çanakkale Boğazları'nın ria tipi kıyı olarak açılması",
+      "C) Karadeniz'in göl olmaktan çıkıp açık bir deniz haline gelmesi",
+      "D) Zonguldak çevresindeki zengin taş kömürü yataklarının oluşması",
+      "E) Anadolu yarımadasının, hafifleyen karanın yükselmesiyle toptan yükselmeye (Epirojenez) uğraması",
+    ],
+    cevap: 3,
+    aciklama: "Ege Denizi, boğazlar (ria tipi kıyı), Karadeniz'in denizleşmesi ve Anadolu'nun epirojenik toptan yükselişi IV. Zaman gelişmesidir. Taş kömürü ise I. Zaman ürünüdür.",
+  },
+  {
+    id: 6,
+    soru: "Yan basınçlarla kıvrılan esnek tortul tabakaların oluşturduğu, yüksekte kalan kubbe kısımlara Antiklinal, çukurda kalan kısımlara Senklinal denen mekanizmayla oluşan \"Kıvrım Dağı\" örneği aşağıdakilerden hangisidir?",
+    secenekler: ["A) Kaz Dağları", "B) Madra Dağları", "C) Küre (İsfendiyar) Dağları", "D) Yunt Dağları", "E) Aydın Dağları"],
+    cevap: 2,
+    aciklama: "Küre (İsfendiyar) Dağları, Kuzey Anadolu dağ silsilesinde yer alan tipik bir antiklinal-senklinal (kıvrım) yapısıdır. Diğer şıklar (Kaz, Madra, Yunt, Aydın) kırık dağlarıdır.",
+  },
+  {
+    id: 7,
+    soru: "Kırık dağlarının (Horst-Graben) Türkiye'de en fazla bulunduğu coğrafi bölge aşağıdakilerden hangisidir?",
+    secenekler: ["A) Karadeniz Bölgesi", "B) Akdeniz Bölgesi", "C) İç Anadolu Bölgesi", "D) Batı Anadolu (Ege) Bölgesi", "E) Doğu Anadolu Bölgesi"],
+    cevap: 3,
+    aciklama: "Sert tabakaların kırılmasıyla oluşan Horst-Graben sistemleri (kırık dağlar) Türkiye'de en yoğun olarak Batı Anadolu (Ege) Bölgesi'nde yer alır.",
+  },
+  {
+    id: 8,
+    soru: "Batı Anadolu'daki kırık dağ silsileleri düşünüldüğünde, coğrafi konumu bakımından Akdeniz Bölgesi'nde yer alan istisnai bir kırık dağ (Horst) örneği aşağıdakilerden hangisidir?",
+    secenekler: ["A) Menteşe Dağları", "B) Nur (Amanos) Dağları", "C) Geyik Dağları", "D) Bolkar Dağları", "E) Canik Dağları"],
+    cevap: 1,
+    aciklama: "Akdeniz Bölgesi'nde yer alan Nur (Amanos) Dağları, Toroslar'ın genel kıvrım yapısına uymayan, kırılma sonucu oluşmuş istisnai bir Horst örneğidir.",
+  },
+  {
+    id: 9,
+    soru: "İç Anadolu Bölgesi'ndeki volkanik dağ silsilesi incelendiğinde, aşağıdakilerden hangisi bu bölgede yer alan volkanik dağlardan biri değildir?",
+    secenekler: ["A) Erciyes Dağı", "B) Hasandağı", "C) Melendiz Dağı", "D) Karadağ", "E) Süphan Dağı"],
+    cevap: 4,
+    aciklama: "Erciyes, Hasandağı, Melendiz, Karacadağ ve Karadağ İç Anadolu'dadır. Süphan Dağı ise Doğu Anadolu Bölgesi'nde yer alan bir volkanik dağdır.",
+  },
+  {
+    id: 10,
+    soru: "Tepesinde Türkiye'nin en büyük kaldera gölünü bulunduran ünlü volkanik dağımız aşağıdakilerden hangisidir?",
+    secenekler: ["A) Ağrı Dağı", "B) Tendürek Dağı", "C) Süphan Dağı", "D) Nemrut Dağı", "E) Erciyes Dağı"],
+    cevap: 3,
+    aciklama: "Bitlis sınırlarında yer alan Nemrut Dağı'nın tepesinde, patlama sonrası çökmeyle oluşan (kaldera) Türkiye'nin en büyük kaldera gölü (Nemrut Gölü) yer alır.",
+  },
+  {
+    id: 11,
+    soru: "Karacadağ'ın, lavları çok akıcı (akışkan) olduğu için diğer volkanik dağlar gibi dik bir koni oluşturmayıp \"kalkan biçimli, yayvan\" bir yapıya sahip olmasının temel nedeni aşağıdakilerden hangisidir?",
+    secenekler: ["A) Çevresindeki akarsu ağının yoğun olması", "B) Lavlarının asidik ve çok koyu kıvamlı olması", "C) Magmadan çıkan lavların çok akıcı ve bazik karakterli olması", "D) Bölgedeki rüzgarların aşındırma faaliyetleri", "E) Bitki örtüsünün cılız olması"],
+    cevap: 2,
+    aciklama: "Güneydoğu'daki Karacadağ, lavlarının çok akışkan (akıcı) olması nedeniyle çevreye yayılmış ve kalkan biçimli, yayvan bir volkanik şekil oluşturmuştur.",
+  },
+  {
+    id: 12,
+    soru: "Ege Bölgesi'nde yer alan ve \"Türkiye'nin en genç volkanik sahası\" olarak kabul edilen, tüf ve kül konileriyle kaplı coğrafi alan aşağıdakilerden hangisidir?",
+    secenekler: ["A) Manisa Kula Volkanları", "B) Muğla Menteşe Yöresi", "C) Aydın Dağları etekleri", "D) İzmir Yamanlar Dağı", "E) Balıkesir Kaz Dağları"],
+    cevap: 0,
+    aciklama: "Manisa'nın Kula ilçesi çevresindeki volkanik arazi, Türkiye'nin en genç volkanik sahası olarak kabul edilir ve \"Kula Jeoparkı\" olarak korunur.",
+  },
+  {
+    id: 13,
+    soru: "\"Türkiye'nin yakın bir jeolojik zamanda oluşmuş, genç bir arazi yapısına sahip olmasının kanıtları\" arandığında, aşağıdakilerden hangisi bu durumun bir kanıtı olamaz?",
+    secenekler: ["A) Sık sık tektonik depremlerin meydana gelmesi", "B) Kırıklı hatların (fay hatlarının) çok yaygın olması", "C) Zengin jeotermal enerji ve sıcak su kaynaklarının bulunması", "D) Yaygın linyit yataklarının bulunması", "E) Zonguldak çevresinde taş kömürü yataklarının bulunması"],
+    cevap: 4,
+    aciklama: "Linyit, bor, depremler, sıcak sular ve faylar ülkemizin genç (III. ve IV. zaman) oluşumlu olduğunu kanıtlarken; taş kömürü I. zaman (yaşlı) arazi kanıtıdır.",
+  },
+  {
+    id: 14,
+    soru: "Ege Bölgesi'ndeki dağlar genel olarak kıyıya dik uzanırken, bir dağ silsilesi bu kurala uymayarak kıyıya paralel uzanır ve bu yüzden bulunduğu yöre daha bol yağış alır ve engebelidir. Bu \"istisna\" olan ve kıyıya paralel uzanan dağ silsilesi hangisidir?",
+    secenekler: ["A) Madra Dağları", "B) Yunt Dağları", "C) Menteşe Dağları", "D) Bozdağlar", "E) Aydın Dağları"],
+    cevap: 2,
+    aciklama: "Ege'de dağlar genelde denize dik uzanırken, Menteşe Dağları (Muğla çevresi) kıyıya paralel uzandığı için denizden gelen nemli hava yamaç boyunca yükselerek bol yağış bırakır.",
+  },
+  {
+    id: 15,
+    soru: "Marmara Bölgesi'nde yer alan Uludağ, magmanın yeryüzüne çıkamadan yerin altında soğuması ve üzerindeki tabakaların zamanla aşınmasıyla ortaya çıkan derinlik volkanizması ürünüdür. Uludağ'ın oluşumunu tanımlayan bu \"derinlik volkanizması (iç püskürük)\" kütlesine verilen coğrafi isim aşağıdakilerden hangisidir?",
+    secenekler: ["A) Kaldera", "B) Maar", "C) Krater", "D) Batolit", "E) Senklinal"],
+    cevap: 3,
+    aciklama: "Uludağ, magmanın yerin altında soğuyarak oluşturduğu bir iç püskürük/derinlik volkanizması kütlesidir ve literatürdeki adı Batolittir.",
+  },
+];

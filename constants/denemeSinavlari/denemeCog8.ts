@@ -1,0 +1,111 @@
+import { DenemeSorusu } from './deneme1';
+
+export const denemeCog8Baslik = "Madenler, Enerji ve Ulaşım";
+
+export const denemeCog8: DenemeSorusu[] = [
+  {
+    id: 1,
+    soru: "Türkiye'de Demir madeni yatakları Sivas (Divriği) ve Malatya (Hekimhan) çevresindedir. Karabük ve Ereğli'deki demir-çelik fabrikalarının bu bölgelerde kurulmasının \"temel sebebi\" aşağıdakilerden hangisidir?",
+    secenekler: ["A) Pazar olanaklarının genişliği", "B) Ulaşım ağlarının çeşitliliği", "C) Enerji (Taş kömürü) kaynağına yakınlık", "D) İş gücü potansiyelinin fazlalığı", "E) Liman olanaklarının gelişmişliği"],
+    cevap: 2,
+    aciklama: "Karabük ve Ereğli'de demir-çelik sanayisinin kurulmasındaki temel etken, demir cevherinin oraya yakın olması değil, demiri eritecek enerji kaynağı olan taş kömürünün o bölgede bulunmasıdır.",
+  },
+  {
+    id: 2,
+    soru: "Türkiye'de bakırın çıkarıldığı yerleri ifade eden \"KADER\" şifresinde yer alan illerimiz aşağıdakilerin hangisinde doğru verilmiştir?",
+    secenekler: ["A) Kayseri - Antalya - Diyarbakır - Edirne - Rize", "B) Kastamonu - Artvin - Diyarbakır - Elazığ - Rize", "C) Konya - Ankara - Denizli - Erzincan - Rize", "D) Kütahya - Aydın - Düzce - Erzurum - Rize", "E) Kırşehir - Amasya - Düzce - Elazığ - Rize"],
+    cevap: 1,
+    aciklama: "Bakır yataklarını ifade eden KADER şifresi: Kastamonu (Küre), Artvin (Murgul), Diyarbakır (Ergani), Elazığ (Maden) ve Rize (Çayeli) illerinden oluşur.",
+  },
+  {
+    id: 3,
+    soru: "Samsun'da yer alan bakır işletme tesisinin, ham madde (bakır madeni) şehre yakın olmamasına rağmen burada kurulmasının \"temel nedeni\" aşağıdakilerden hangisidir?",
+    secenekler: ["A) İklim koşullarının elverişliliği", "B) Ulaşım ve liman olanaklarının gelişmiş olması", "C) İş gücünün ucuzluğu", "D) Bölgedeki turizm potansiyeli", "E) Enerji ihtiyacının bölgeden karşılanması"],
+    cevap: 1,
+    aciklama: "Samsun'da bakır çıkarılmaz. Ancak liman şehri olması ve ulaşım kolaylığı sayesinde bölgeden gelen ham maddelerin burada işlenip kolayca pazarlanması için buraya fabrika kurulmuştur.",
+  },
+  {
+    id: 4,
+    soru: "Türkiye'nin dünya ihracatında lider olduğu, cam ve seramik sanayisinin vazgeçilmez ham maddesi olan ve \"Ege Bölgesi'nde\" yoğunlaşan maden aşağıdakilerden hangisidir?",
+    secenekler: ["A) Krom", "B) Bor", "C) Feldspat", "D) Barit", "E) Boksit"],
+    cevap: 2,
+    aciklama: "Feldspat, cam ve seramik sanayisinin ana maddesidir ve Ege Bölgesi'nde yoğunlaşır. Türkiye bu alanda dünya ihracat lideridir.",
+  },
+  {
+    id: 5,
+    soru: "Sondaj kuyularında petrol ve doğalgazın patlamasını önlemek için kullanılan, yoğunluğu yüksek olan ve Türkiye'de Antalya, Kahramanmaraş, Elazığ gibi yerlerde yatakları bulunan maden hangisidir?",
+    secenekler: ["A) Asbest", "B) Kükürt", "C) Barit", "D) Manganez", "E) Fosfat"],
+    cevap: 2,
+    aciklama: "Yoğunluğu çok yüksek olan Barit, sondaj kuyularında basınç dengeleyici olarak kullanılır ve Türkiye'de Antalya, Kahramanmaraş, Elazığ gibi yerlerde yatakları vardır.",
+  },
+  {
+    id: 6,
+    soru: "Türkiye'de rezervi kısıtlı olduğu için tarımda yapay gübre yapımı için dışarıdan (ithal) satın almak zorunda kaldığımız maden aşağıdakilerden hangisidir?",
+    secenekler: ["A) Fosfat", "B) Krom", "C) Bakır", "D) Bor", "E) Demir"],
+    cevap: 0,
+    aciklama: "Türkiye bir tarım ülkesi olmasına rağmen yerli fosfat rezervleri gübre ihtiyacını karşılamaya yetmediği için büyük oranda ithal (dış alım) edilir.",
+  },
+  {
+    id: 7,
+    soru: "Sadece Erzurum (Oltu) çevresinde çıkarılan, ardıç ağacının fosilleşmesiyle oluşan süs taşımız aşağıdakilerden hangisidir?",
+    secenekler: ["A) Mermer", "B) Oltu Taşı", "C) Boksit", "D) Zımpara Taşı", "E) Feldspat"],
+    cevap: 1,
+    aciklama: "Erzurum'da çıkarılan Oltu Taşı, aslında bir ardıç ağacının fosilleşmesiyle oluşan ve takı yapımında kullanılan nadir bir süs taşıdır.",
+  },
+  {
+    id: 8,
+    soru: "Türkiye'de I. Jeolojik Zaman ürünü olup sadece Zonguldak çevresinden çıkarılan ve Çatalağzı Termik Santrali'nde elektrik üretiminde kullanılan enerji kaynağı hangisidir?",
+    secenekler: ["A) Linyit", "B) Petrol", "C) Taş kömürü", "D) Doğalgaz", "E) Jeotermal"],
+    cevap: 2,
+    aciklama: "I. jeolojik zaman ürünü olan Taş kömürü sadece Zonguldak ve çevresinde çıkarılır, enerji üretimi için Çatalağzı Termik Santrali'nde kullanılır.",
+  },
+  {
+    id: 9,
+    soru: "Türkiye'de hemen her bölgede yatakları bulunan, III. Jeolojik Zaman ürünü olan ve termik santrallerde yaygın olarak kullanılan enerji kaynağı aşağıdakilerden hangisidir?",
+    secenekler: ["A) Taş kömürü", "B) Linyit", "C) Doğalgaz", "D) Petrol", "E) Uranyum"],
+    cevap: 1,
+    aciklama: "Linyit, III. jeolojik zaman ürünüdür ve Türkiye'nin genç yapısının kanıtı olarak hemen her bölgesinde bol miktarda bulunur.",
+  },
+  {
+    id: 10,
+    soru: "Petrol rafinerileri, pazara ve deniz ulaşımına yakınlık faktörlerine göre kurulmuştur. Aşağıdakilerden hangisi \"ham maddeye (çıkarım sahasına) yakın kurulan\" tek petrol rafinerimizdir?",
+    secenekler: ["A) İzmit (İpraş)", "B) İzmir (Aliağa)", "C) Kırıkkale (Orta Anadolu)", "D) Batman Rafinerisi", "E) Mersin (Ataş)"],
+    cevap: 3,
+    aciklama: "Türkiye'deki diğer tüm petrol rafinerileri pazar veya ulaşıma yakın (deniz kenarı) kurulmuştur; ancak Batman rafinerisi petrolün çıkarıldığı alana (ham maddeye) yakın kurulan tek örnektir.",
+  },
+  {
+    id: 11,
+    soru: "Aşağıdakilerden hangisi \"yeraltı sıcak su/buhar\" gücüne dayalı olup, Ege Bölgesi'ndeki fay hatları üzerinde yer alan ve iklim koşullarından asla etkilenmeyen enerji kaynağımızdır?",
+    secenekler: ["A) Hidroelektrik (HES)", "B) Jeotermal Enerji", "C) Güneş Enerjisi", "D) Rüzgar Enerjisi", "E) Biyokütle"],
+    cevap: 1,
+    aciklama: "Jeotermal enerji yerin derinliklerindeki faylardan gelir, dolayısıyla iklim veya mevsim koşullarından (kar, yağış, kuraklık) asla etkilenmez.",
+  },
+  {
+    id: 12,
+    soru: "Türkiye'de demiryolu ulaşımı bulunmayan, sarp ve dağlık yapısı veya sapa konumu nedeniyle ulaşılamayan yerler arasında aşağıdakilerden hangisi yer almaz?",
+    secenekler: ["A) Antalya", "B) Hakkari", "C) Sinop", "D) Doğu Karadeniz (Trabzon-Rize-Artvin)", "E) Kırıkkale"],
+    cevap: 4,
+    aciklama: "Kırıkkale (yüksek hızlı tren hattı üzerinde ve demiryolu kavşağında) hariç; Antalya, Hakkari, Sinop ve Doğu Karadeniz engebeli arazi veya ulaşım zorluğu nedeniyle demiryolu ağından mahrumdur.",
+  },
+  {
+    id: 13,
+    soru: "Gülek geçidi (Adana-İç Anadolu) ile beraber Türkiye'nin en işlek geçitlerinden olan ve \"Antalya'yı Göller Yöresi'ne\" bağlayan geçit hangisidir?",
+    secenekler: ["A) Çubuk Geçidi", "B) Sertavul Geçidi", "C) Belen Geçidi", "D) Zigana Geçidi", "E) Kop Geçidi"],
+    cevap: 0,
+    aciklama: "Antalya'yı İç Anadolu'nun Göller Yöresi'ne bağlayan ve Gülek geçidi kadar işlek olan geçit Çubuk Geçididir.",
+  },
+  {
+    id: 14,
+    soru: "Hinterlandı (ard bölgesi) dar olan (Küre Dağları hemen kıyıda başladığı için) ve bu yüzden demiryolu ağı bağlantısı bulunmayan, ticaret hacmi kısıtlı kalan Karadeniz'in tek doğal limanı hangisidir?",
+    secenekler: ["A) Samsun Limanı", "B) Trabzon Limanı", "C) Sinop Limanı", "D) Zonguldak Limanı", "E) İskenderun Limanı"],
+    cevap: 2,
+    aciklama: "Sinop, doğal bir liman olmasına rağmen hemen arkasında Küre Dağları başladığı için hinterlandı çok dardır ve demiryolu bağlantısı bulunmamaktadır.",
+  },
+  {
+    id: 15,
+    soru: "Türkiye'de turizme bağlı olarak gelişen, kruvaziyer (yüzen otel) taşımacılığının kalbi kabul edilen ve \"yat/marina\" limanı olarak öne çıkan merkezimiz aşağıdakilerden hangisidir?",
+    secenekler: ["A) Antalya Limanı", "B) Mersin Limanı", "C) İzmir Limanı", "D) İskenderun Limanı", "E) Bandırma Limanı"],
+    cevap: 0,
+    aciklama: "Antalya Limanı turizm odaklı gelişmiştir ve bir yat/marina limanıdır; demiryolu bağlantısı bulunmaz.",
+  },
+];

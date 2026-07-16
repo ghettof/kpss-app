@@ -1,0 +1,111 @@
+import { DenemeSorusu } from './deneme1';
+
+export const denemeCog5Baslik = "İklim, Basınçlar ve Toprak Tipleri";
+
+export const denemeCog5: DenemeSorusu[] = [
+  {
+    id: 1,
+    soru: "60° Kuzey enleminden kışın Türkiye'ye sokulan, ülkemizde kışların nispeten ılık, bol yağışlı ve kıyılarda kar yağışlı geçmesini sağlayan \"Dinamik Alçak Basınç\" merkezi aşağıdakilerden hangisidir?",
+    secenekler: ["A) İzlanda Basıncı", "B) Sibirya Basıncı", "C) Azor Basıncı", "D) Basra Basıncı", "E) Muson Basıncı"],
+    cevap: 0,
+    aciklama: "Kışın kuzeybatıdan gelen ve kışların ılık, bol yağışlı geçmesini sağlayan Dinamik Alçak Basınç merkezi İzlanda'dır.",
+  },
+  {
+    id: 2,
+    soru: "Kış mevsiminde Türkiye'yi etkisi altına aldığında; dondurucu soğuklara, kuru ayaza ve şiddetli kar yağışlarına neden olan \"Termik Yüksek Basınç\" merkezi aşağıdakilerden hangisidir?",
+    secenekler: ["A) İzlanda Basıncı", "B) Sibirya Basıncı", "C) Azor Basıncı", "D) Basra Basıncı", "E) Cezayir Basıncı"],
+    cevap: 1,
+    aciklama: "Kışın kuzeydoğudan sokulan, Türkiye'ye kuru ayaz, dondurucu soğuk ve kar getiren Termik Yüksek Basınç merkezi Sibirya'dır.",
+  },
+  {
+    id: 3,
+    soru: "30° Kuzey enleminden köken alan, yazın Türkiye genelinde belirgin yaz kuraklığına, açık ve sıcak günlerin yaşanmasına sebep olan \"Dinamik Yüksek Basınç\" merkezi aşağıdakilerden hangisidir?",
+    secenekler: ["A) İzlanda Basıncı", "B) Sibirya Basıncı", "C) Azor Basıncı", "D) Basra Basıncı", "E) Asya Basıncı"],
+    cevap: 2,
+    aciklama: "30° enleminden yazın gelerek Türkiye genelinde belirgin yaz kuraklığı ve aşırı sıcaklıklara yol açan Dinamik Yüksek Basınç merkezi Azor rüzgar/basınç kuşağıdır.",
+  },
+  {
+    id: 4,
+    soru: "Yaz mevsiminde Güneydoğu Asya üzerinden Türkiye'ye sokulan; özellikle Güneydoğu Anadolu ve Akdeniz'de aşırı sıcaklık, şiddetli buharlaşma ve çölleşme etkileri yaratan \"Termik Alçak Basınç\" merkezi hangisidir?",
+    secenekler: ["A) İzlanda Basıncı", "B) Sibirya Basıncı", "C) Azor Basıncı", "D) Basra Basıncı", "E) İran Basıncı"],
+    cevap: 3,
+    aciklama: "Yazın güneydoğudan (Basra Körfezi üzerinden) sokulup Güneydoğu Anadolu ve Akdeniz'de çöl sıcakları ile şiddetli buharlaşmaya neden olan alçak basınç Basra'dır.",
+  },
+  {
+    id: 5,
+    soru: "Her mevsimi düzenli ve bol yağışlı geçen, yıllık sıcaklık farkının nemlilikten dolayı en az olduğu, en çok yağışını Sonbahar, en az yağışını ise İlkbahar mevsiminde alan Türkiye iklim tipi aşağıdakilerden hangisidir?",
+    secenekler: ["A) Akdeniz İklimi", "B) Ilıman Karasal İklim", "C) Sert Karasal İklim", "D) Karadeniz İklimi", "E) Marmara Geçiş İklimi"],
+    cevap: 3,
+    aciklama: "Her mevsimi yağışlı olan, en çok yağışını sonbaharda, en azını ilkbaharda alan iklim tipi karakteristik olarak Karadeniz İklimidir.",
+  },
+  {
+    id: 6,
+    soru: "Yazları sıcak ve kurak, kışları ılık ve yağışlı geçen; en çok yağışını \"Kış\" mevsiminde alan Akdeniz ikliminin karakteristik doğal bitki örtüsü aşağıdakilerden hangisidir?",
+    secenekler: ["A) Bozkır (Step)", "B) Geniş yapraklı ormanlar", "C) Kızılçam ormanları ve bunların tahribiyle oluşan Makiler", "D) Alpin çayırlar", "E) Antropojen bozkırlar"],
+    cevap: 2,
+    aciklama: "Akdeniz ikliminin asıl ağaç türü kızılçam ormanlarıdır; bunların insanlarca tahrip edildiği yerlerde ise bodur çalı topluluğu olan Maki (zeytin, zakkum, defne vb.) gelişir.",
+  },
+  {
+    id: 7,
+    soru: "İç Anadolu, Doğu Anadolu'nun alçak düzlükleri ve Güneydoğu Anadolu'da etkili olan Ilıman Karasal (Step) iklimde en çok yağışın \"İlkbahar\" mevsiminde yükselim hareketlerine bağlı olarak düşmesiyle oluşan yağış türü aşağıdakilerden hangisidir?",
+    secenekler: ["A) Cephesel (Frontal) yağışlar", "B) Orografik (Yamaç) yağışları", "C) Konveksiyonel (Kırkikindi) yağışları", "D) Siklonik yağışlar", "E) Muson yağışları"],
+    cevap: 2,
+    aciklama: "Ilıman karasal iklimde ilkbaharda ısınan havanın yükselerek soğumasıyla oluşan yağışlara konveksiyonel (yükselim) yağışlar denir. Halk arasında buna Kırkikindi yağışları adı verilir.",
+  },
+  {
+    id: 8,
+    soru: "Erzurum-Kars ve Ardahan çevresinde görülen, en çok yağışını konveksiyonel olarak \"Yaz\" mevsiminde alan ve yıllık sıcaklık farkının Türkiye'de en yüksek olduğu iklim tipi aşağıdakilerden hangisidir?",
+    secenekler: ["A) Karadeniz İklimi", "B) Ilıman Karasal İklim", "C) Sert Karasal İklim", "D) Akdeniz İklimi", "E) Step İklimi"],
+    cevap: 2,
+    aciklama: "Erzurum-Kars-Ardahan platolarında görülen, yaz yağışları konveksiyonel olan ve yıllık sıcaklık farkının en şiddetli olduğu iklim Sert Karasal İklimdir.",
+  },
+  {
+    id: 9,
+    soru: "Akdeniz iklim sahasında, kalkerli (kireç taşlı) araziler üzerinde oluşan, içindeki demir oksit oranı yüksek olduğu için \"kırmızı\" renkli olan zon toprak türü aşağıdakilerden hangisidir?",
+    secenekler: ["A) Çernozyom", "B) Vertisol", "C) Terra-Rossa", "D) Podzol", "E) Kahverengi Orman Toprağı"],
+    cevap: 2,
+    aciklama: "Akdeniz iklim sahasında kireç taşlarının (kalker) çözünmesiyle oluşan, bünyesindeki demir oksitten ötürü kırmızı renk alan toprak Terra-Rossa'dır.",
+  },
+  {
+    id: 10,
+    soru: "Sert karasal iklimin hüküm sürdüğü Erzurum-Kars platolarında, gür çayırlar altında oluşan, organik madde (humus) yönünden dünyanın en zengin yerli toprağı olmasına rağmen sert iklim şartlarından ötürü tarım süresi kısıtlı olan toprak hangisidir?",
+    secenekler: ["A) Terra-Rossa", "B) Çernozyom (Kara Toprak)", "C) Vertisol", "D) Alüvyal Toprak", "E) Kahverengi Orman Toprağı"],
+    cevap: 1,
+    aciklama: "Gür çayırlar altında yıkanarak zenginleşen, dünyanın en humuslu yerli kara toprağı olan tür Çernozyomdur.",
+  },
+  {
+    id: 11,
+    soru: "Karadeniz Bölgesi'nin her mevsim yağışlı ve gür orman örtüsü altında gelişen kahverengi orman toprakları ile ilgili aşağıdakilerden hangisi söylenebilir?",
+    secenekler: ["A) Killi yapısı nedeniyle dönen toprak olarak adlandırılır", "B) Demir oksit oranı az olduğu için rengi kırmızıdır", "C) Yağışın fazla olmasından dolayı yıkanma oranı yüksek topraklardır", "D) Sadece kalkerli yapılar üzerinde tabaka düzlüklerinde oluşur", "E) Horizon tabakalaşması göstermeyen azonal topraklardır"],
+    cevap: 2,
+    aciklama: "Karadeniz'in her mevsim nemli olan orman örtüsü altında, bol yağış nedeniyle yıkanma oranı son derece yüksek kahverengi orman toprakları oluşur.",
+  },
+  {
+    id: 12,
+    soru: "Aşağıdakilerden hangisi Türkiye'deki mikroklima alanları ve buralarda yetişen tarım ürünü eşleştirmelerinden biri değildir?",
+    secenekler: ["A) Rize → Narenciye (Mandalina)", "B) Artvin (Çoruh Vadisi) → Zeytin", "C) Iğdır Ovası → Pamuk", "D) Alanya Kıyıları → Muz", "E) Konya Ovası → Çay"],
+    cevap: 4,
+    aciklama: "Rize'de narenciye, Artvin'de zeytin, Iğdır'da pamuk ve Alanya'da muz net birer mikroklima ürünüdür. Ancak Konya Ovası bir mikroklima alanı olmadığı gibi orada çay tarımı yapılması iklimsel olarak imkansızdır.",
+  },
+  {
+    id: 13,
+    soru: "Türkiye'ye güneybatı yönünden esen, nemli ve sıcak karakterli olan, kışın denizcileri zor durumda bırakan rüzgar aşağıdakilerden hangisidir?",
+    secenekler: ["A) Karayel", "B) Poyraz", "C) Samyeli", "D) Lodos", "E) Keşişleme"],
+    cevap: 3,
+    aciklama: "KAYIP SAKAL şifresine göre: Karayel, Yıldız, Poyraz (Kuzeydekiler/Soğuk); Samyeli, Kıble, Lodos (Güneydekiler/Sıcak) rüzgarlardır. Güneybatıdan esen nemli sıcak rüzgar Lodostur.",
+  },
+  {
+    id: 14,
+    soru: "Akdeniz iklimindeki kızılçam ormanlarının tahrip edilmesiyle bodur, sert ve parlak yapraklı çalılardan oluşan \"Maki\" formasyonu meydana gelir. Aşağıdakilerden hangisi maki türleri arasında gösterilemez?",
+    secenekler: ["A) Zeytin", "B) Zakkum", "C) Defne", "D) Geven", "E) Mersin"],
+    cevap: 3,
+    aciklama: "Zeytin, zakkum, defne ve mersin Akdeniz'in maki türleridir. Geven ise karasal iklimin cılız ot topluluğu olan bozkır (step) formasyonuna ait bir bitkidir.",
+  },
+  {
+    id: 15,
+    soru: "İç Anadolu Bölgesi gibi kurak alanlarda, geçmişte orman örtüsüyle kaplı olan alanların insanlar tarafından kesilip yakılarak yok edilmesiyle ortaya çıkan bozkır türüne ne ad verilir?",
+    secenekler: ["A) Alpin Çayır", "B) Garig", "C) Psödomaki", "D) Antropojen Bozkır", "E) Yalancı Maki"],
+    cevap: 3,
+    aciklama: "İç Anadolu'da ormanların insanlar tarafından yakılıp yok edilmesiyle oluşan yapay ot topluluklarına Antropojen Bozkır adı verilir.",
+  },
+];

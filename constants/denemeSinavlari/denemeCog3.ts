@@ -1,0 +1,117 @@
+import { DenemeSorusu } from './deneme1';
+
+export const denemeCog3Baslik = "Ovalar ve Platolar";
+
+export const denemeCog3: DenemeSorusu[] = [
+  {
+    id: 1,
+    soru: "Türkiye'nin \"en büyük delta ovası\" olan ve Seyhan ile Ceyhan nehirlerinin ortaklaşa oluşturduğu kıyı ovası aşağıdakilerden hangisidir?",
+    secenekler: ["A) Bafra", "B) Çarşamba", "C) Silifke", "D) Çukurova", "E) Menemen"],
+    cevap: 3,
+    aciklama: "Seyhan ve Ceyhan nehirlerinin Akdeniz'e döküldüğü yerde oluşturduğu Çukurova, Türkiye'nin en büyük delta ovasıdır.",
+  },
+  {
+    id: 2,
+    soru: "Türkiye'deki delta ovaları ve onları oluşturan akarsu eşleştirmelerinden hangisi yanlıştır?",
+    secenekler: ["A) Bafra Deltası → Kızılırmak", "B) Çarşamba Deltası → Yeşilırmak", "C) Silifke Deltası → Göksu", "D) Menemen Deltası → Gediz", "E) Balat Deltası → Küçük Menderes"],
+    cevap: 4,
+    aciklama: "Balat Deltası'nı Küçük Menderes değil, Büyük Menderes nehri oluşturur. Küçük Menderes nehri ise Selçuk Deltası'nı oluşturmaktadır.",
+  },
+  {
+    id: 3,
+    soru: "Aşağıdakilerden hangisi Türkiye'de \"TAKKEM\" şifresiyle hafızaya kazınan karstik ovalardan (gölovalardan) biri değildir?",
+    secenekler: ["A) Tefenni", "B) Acıpayam", "C) Korkuteli", "D) Konya", "E) Elmalı"],
+    cevap: 3,
+    aciklama: "Karstik polye ovaları TAKKEM (Tefenni, Acıpayam, Korkuteli, Kestel, Elmalı, Muğla) şifresiyle kodlanır. Konya Ovası ise karstik değil, devasa bir tektonik ovadır.",
+  },
+  {
+    id: 4,
+    soru: "Fay hatlarındaki çöküntü alanlarında (oluklarında) oluşan ve Türkiye'nin iç kesimlerinde en yaygın olarak görülen ova türü aşağıdakilerden hangisidir?",
+    secenekler: ["A) Delta Ovaları", "B) Karstik Ovalar", "C) Tektonik Ovalar", "D) Lav Örtüsü Ovaları", "E) Dağ Eteği Ovaları"],
+    cevap: 2,
+    aciklama: "Fay hatlarındaki tektonik çöküntü alanlarında biriken alüvyonlarla oluşan ve Türkiye'de en yaygın bulunan ova türü Tektonik Ovalardır.",
+  },
+  {
+    id: 5,
+    soru: "Aşağıdaki ovalardan hangisi, oluşum yönüyle diğerlerinden farklı olarak bir \"Tektonik Ova\" örneğidir?",
+    secenekler: ["A) Silifke Ovası", "B) Menemen Ovası", "C) Muğla Ovası", "D) Adapazarı Ovası", "E) Çarşamba Ovası"],
+    cevap: 3,
+    aciklama: "Silifke, Menemen ve Çarşamba ovaları delta (kıyı) ovaları iken; Muğla ovası karstik bir polye ovasıdır. Adapazarı Ovası ise Kuzey Anadolu Fay Hattı üzerinde yer alan tipik bir Tektonik Ova örneğidir.",
+  },
+  {
+    id: 6,
+    soru: "Akdeniz Bölgesi'nde yer alan Teke ve Taşeli platoları karstik yapıdadır ve yüzey suları bakımından fakirdir. Buna göre, bu platolarda gelişen en temel hayvancılık faaliyeti aşağıdakilerden hangisidir?",
+    secenekler: ["A) Büyükbaş mera hayvancılığı", "B) Kıl keçisi yetiştiriciliği", "C) Kümes hayvancılığı", "D) İpek böcekçiliği", "E) Arıcılık"],
+    cevap: 1,
+    aciklama: "Kireçli ve geçirgen yapıya sahip karstik Teke ve Taşeli platolarında, engebeli araziye ve çalımsı örtüye en iyi uyum sağlayan hayvancılık faaliyeti Kıl Keçisi yetiştiriciliğidir.",
+  },
+  {
+    id: 7,
+    soru: "Erzurum-Kars ve Ardahan lav platolarının, Türkiye ekonomisindeki ve hayvancılığındaki en temel fonksiyonu aşağıdakilerden hangisidir?",
+    secenekler: [
+      "A) Kıl keçisi üretimi için maki bitki örtüsü sunması",
+      "B) Yaz yağışlarıyla yeşeren gür Alpin çayırlar sayesinde \"Büyükbaş mera hayvancılığına\" zemin hazırlaması",
+      "C) Yoğun nüfusa bağlı olarak besi hayvancılığının gelişmesi",
+      "D) Sıcaklık değerleri yüksek olduğu için pamuk tarımına uygun olması",
+      "E) Sanayi tesislerinin bu sahalarda yoğunlaşması",
+    ],
+    cevap: 1,
+    aciklama: "Erzurum-Kars ve Ardahan gibi yüksek lav platolarında yaz yağışları gür Alpin çayırları oluşturur; bu ot çeşitliliği bölgede Büyükbaş mera hayvancılığının temel geçim kaynağı olmasını sağlar.",
+  },
+  {
+    id: 8,
+    soru: "Aşağıdakilerden hangisi Çatalca-Kocaeli Platosu'nu Türkiye'nin diğer tüm platolarından ayıran en yüksek seviyede olan karakteristik özelliğidir?",
+    secenekler: ["A) Yükseltisinin en fazla olan plato olması", "B) Küçükbaş hayvancılık ve tahıl tarımının zirvede olması", "C) Sanayi, ticaret, ulaşım ve nüfus yoğunluğunun en fazla olduğu saha olması", "D) Büyükbaş mera hayvancılığının yaygın yapılması", "E) Yüzey sularının yer altına sızması nedeniyle kurak olması"],
+    cevap: 2,
+    aciklama: "Yükseltisi en az olan Çatalca-Kocaeli Platosu; sanayinin, ticaretin, dev ulaşım ağlarının ve nüfusun Türkiye'de en yoğun kümelendiği sahadır.",
+  },
+  {
+    id: 9,
+    soru: "Aşağıdaki platolardan hangisi İç Anadolu Bölgesi'nde yer alan \"Tabaka Düzlüğü (Yatay Duruşlu)\" platoları arasında gösterilemez?",
+    secenekler: ["A) Haymana Platosu", "B) Cihanbeyli Platosu", "C) Bozok Platosu", "D) Obruk Platosu", "E) Ardahan Platosu"],
+    cevap: 4,
+    aciklama: "Haymana, Cihanbeyli, Obruk ve Bozok İç Anadolu'nun yatay duruşlu platolarıdır. Ardahan Platosu ise Doğu Anadolu Bölgesi'nde yer alan bir Lav (Volkanik) Platosudur.",
+  },
+  {
+    id: 10,
+    soru: "Güneydoğu Anadolu Bölgesi'nde geniş yer kaplayan Gaziantep ve Şanlıurfa platolarında en yaygın olarak yürütülen ekonomik faaliyetler aşağıdakilerden hangisidir?",
+    secenekler: ["A) Büyükbaş mera hayvancılığı ve çay tarımı", "B) Tahıl tarımı ve küçükbaş hayvancılık", "C) Kıl keçisi yetiştiriciliği ve ormancılık", "D) Kümes hayvancılığı ve arıcılık", "E) Turizm ve madencilik"],
+    cevap: 1,
+    aciklama: "Tabaka düzlüğü platoları olan Antep ve Urfa platolarında yarı kurak iklime bağlı olarak en temel ekonomik faaliyetler Tahıl tarımı ve küçükbaş hayvancılıktır.",
+  },
+  {
+    id: 11,
+    soru: "Bir kıyı şeridinde delta ovası oluşabilmesi için gerekli olan aşağıdaki şartlardan hangisi, doğrudan \"akarsuyun havzasındaki\" özelliklerle ilgilidir?",
+    secenekler: ["A) Kıyıda güçlü gelgit (medcezir) akıntılarının olmaması", "B) Deniz kıyısının sığ (derinliğinin az) olması", "C) Kıta sahanlığının (şelf alanının) geniş olması", "D) Akarsuyun havzasından bol miktarda alüvyon (malzeme) taşıması", "E) Kıyı açıklarında güçlü deniz akıntılarının bulunmaması"],
+    cevap: 3,
+    aciklama: "Gelgit, kıyı derinliği ve kıta sahanlığı doğrudan \"deniz/kıyı\" özellikleri iken; akarsuyun havzasından bol miktarda malzeme (alüvyon) koparıp getirmesi doğrudan akarsuyun kendi havza özellikleri ve erozyon gücüyle ilgilidir.",
+  },
+  {
+    id: 12,
+    soru: "Türkiye'de yer alan platoların \"yükseltisi en az olandan en fazla olana\" doğru sıralanışı aşağıdakilerin hangisinde doğru olarak verilmiştir?",
+    secenekler: ["A) Çatalca-Kocaeli → Haymana → Erzurum-Kars", "B) Erzurum-Kars → Cihanbeyli → Çatalca-Kocaeli", "C) Teke → Taşeli → Gaziantep", "D) Şanlıurfa → Bozok → Çatalca-Kocaeli", "E) Erzurum-Kars → Çatalca-Kocaeli → Obruk"],
+    cevap: 0,
+    aciklama: "Türkiye'de yükseltisi en az olan plato Marmara'daki Çatalca-Kocaeli; orta seviyede olanlar İç Anadolu platoları (Haymana vb.); yükseltisi en fazla olanlar ise Doğu Anadolu'daki Erzurum-Kars platolarıdır.",
+  },
+  {
+    id: 13,
+    soru: "Delta ovalarında yer alan toprakların mineralce zengin ve tarımsal veriminin çok yüksek olmasının temel sebebi aşağıdakilerden hangisidir?",
+    secenekler: ["A) Kalkerli ve kireçli araziler üzerinde oluşmaları", "B) Farklı coğrafi havzalardan taşınmış alüvyal topraklardan meydana gelmesi", "C) Yıl boyunca düzenli ve bol yağış almaları", "D) Killi tabakaların suyu yüzeyde tutması", "E) Horizon (katmanlaşma) özelliklerinin çok belirgin olması"],
+    cevap: 1,
+    aciklama: "Delta ovalarındaki topraklar (Alüvyal topraklar), akarsuların yüzlerce kilometrelik havza boyunca farklı kayaçlardan kopardığı mineralleri bünyesinde topladığı için mineralce son derece zengindir.",
+  },
+  {
+    id: 14,
+    soru: "Aşağıdaki plato ve oluşum eşleştirmelerinden hangisi yanlıştır?",
+    secenekler: ["A) Taşeli Platosu → Karstik Plato", "B) Erzurum-Kars Platosu → Lav (Volkanik) Platosu", "C) Çatalca-Kocaeli Platosu → Aşınım Düzlüğü Platosu", "D) Haymana Platosu → Tabaka Düzlüğü Platosu", "E) Cihanbeyli Platosu → Karstik Plato"],
+    cevap: 4,
+    aciklama: "Cihanbeyli Platosu karstik bir plato değil; İç Anadolu'da yer alan tipik bir Tabaka Düzlüğü (Yatay Duruşlu) platodur.",
+  },
+  {
+    id: 15,
+    soru: "Marmara Bölgesi'ndeki Ergene Havzası'nda çok yaygın olan, eski göl tabanlarındaki killi arazilerde kurak dönemde çatlayan ve yağışlı dönemde içindeki taşları dışarı fırlattığı için \"Taş Doğuran\" ya da \"Dönen Toprak\" olarak bilinen, ayçiçeği tarımı için ideal olan toprak türü hangisidir?",
+    secenekler: ["A) Terra-Rossa", "B) Çernozyom", "C) Vertisol", "D) Podzol", "E) Laterit"],
+    cevap: 2,
+    aciklama: "Trakya-Ergene havzasında killi arazilerde oluşan, ayçiçeği tarımına çok uygun olan ve \"Taş doğuran / Dönen toprak\" olarak bilinen tür Vertisoldür.",
+  },
+];

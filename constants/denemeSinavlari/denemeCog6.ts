@@ -1,0 +1,111 @@
+import { DenemeSorusu } from './deneme1';
+
+export const denemeCog6Baslik = "Beşeri Coğrafya ve Nüfus";
+
+export const denemeCog6: DenemeSorusu[] = [
+  {
+    id: 1,
+    soru: "Aşağıdakilerden hangisi Türkiye'de \"Yer şekillerinin aşırı engebeli olması, karstik arazi yapısı ve su kıtlığı\" nedeniyle seyrek nüfuslanmış alanlar arasında yer alır?",
+    secenekler: ["A) Çatalca-Kocaeli Platosu", "B) Teke ve Taşeli Platoları", "C) Doğu Karadeniz Kıyı Şeridi", "D) Çukurova Deltası", "E) Kıyı Ege Bölümü"],
+    cevap: 1,
+    aciklama: "Akdeniz'deki Teke ve Taşeli platoları; engebeli yapıları, karstik erimeli çatlak arazileri ve suların yer altına sızmasından kaynaklı yüzey suyu kıtlığı nedeniyle seyrek nüfuslanmıştır.",
+  },
+  {
+    id: 2,
+    soru: "Sapada kalan konumu, ana ulaşım yollarına uzaklığı ve engebeli dağlık yapısı nedeniyle bol yağış almasına rağmen \"seyrek nüfuslu\" olan Marmara Bölümü alanı aşağıdakilerden hangisidir?",
+    secenekler: ["A) Yıldız Dağları (Istranca) Yöresi", "B) Ergene Havzası", "C) Çatalca-Kocaeli Sahası", "D) Güney Marmara Bölümü", "E) Kocaeli Yarımadası"],
+    cevap: 0,
+    aciklama: "Yıldız Dağları (Istranca), Marmara'nın en çok yağış alan yerlerinden biri olmasına rağmen, engebeli yapısı ve ana transit yolların sapa (kuzey) kısmında kalması nedeniyle oldukça seyrek nüfusludur.",
+  },
+  {
+    id: 3,
+    soru: "Türkiye nüfusunun yaş yapısındaki değişimler incelendiğinde; \"0-14 yaş çocuk nüfus oranının azalması\", \"65 ve üstü yaşlı nüfus oranının artması\" ve \"ortanca yaşın yükselmesi\" durumları aşağıdakilerden hangisinin kesin bir göstergesidir?",
+    secenekler: ["A) Türkiye'nin toplam nüfus miktarının azaldığının", "B) Türkiye nüfusunun yapısal olarak yaşlanma eğiliminde olduğunun", "C) Doğum oranlarının hızla artış gösterdiğinin", "D) Kentlerden kırlara doğru göç hareketlerinin başladığının", "E) Nüfus artış hızının sıfırın altına düştüğünün"],
+    cevap: 1,
+    aciklama: "Çocuk nüfus oranının gerilemesi, yaşlı oranının artması ve ortanca yaş değerinin yukarı tırmanması, Türkiye nüfusunun gelişmiş ülkelerdeki gibi yapısal bir yaşlanma sürecinde olduğunu kanıtlar.",
+  },
+  {
+    id: 4,
+    soru: "Türkiye'de ortanca yaşı en yüksek olan (en yaşlı) il ile ortanca yaşı en düşük olan (en genç) il aşağıdakilerin hangisinde sırasıyla doğru olarak verilmiştir?",
+    secenekler: ["A) İstanbul - Ankara", "B) Sinop - Şanlıurfa", "C) Şanlıurfa - Sinop", "D) Tunceli - Bayburt", "E) Sinop - Tunceli"],
+    cevap: 1,
+    aciklama: "TÜİK verilerine göre; Türkiye'de ortanca yaşı en yüksek olan (en yaşlı) il Sinop, ortanca yaşı en düşük olan (en genç) il ise Şanlıurfa'dır.",
+  },
+  {
+    id: 5,
+    soru: "Türkiye'de km² başına düşen insan sayısının \"en fazla olduğu il\" ile \"en az olduğu il\" aşağıdakilerin hangisinde sırasıyla doğru verilmiştir?",
+    secenekler: ["A) İstanbul - Tunceli", "B) Ankara - Bayburt", "C) İstanbul - Bayburt", "D) İzmir - Tunceli", "E) İstanbul - Ardahan"],
+    cevap: 0,
+    aciklama: "Kilometrekareye düşen kişi sayısının en yoğun olduğu il İstanbul, en tenha olduğu il ise yüz ölçümüne göre az nüfus barındıran Tunceli ilidir.",
+  },
+  {
+    id: 6,
+    soru: "Türkiye nüfusunun \"Nüfus Projeksiyonu\" tahminleri dikkate alındığında, aşağıdakilerden hangisinin gerçekleşmesi beklenemez?",
+    secenekler: ["A) Genç nüfus oranının azalması", "B) Yaşlı nüfus oranının artması", "C) Ortanca yaşın yükselmesi", "D) Yaşlı bağımlı nüfus miktarının artması", "E) Piramidin tabanının giderek genişlemesi"],
+    cevap: 4,
+    aciklama: "Nüfusun yaşlandığı projeksiyonlarda genç nüfus ve doğum oranları azalacağı için piramidin tabanının genişlemesi değil, aksine daralması beklenir.",
+  },
+  {
+    id: 7,
+    soru: "Aşağıdakilerden hangisi Türkiye'deki \"Kalıcı Kırsal Yerleşme\" tipleri arasında yer alır?",
+    secenekler: ["A) Yayla", "B) Kom", "C) Oba", "D) Mezra", "E) Ağıl"],
+    cevap: 3,
+    aciklama: "Mahalle, divan, mezra ve çiftlik kalıcı yerleşmelerdir. Yayla, kom, oba, ağıl ve dam ise hayvancılık amaçlı geçici yerleşmelerdir. Bu yüzden Mezra kalıcı bir kırsal yerleşmedir.",
+  },
+  {
+    id: 8,
+    soru: "Özellikle Doğu ve Güneydoğu Anadolu bölgelerinde yaygın olan, tarım ve hayvancılık faaliyetlerinin bir arada yürütüldüğü, mülkiyeti kesinleşmiş \"kalıcı kırsal yerleşme türü\" aşağıdakilerden hangisidir?",
+    secenekler: ["A) Mezra", "B) Divan", "C) Oba", "D) Dam", "E) Kom"],
+    cevap: 0,
+    aciklama: "Doğu ve Güneydoğu Anadolu'da tarım alanlarının parsel mülkiyetine ve hayvancılığa dayalı olarak kurulan, kalıcı nitelik taşıyan köy altı birimi Mezradır.",
+  },
+  {
+    id: 9,
+    soru: "Özellikle Batı Karadeniz Bölümü'nde yaygın olarak görülen, birbirine uzak birkaç mahallenin tek bir muhtarlık altında birleşmesiyle oluşan \"kalıcı kırsal yerleşme\" türü hangisidir?",
+    secenekler: ["A) Mezra", "B) Divan", "C) Çiftlik", "D) Kom", "E) Oba"],
+    cevap: 1,
+    aciklama: "Batı Karadeniz'in engebeli yapısında mahallelerin bir muhtarlık çatısı altında toplanmasıyla oluşan kalıcı yerleşme türüne Divan adı verilir.",
+  },
+  {
+    id: 10,
+    soru: "Türkiye'de en yaygın olarak görülen, Karadeniz, Akdeniz ve Doğu Anadolu'da yaz döneminde gür otlaklardan yararlanmak amacıyla çıkılan \"en büyük geçici kırsal yerleşme\" türü aşağıdakilerden hangisidir?",
+    secenekler: ["A) Oba", "B) Kom", "C) Yayla", "D) Ağıl", "E) Dam"],
+    cevap: 2,
+    aciklama: "Türkiye'deki en yaygın, en geniş coğrafyaya yayılan ve yaz aylarında hayvancılık amacıyla yüksek alanlara çıkışı simgeleyen geçici kır yerleşmesi Yayladır.",
+  },
+  {
+    id: 11,
+    soru: "Doğu Anadolu Bölgesi'nde şahıslara veya ailelere ait olan, büyükbaş ve küçükbaş hayvancılık yapmak amacıyla yazın kullanılan \"geçici kırsal yerleşme\" aşağıdakilerden hangisidir?",
+    secenekler: ["A) Mezra", "B) Kom", "C) Divan", "D) Çiftlik", "E) Mahalle"],
+    cevap: 1,
+    aciklama: "Doğu Anadolu Bölgesi'nde aile veya şahıslara ait, sadece hayvancılık amacıyla dönemsel kullanılan geçici yerleşme Komdur (Mezra ile karıştırılmamalıdır, kom geçicidir).",
+  },
+  {
+    id: 12,
+    soru: "Göçebe ailelerin çadırlardan oluşturduğu, hayvancılık faaliyetlerinin yürütüldüğü ve özellikle Toroslar (Akdeniz) ile Ege Bölgesi'nde yaygın olan geçici kır yerleşmesi hangisidir?",
+    secenekler: ["A) Oba", "B) Kom", "C) Divan", "D) Mezra", "E) Çiftlik"],
+    cevap: 0,
+    aciklama: "Toroslar'da Yörük kültürünün de bir parçası olan, çadırlardan oluşan göçebe hayvancılık yerleşmesi Obadır.",
+  },
+  {
+    id: 13,
+    soru: "Ege Bölgesi ve Gökçeada çevresinde yaygın olan, yılın belirli dönemlerinde kısmi tarım ve çoğunlukla küçükbaş hayvancılık yapılan geçici yerleşme türü aşağıdakilerden hangisidir?",
+    secenekler: ["A) Kom", "B) Ağıl", "C) Dam", "D) Oba", "E) Divan"],
+    cevap: 2,
+    aciklama: "Ege kıyıları, dik dağlar ve Gökçeada çevresinde hayvancılık odaklı küçük geçici barınak yapılara Dam adı verilir.",
+  },
+  {
+    id: 14,
+    soru: "Türkiye'de nüfus artış hızı (binde oran olarak) son yıllarda düşme eğiliminde olmasına rağmen, ülke nüfusunun toplam miktarının sürekli artmaya devam etmesinin temel sebebi aşağıdakilerden hangisidir?",
+    secenekler: ["A) Kent nüfus oranının kırsal nüfustan fazla olması", "B) Nüfus artış hızının binde oran olarak sıfırın altına düşmemesi ve pozitif değerini koruması", "C) Ortanca yaşın sürekli yükselmesi", "D) Ortalama yaşam süresinin kadınlarda daha uzun olması", "E) Dış ülkelerden alınan göç miktarının artması"],
+    cevap: 1,
+    aciklama: "Nüfus artış hızı düşse bile, bu oran negatif değerlere düşmediği, yani sıfırın üzerinde pozitif kaldığı sürece ülkenin toplam nüfus miktarı sürekli artar.",
+  },
+  {
+    id: 15,
+    soru: "Aşağıdaki alanlardan hangisi, bol yağış almasına rağmen \"engebeli yer şekilleri ve ana ulaşım hatlarına uzaklık\" nedeniyle seyrek nüfuslanmış yerlere örnektir?",
+    secenekler: ["A) Çatalca-Kocaeli Yöresi", "B) Kıyı Ege Ovaları", "C) Menteşe (Muğla) Yöresi", "D) Çukurova Havzası", "E) Ergene Havzası"],
+    cevap: 2,
+    aciklama: "Muğla çevresindeki Menteşe Yöresi, dağların paralel uzanmasından ötürü çok bol yağış alır. Ancak aşırı engebeli arazi yapısı ve ana ulaşım hatlarının uzağında kalması nedeniyle seyrek nüfusludur.",
+  },
+];

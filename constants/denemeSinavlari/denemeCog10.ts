@@ -1,0 +1,123 @@
+import { DenemeSorusu } from './deneme1';
+
+export const denemeCog10Baslik = "Bölgesel Kalkınma Projeleri";
+
+export const denemeCog10: DenemeSorusu[] = [
+  {
+    id: 1,
+    soru: "Türkiye'de Cumhuriyet tarihinin en kapsamlı, Şanlıurfa merkezli olarak Fırat ile Dicle nehirleri üzerine kurulan barajlarla tarımda sulama ve hidroelektrik üretmeyi amaçlayan en büyük bölgesel kalkınma projesi aşağıdakilerden hangisidir?",
+    secenekler: ["A) DOKAP", "B) KOP", "C) ZBK", "D) GAP", "E) DAP"],
+    cevap: 3,
+    aciklama: "Türkiye'nin en büyük, en kapsamlı ve tarım-enerji odaklı bölgesel projesi Güneydoğu Anadolu Projesi (GAP)'tir.",
+  },
+  {
+    id: 2,
+    soru: "Aşağıdakilerden hangisi GAP kapsamında sulama olanaklarının artmasıyla bölgede ekim alanı devasa oranda genişleyen ve Şanlıurfa'yı Türkiye birinciliğine taşıyan tarım ürünüdür?",
+    secenekler: ["A) Tütün", "B) Pamuk", "C) Fındık", "D) Çay", "E) Şeker Pancarı"],
+    cevap: 1,
+    aciklama: "GAP sulama kanallarının devreye girmesiyle Şanlıurfa, pamuk üretiminde Ege ve Çukurova'yı geride bırakarak Türkiye birincisi olmuştur.",
+  },
+  {
+    id: 3,
+    soru: "Göksu Nehri'nin sularını \"Mavi Tünel\" projesiyle ovaya akıtarak İç Anadolu'daki tarımsal üretimi güvence altına almayı amaçlayan bölgesel kalkınma projesi aşağıdakilerden hangisidir?",
+    secenekler: ["A) GAP", "B) KOP (Konya Ovası Projesi)", "C) DOKAP", "D) ZBK", "E) YHGP"],
+    cevap: 1,
+    aciklama: "Konya Ovası Projesi (KOP), Akdeniz havzasındaki Göksu nehrinin sularını tüneller vasıtasıyla Konya'ya akıtmayı hedefler.",
+  },
+  {
+    id: 4,
+    soru: "Aşağıdakilerden hangisi DOKAP (Doğu Karadeniz Projesi) kapsamında bölgenin engebeli yapısını avantaja çevirmek ve \"Yeşil Yol\" projesiyle canlandırılmak istenen temel turizm sektörüdür?",
+    secenekler: ["A) Kış Turizmi", "B) Deniz Turizmi", "C) Yayla Turizmi", "D) Golf Turizmi", "E) İnanç Turizmi"],
+    cevap: 2,
+    aciklama: "Doğu Karadeniz Projesi'nin (DOKAP) turizm ayağını, yaylaları birbirine bağlayan \"Yeşil Yol\" projesiyle Yayla Turizmi oluşturur.",
+  },
+  {
+    id: 5,
+    soru: "Zonguldak-Bartın-Karabük (ZBK) Projesi'nin temel çıkış noktası ve odaklandığı ana sektör grubu aşağıdakilerin hangisinde doğru verilmiştir?",
+    secenekler: [
+      "A) Turizm ve konaklama tesislerinin artırılması",
+      "B) Özelleşen ve küçülen demir-çelik sanayisi ile kömür işletmelerinin yarattığı ekonomik daralmayı aşmak",
+      "C) Bölgede narenciye ve zeytin tarımını yaygınlaştırmak",
+      "D) Sulama kanalları açarak çeltik tarımını geliştirmek",
+      "E) Yayla turizmini canlandıracak yeni yollar inşa etmek",
+    ],
+    cevap: 1,
+    aciklama: "ZBK projesi, özelleşen ve küçülen maden (taş kömürü) ile demir-çelik sanayisinin bölgede yarattığı istihdam daralmasını ve ekonomik krizi aşmak için tasarlanmıştır.",
+  },
+  {
+    id: 6,
+    soru: "Aşağıdaki bölgesel kalkınma projelerinden hangisinin temel amacı \"tarımda nadas alanlarını azaltmak, yeraltı sularının aşırı kullanımını engellemek ve Göksu nehrinin sularını havzaya taşımaktır\"?",
+    secenekler: ["A) GAP", "B) ZBK", "C) DOKAP", "D) KOP", "E) DAP"],
+    cevap: 3,
+    aciklama: "Konya Ovası'ndaki nadası bitirmek, aşırı yeraltı su tüketiminin önüne geçmek (obruk oluşumunu engellemek) amacıyla yürütülen proje KOP'tur.",
+  },
+  {
+    id: 7,
+    soru: "Aşağıdakilerden hangisi GAP'ın bölge ekonomisine ve sosyal yapısına sağladığı doğrudan sonuçlar arasında gösterilemez?",
+    secenekler: [
+      "A) Tarımda sulanabilen arazi miktarının büyük oranda artması",
+      "B) Hidroelektrik enerji üretim kapasitesinin zirveye ulaşması",
+      "C) Bölgeden dışarıya yapılan mevsimlik işçi göçünün azalması",
+      "D) Bölgede pamuk gibi endüstri bitkilerinin üretiminde patlama yaşanması",
+      "E) Taş kömürü maden ocaklarının üretim kapasitesinin iki katına çıkarılması",
+    ],
+    cevap: 4,
+    aciklama: "Taş kömürü sadece Zonguldak ve çevresinde (ZBK sahasında) yer alır, Güneydoğu Anadolu (GAP) ile hiçbir coğrafi bağlantısı yoktur.",
+  },
+  {
+    id: 8,
+    soru: "Fırat ve Dicle nehirleri üzerinde kurulan ve GAP'ın adeta sembolü haline gelen, Türkiye'nin su potansiyeli ve enerji üretimi en yüksek olan devasa barajı aşağıdakilerden hangisidir?",
+    secenekler: ["A) Atatürk Barajı", "B) Çatalağzı Barajı", "C) Hirfanlı Barajı", "D) Aslantaş Barajı", "E) Demirköprü Barajı"],
+    cevap: 0,
+    aciklama: "Fırat nehri üzerinde yer alan Atatürk Barajı, Türkiye'nin en büyük su toplama hacmine sahip, GAP'ın temel dinamosu olan barajdır.",
+  },
+  {
+    id: 9,
+    soru: "KOP (Konya Ovası Projesi) kapsamında inşa edilen ve Göksu Nehri'nin Akdeniz'e boşa akan sularını dağların altından geçirerek İç Anadolu'ya ulaştıran devasa yer altı su yapısının adı nedir?",
+    secenekler: ["A) Yeşil Yol Projesi", "B) Mavi Tünel", "C) Kalkanlı Koridoru", "D) TANAP Hattı", "E) Ilgaz Tüneli"],
+    cevap: 1,
+    aciklama: "Göksu'nun sularını Akdeniz yerine Konya Ovası'na akıtan devasa yeraltı su kanalının adı Mavi Tünel'dir.",
+  },
+  {
+    id: 10,
+    soru: "Aşağıdaki bölgesel projeler ve projenin kapsadığı/odaklandığı temel şehir eşleştirmelerinden hangisi yanlıştır?",
+    secenekler: ["A) GAP → Şanlıurfa", "B) KOP → Konya", "C) ZBK → Zonguldak", "D) DOKAP → Rize", "E) ZBK → Antalya"],
+    cevap: 4,
+    aciklama: "ZBK projesi isminden de anlaşılacağı üzere Zonguldak, Bartın ve Karabük illerini kapsar. Antalya bu bölgeden tamamen bağımsız bir Akdeniz şehridir.",
+  },
+  {
+    id: 11,
+    soru: "DOKAP (Doğu Karadeniz Projesi) kapsamında, bölgedeki yaylaları üst kotlardan birbirine bağlayarak turizm koridoru oluşturmayı amaçlayan projenin adı aşağıdakilerden hangisidir?",
+    secenekler: ["A) Mavi Tünel", "B) Yeşil Yol Projesi", "C) İpek Yolu Koridoru", "D) Zigana Geçidi Hattı", "E) Trans-Karadeniz Otobanı"],
+    cevap: 1,
+    aciklama: "DOKAP kapsamında Doğu Karadeniz yaylalarını entegre ederek turizmi canlandırmayı amaçlayan kurumsal projenin adı Yeşil Yol Projesi'dir.",
+  },
+  {
+    id: 12,
+    soru: "Aşağıdaki enerji santrallerinden hangisi, gücünü taş kömüründen alan ve ZBK proje sahasında yer alan Türkiye'nin en eski termik santrallerinden biridir?",
+    secenekler: ["A) Afşin-Elbistan Termik Santrali", "B) Soma Termik Santrali", "C) Çatalağzı Termik Santrali", "D) Yatağan Termik Santrali", "E) Ambarlı Doğalgaz Santrali"],
+    cevap: 2,
+    aciklama: "Türkiye'de taş kömürüyle çalışan tek termik santral Zonguldak'taki Çatalağzı Termik Santralidir (diğer şıklar linyit veya doğalgazdır).",
+  },
+  {
+    id: 13,
+    soru: "GAP sonrasında bölgede sulu tarıma geçilmesiyle birlikte, aşağıdaki tarım ürünlerinden hangisinin üretim miktarında ve ülke payında \"düşüş\" yaşanması beklenir?",
+    secenekler: ["A) Pamuk", "B) Kuru fasulye", "C) Kırmızı Mercimek (Kurakçıl ürünler)", "D) Mısır", "E) Sebze ve meyveler"],
+    cevap: 2,
+    aciklama: "Bölgeye su gelince, kurak döneme dayanıklı olan Kırmızı Mercimek gibi ürünlerin ekim alanı daralmış; yerini pamuk ve mısır gibi sulu tarım ürünlerine bırakmıştır.",
+  },
+  {
+    id: 14,
+    soru: "ZBK (Zonguldak-Bartın-Karabük) projesinin uygulandığı sahada, madencilik ve ağır sanayinin yanında bölge ekonomisini çeşitlendirmek amacıyla desteklenen diğer alanlar hangileridir?",
+    secenekler: ["A) Çay tarımı ve kıl keçisi üretimi", "B) Yeni iş kolları, alternatif istihdam ve tarım-seracılık sahaları açmak", "C) Kruvaziyer turizmi ve golf sahaları inşa etmek", "D) Pamuk tarımı ve antep fıstığı üretimi", "E) Jeotermal enerji santralleri kurmak"],
+    cevap: 1,
+    aciklama: "ZBK projesinde maden dışındaki riskleri azaltmak için bölgede yeni iş kolları, alternatif istihdam ve tarım-seracılık sahaları açılması hedeflenmektedir.",
+  },
+  {
+    id: 15,
+    soru: "Aşağıdaki limanlarımızdan hangisi, İskenderun Limanı gibi demir-çelik sanayisine dayalı olarak gelişen, ağır yük gemilerinin yanaştığı ve ZBK bölgesinin dış dünyaya açılan önemli bir kapısı olan limandır?",
+    secenekler: ["A) Sinop Limanı", "B) Antalya Limanı", "C) Zonguldak/Ereğli Limanı", "D) Kuşadası Limanı", "E) Trabzon Limanı"],
+    cevap: 2,
+    aciklama: "Karabük ve Ereğli'deki demir-çelik fabrikalarının ağır yüklerini taşıyan, sanayiye dayalı gelişmiş olan liman Zonguldak/Ereğli Limanıdır.",
+  },
+];

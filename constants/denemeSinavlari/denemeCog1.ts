@@ -1,0 +1,123 @@
+import { DenemeSorusu } from './deneme1';
+
+export const denemeCog1Baslik = "Türkiye'nin Coğrafi Konumu";
+
+export const denemeCog1: DenemeSorusu[] = [
+  {
+    id: 1,
+    soru: "Türkiye, 36°-42° Kuzey paralelleri ile 26°-45° Doğu meridyenleri arasında yer alan, Kuzey Yarım Küre'de ve Başlangıç Meridyeni'nin doğusunda bulunan bir ülkedir. Buna göre, aşağıdaki uç nokta ve konum eşleştirmelerinden hangisi yanlıştır?",
+    secenekler: ["A) En kuzeyi → Sinop - İnceburun", "B) En doğusu → Iğdır - Dilucu", "C) En güneyi → Hatay - Topraktutan", "D) En batısı → Çanakkale - Avlaka Burnu", "E) En kuzeybatısı → Edirne - Kapıkule"],
+    cevap: 4,
+    aciklama: "Türkiye'nin uç sınırları: en kuzeyi Sinop, en doğusu Iğdır, en güneyi Hatay ve en batısı Çanakkale'dir. Edirne-Kapıkule bir uç nokta değil, sınır kapısıdır.",
+  },
+  {
+    id: 2,
+    soru: "Türkiye'nin uç sınırları dikkate alındığında, \"Kuzey-Güney kuş uçuşu sabit mesafesi\" ile \"En doğusu ve en batısı arasındaki yerel saat farkı\" aşağıdakilerin hangisinde sırasıyla doğru olarak verilmiştir?",
+    secenekler: ["A) 666 km - 76 dakika", "B) 777 km - 19 dakika", "C) 666 km - 45 dakika", "D) 111 km - 76 dakika", "E) 555 km - 60 dakika"],
+    cevap: 0,
+    aciklama: "Kuzey-güney kuş uçuşu mesafesi 6 enlem × 111 km = 666 km'dir. En doğu ile en batı arasındaki 19 meridyen farkı × 4 dakika = 76 dakika yerel saat farkı yapar.",
+  },
+  {
+    id: 3,
+    soru: "Coğrafi konum özellikleri dikkate alındığında Türkiye'de; \"Çizgisel hızın en fazla olduğu il\" ile \"Tan ve gurup süresinin en uzun yaşandığı il\" aşağıdakilerin hangisinde sırasıyla doğru verilmiştir?",
+    secenekler: ["A) Sinop - Hatay", "B) Hatay - Sinop", "C) Iğdır - Çanakkale", "D) Çanakkale - Iğdır", "E) Hatay - Iğdır"],
+    cevap: 1,
+    aciklama: "Çizgisel hız Ekvator'a yakın olan güney illerimizde (Hatay) en fazlayken; kutuplara gidildikçe azaldığı için tan/gurup süresi kuzey uç noktamız olan Sinop'ta en uzundur.",
+  },
+  {
+    id: 4,
+    soru: "Aşağıdakilerden hangisi Türkiye'nin orta kuşakta yer almasının doğrudan kanıtları arasında gösterilen unsurlardan biri değildir?",
+    secenekler: ["A) Akdeniz İklim sahasında yer alması", "B) Batı Rüzgarları'nın etkisi altında bulunması", "C) Cephesel (Frontal) yağışların görülmesi", "D) Dört mevsimin yıl içinde belirgin yaşanması", "E) Dağların güney yamacında bakı sabitliğinin olması"],
+    cevap: 4,
+    aciklama: "Orta kuşakta olmanın kanıtları: Akdeniz İklimi, Batı Rüzgarları, Cephesel Yağışlar ve Dört Mevsim. Bakı yönünün daima güney olması orta kuşak değil, Kuzey Yarım Küre'de/dönence dışı olmanın sonucudur.",
+  },
+  {
+    id: 5,
+    soru: "21 Haziran (Yaz Gündönümü) tarihinde Türkiye'de yaşanan coğrafi gelişmelerle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    secenekler: ["A) Güneş ışınları Türkiye'ye yıl içindeki en dik açıyla gelir", "B) Yıl içindeki en kısa gölge boyu ölçülür", "C) En uzun gündüz, en kısa gece yaşanır", "D) Bu tarihten sonra Türkiye'de gündüzler uzamaya başlar", "E) Türkiye içinde kuzeye doğru gidildikçe gündüz süresi daha da uzar"],
+    cevap: 3,
+    aciklama: "21 Haziran'da en uzun gündüz yaşanır ve bu tepe noktadır. Bu tarihten sonra gündüzler kısalmaya, geceler uzamaya başlar; \"gündüzler uzamaya başlar\" ifadesi yanlıştır.",
+  },
+  {
+    id: 6,
+    soru: "21 Aralık (Kış Gündönümü) tarihinde güneyden kuzeye (Hatay'dan Sinop'a) doğru seyahat eden bir gözlemcinin aşağıdakilerden hangisini yaşaması beklenir?",
+    secenekler: ["A) Gündüz süresinin uzadığını", "B) Gece süresinin uzadığını, gölge boyunun daha da uzadığını", "C) Güneş ışınlarının geliş açısının büyüdüğünü", "D) Yerel saatin sürekli geri gittiğini", "E) Çizgisel hızın arttığını"],
+    cevap: 1,
+    aciklama: "21 Aralık'ta kuzeye doğru gidildikçe gece süresi uzar, gündüz süresi kısalır; Güneş ışınları daha eğik geleceği için gölge boyu en uzun halini alır.",
+  },
+  {
+    id: 7,
+    soru: "I. Güneş ışınları Ekvator'a dik açıyla gelir.\nII. Türkiye'de 12 saat gece, 12 saat gündüz yaşanır.\nIII. Aynı meridyen üzerindeki tüm noktalarda Güneş aynı anda doğar, aynı anda batar.\nYukarıda verilen özelliklerin tamamı Türkiye'de hangi tarihlerde ortak olarak yaşanmaktadır?",
+    secenekler: ["A) 21 Haziran - 21 Aralık", "B) 21 Mart - 23 Eylül", "C) 1 Mayıs - 29 Ekim", "D) 21 Mart - 21 Haziran", "E) 23 Eylül - 21 Aralık"],
+    cevap: 1,
+    aciklama: "21 Mart ve 23 Eylül ekinoks tarihlerinde Güneş ışınları Ekvator'a dik gelir, 12 saat gece-gündüz eşitliği yaşanır ve aynı meridyendeki yerlerde Güneş aynı anda doğup batar.",
+  },
+  {
+    id: 8,
+    soru: "Türkiye, coğrafi konumu gereği dönencelerin dışında, Yengeç Dönencesi'nin kuzeyinde yer alır. Bu durumun Türkiye üzerindeki doğrudan etkisi aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+    secenekler: [
+      "A) Güneş ışınları yılda iki kez dik açıyla gelir",
+      "B) Dağların bakı yönü yıl içinde kuzey ile güney arasında yer değiştirir",
+      "C) Güneş ışınları hiçbir zaman 90° dik açıyla gelmez ve gölge boyu asla sıfır olmaz",
+      "D) Yıl boyunca sadece Batı Rüzgarları esebilir",
+      "E) En uzun gündüz her zaman ekinoks tarihlerinde yaşanır",
+    ],
+    cevap: 2,
+    aciklama: "Türkiye Yengeç Dönencesi'nin kuzeyinde (dönence dışında) yer aldığı için Güneş ışınları hiçbir zaman dik (90°) açıyla gelemez ve gölge boyu hiçbir tarihte sıfır olamaz.",
+  },
+  {
+    id: 9,
+    soru: "Türkiye, kış ve yaz saati uygulamalarını tamamen kaldırarak yıl boyunca tek bir ortak saat kullanma kararı almıştır. Buna göre ülkemizin yıl boyunca kullandığı ulusal ortak saat dilimi aşağıdakilerden hangisidir?",
+    secenekler: ["A) +2. Saat Dilimi (30° Doğu - İzmit)", "B) +3. Saat Dilimi (45° Doğu - Iğdır)", "C) +4. Saat Dilimi (60° Doğu - Bakü)", "D) +1. Saat Dilimi (15° Doğu - Berlin)", "E) 0. Saat Dilimi (Başlangıç Meridyeni - Greenwich)"],
+    cevap: 1,
+    aciklama: "Türkiye, ileri-geri saat uygulamasını kaldırarak yıl boyunca tek ortak saat olarak en doğudaki +3. Saat Dilimini (45° Doğu - Iğdır) kullanmaktadır.",
+  },
+  {
+    id: 10,
+    soru: "\"Aynı anda farklı iklim/mevsim özelliklerinin yaşanması\" ile \"Yıl içinde dört mevsimin ardışık olarak belirgin yaşanması\" özellikleri sırasıyla hangi konum türleri ile açıklanır?",
+    secenekler: ["A) Matematik Konum - Özel Konum", "B) Özel (Göreceli) Konum - Mutlak (Matematik) Konum", "C) Jeopolitik Konum - Matematik Konum", "D) Özel Konum - Jeopolitik Konum", "E) Mutlak Konum - Jeopolitik Konum"],
+    cevap: 1,
+    aciklama: "Aynı anda farklı özelliklerin yaşanması yer şekilleri ve yükseltiyle ilgili olduğundan Özel Konum; yıl içinde dört mevsimin ardışık ve belirgin yaşanması enlem kuşağıyla ilgili olduğundan Matematik (Mutlak) Konumdur.",
+  },
+  {
+    id: 11,
+    soru: "Aşağıdakilerden hangisi Türkiye'nin \"Özel Konumu\" ile açıklanabilecek bir durum değildir?",
+    secenekler: [
+      "A) Batıdan doğuya doğru gidildikçe yükseltinin artmasına bağlı sıcaklığın düşmesi",
+      "B) Kısa mesafelerde engebe nedeniyle iklim ve bitki örtüsünün hızla değişmesi",
+      "C) İstanbul ve Çanakkale Boğazları sayesinde transit taşımacılıkta köprü olması",
+      "D) Akdeniz iklim özelliklerinin geniş sahalarda hissedilmesi",
+      "E) Bor, linyit ve jeotermal kaynaklar bakımından zengin olması",
+    ],
+    cevap: 3,
+    aciklama: "Akdeniz iklim kuşağında bulunuyor olmamız mutlak (matematik) konumumuzun bir sonucudur. Diğer şıklar yükselti, engebe ve jeolojik yapı kaynaklı özel konumun sonuçlarıdır.",
+  },
+  {
+    id: 12,
+    soru: "Türkiye'nin komşularıyla olan ticari ilişkilerinde \"Avrupa'ya açılan en işlek sınır kapısı\" aşağıdakilerden hangisidir?",
+    secenekler: ["A) Gürbulak Sınır Kapısı", "B) Habur Sınır Kapısı", "C) Kapıkule Sınır Kapısı", "D) Sarp Sınır Kapısı", "E) İpsala Sınır Kapısı"],
+    cevap: 2,
+    aciklama: "Türkiye'nin Avrupa'ya açılan, ticaret hacmi en yüksek ve en işlek sınır kapısı Bulgaristan sınırındaki Kapıkule Sınır Kapısı'dır.",
+  },
+  {
+    id: 13,
+    soru: "Aşağıdaki sınır kapılarından hangisinde \"Demiryolu ağı bağlantısı\" bulunmamaktadır?",
+    secenekler: ["A) Kapıkule (Bulgaristan)", "B) Uzunköprü (Yunanistan)", "C) Sarp (Gürcistan)", "D) Kapıköy (İran)", "E) Nusaybin (Suriye)"],
+    cevap: 2,
+    aciklama: "Gürcistan sınırındaki Sarp Sınır Kapısı'nda demiryolu bağlantısı yoktur. Kapıkule, Uzunköprü, Kapıköy ve Nusaybin kapılarında aktif demiryolu ağı bulunur.",
+  },
+  {
+    id: 14,
+    soru: "Türkiye'nin siyasi sınırları incelendiğinde, \"En uzun kara sınırına sahip olduğumuz ülke\" ile \"Türkiye-Gürcistan sınırını oluşturan tek sınır çizen gölümüz\" aşağıdakilerin hangisinde sırasıyla doğru verilmiştir?",
+    secenekler: ["A) İran - Van Gölü", "B) Suriye - Aktaş Gölü", "C) Irak - Çıldır Gölü", "D) Yunanistan - Manyas Gölü", "E) Suriye - Hazar Gölü"],
+    cevap: 1,
+    aciklama: "En uzun kara sınırımız Suriye sınırı iken; Gürcistan ile sınırımızı çizen tek gölümüz Aktaş Gölü'dür.",
+  },
+  {
+    id: 15,
+    soru: "Türkiye'nin \"Türk dünyasına açılan tek kapısı\" olma özelliği taşıyan, en kısa kara sınırımızın bulunduğu Nahçıvan (Azerbaycan) ile bağlantımızı sağlayan sınır kapısı hangisidir?",
+    secenekler: ["A) Dilucu Sınır Kapısı", "B) Esendere Sınır Kapısı", "C) Alican Sınır Kapısı", "D) Çobanbey Sınır Kapısı", "E) Yayladağı Sınır Kapısı"],
+    cevap: 0,
+    aciklama: "Nahçıvan (Azerbaycan) ile sınırımızı oluşturan, Türk dünyasına açılan can damarımız Dilucu Sınır Kapısı'dır.",
+  },
+];

@@ -1,0 +1,111 @@
+import { DenemeSorusu } from './deneme1';
+
+export const denemeCog7Baslik = "Tarım, Hayvancılık ve TÜİK Verileri";
+
+export const denemeCog7: DenemeSorusu[] = [
+  {
+    id: 1,
+    soru: "Aşağıdakilerden hangisi Türkiye'de kalitesini korumak, üretimi dengelemek veya kaçakçılığı/sağlık sorunlarını önlemek amacıyla \"Devlet Kontrolünde\" yetiştirilen tarım ürünleri arasında yer almaz?",
+    secenekler: ["A) Tütün", "B) Haşhaş", "C) Pirinç (Çeltik)", "D) Kenevir", "E) Buğday"],
+    cevap: 4,
+    aciklama: "Tütün (kalite standartları), haşhaş-kenevir (uyuşturucu hammadde önlemi) ve pirinç (sıtma hastalığı önlemi) devlet kontrolündedir. Buğday ise iklimin elverdiği her yerde devlet müdahalesi olmadan serbestçe ekilir.",
+  },
+  {
+    id: 2,
+    soru: "Pirinç (çeltik) tarımının Türkiye'de yerleşim yerlerinin hemen yakınında yapılmasına izin verilmeyerek \"sağlık gerekçesiyle\" devlet kontrolünde tutulmasının temel sebebi aşağıdakilerden hangisidir?",
+    secenekler: ["A) Toprağın verimliliğini hızla düşürmesi", "B) Sulak alanlarda sinek üremesine bağlı olarak sıtma hastalığına yol açması", "C) Hasat döneminde çok yoğun iş gücü gerektirmesi", "D) Aşırı su tüketimi nedeniyle yeraltı sularını bitirmesi", "E) Sanayi kollarında hammadde olarak kullanılamaması"],
+    cevap: 1,
+    aciklama: "Çeltik (pirinç) tarlaları sürekli su altında tutulduğu için sivrisineklerin üreme odağı haline gelir. Bu durum sıtma salgınlarına yol açabileceğinden, yerleşim birimlerinin uzağında yapılması yasal bir zorunluluktur.",
+  },
+  {
+    id: 3,
+    soru: "GAP kapsamında bölgede sulama olanaklarının artması sonrasında üretim alanları devasa oranda genişleyen ve Türkiye toplam üretiminde Şanlıurfa'yı birinci sıraya taşıyan stratejik ürün aşağıdakilerden hangisidir?",
+    secenekler: ["A) Buğday", "B) Mısır", "C) Pamuk", "D) Fındık", "E) Şeker Pancarı"],
+    cevap: 2,
+    aciklama: "Güneydoğu Anadolu Projesi (GAP) ile Fırat ve Dicle'nin suları toprağa ulaşınca bölgede pamuk tarımı patlama yapmış ve Şanlıurfa bu alanda Türkiye birincisi olmuştur.",
+  },
+  {
+    id: 4,
+    soru: "Mısır bitkisi doğal olarak her mevsim yağış isteyen Karadeniz iklimine uyumlu olmasına rağmen, günümüzde Türkiye'de Konya Ovası Projesi (KOP) dahilinde İç Anadolu'da yetiştirilmektedir. Bu durumun temel nedeni aşağıdakilerden hangisidir?",
+    secenekler: ["A) Karadeniz Bölgesi'nde mısır tüketen nüfusun az olması", "B) İç Anadolu Bölgesi'ndeki toprakların mineralce daha zengin olması", "C) Mısırın ekonomik getirisinin yüksek olması nedeniyle sulama maliyetlerini karşılayabilmesi", "D) Karadeniz kıyılarında mısırın olgunlaşma süresinin çok uzun olması", "E) İç Anadolu'da kış ılıklığının belirgin olması"],
+    cevap: 2,
+    aciklama: "Mısır, endüstriyel değeri ve getirisi çok yüksek bir ürün olduğu için yapay sulama maliyetlerini (KOP baraj/tünel sularını) rahatlıkla kurtarır. Bu yüzden üretim merkezi İç Anadolu'ya kaymıştır.",
+  },
+  {
+    id: 5,
+    soru: "Lifleri tekstilde, yağı ise ilaç sanayisinde kullanılan ve güncel TÜİK tarım verilerine göre kontrollü üretiminde Samsun ilimizin birinci sırada yer aldığı tarım ürünü hangisidir?",
+    secenekler: ["A) Haşhaş", "B) Kenevir", "C) Kanola", "D) Tütün", "E) Keten"],
+    cevap: 1,
+    aciklama: "Lif ve ilaç sanayisi ham maddesi olan, ekimi sıkı güvenlik denetimlerine tabi tutulan kenevir üretiminde en güncel birincilik Samsun ilimize aittir.",
+  },
+  {
+    id: 6,
+    soru: "Güncel TÜİK tarım haritası verileri dikkate alındığında, aşağıdaki \"Ürün - En Çok Üretildiği Birinci Sıradaki İl\" eşleştirmelerinden hangisi yanlıştır?",
+    secenekler: ["A) Çay → Rize", "B) İncir → Aydın", "C) Kayısı → Malatya", "D) Muz → Mersin", "E) Pamuk → Adana"],
+    cevap: 4,
+    aciklama: "Çay Rize'de, incir Aydın'de, kayısı Malatya'da, muz ise Mersin'de (Anamur) birinci sıradadır. Pamuk üretiminde birinci sıradaki ilimiz ise Adana değil, Şanlıurfa'dır.",
+  },
+  {
+    id: 7,
+    soru: "Bozkır (Step) bitki örtüsünün geniş yer kapladığı İç ve Doğu Anadolu düzlüklerinde en yaygın olarak yürütülen hayvancılık faaliyeti aşağıdakilerden hangisidir?",
+    secenekler: ["A) Büyükbaş mera hayvancılığı", "B) Küçükbaş hayvancılık (Koyun)", "C) Arıcılık", "D) Kıl keçisi yetiştiriciliği", "E) Kümes hayvancılığı"],
+    cevap: 1,
+    aciklama: "Küçük ot topluluğu olan bozkırların (step) yaygın olduğu alanlarda küçükbaş hayvancılık, özellikle de koyun yetiştiriciliği birinci plandadır.",
+  },
+  {
+    id: 8,
+    soru: "Akdeniz Bölgesi'ndeki karstik Teke ve Taşeli platolarında, çalımsı ve engebeli arazi şartlarına çok iyi uyum sağladığı için yaygın olarak beslenen küçükbaş hayvan türü aşağıdakilerden hangisidir?",
+    secenekler: ["A) Merinos Koyunu", "B) Kıl Keçisi", "C) Tiftik Keçisi", "D) Karaman Koyunu", "E) Kültür Sığırı"],
+    cevap: 1,
+    aciklama: "Karstik engebeli yapılara, maki ve çalı sürgünlerini rahatlıkla yiyebilen, tırmanma kabiliyeti yüksek olan Kıl Keçisi eşlik eder. Teke ve Taşeli kıl keçisinin anavatanıdır.",
+  },
+  {
+    id: 9,
+    soru: "Tüyü ve yünü son derece değerli olan, Türkiye'de esas olarak Ankara, Eskişehir ve Siirt çevresinde yoğun olarak yetiştirilen keçi türü aşağıdakilerden hangisidir?",
+    secenekler: ["A) Kıl Keçisi", "B) Tiftik (Ankara) Keçisi", "C) Malta Keçisi", "D) Halep Keçisi", "E) Sanen Keçisi"],
+    cevap: 1,
+    aciklama: "İç Anadolu'da Ankara ve Eskişehir çevrelerinde tüyü (moher) için beslenen değerli küçükbaş hayvan Tiftik Keçisidir.",
+  },
+  {
+    id: 10,
+    soru: "Yaz yağışlarının gür Alpin çayırları oluşturduğu Erzurum-Kars, Ardahan platoları ile Doğu Karadeniz'in yüksek yaylalarında yaygın olan hayvancılık türü aşağıdakilerden hangisidir?",
+    secenekler: ["A) Ahır ve besi hayvancılığı", "B) Büyükbaş mera hayvancılığı", "C) İpek böcekçiliği", "D) Küçükbaş koyun yetiştiriciliği", "E) Kümes hayvancılığı"],
+    cevap: 1,
+    aciklama: "Yaz yağışlarının oluşturduğu gür ve uzun boylu otlar (Alpin çayırlar), Erzurum-Kars-Ardahan sahasında doğrudan büyükbaş mera hayvancılığına zemin hazırlar.",
+  },
+  {
+    id: 11,
+    soru: "Büyükbaş mera hayvancılığının yaygın olduğu bir coğrafyada, hayvanların tamamen doğal otlaklarda otlatılması ve iklim şartlarına bağımlılığın yüksek olmasının doğrudan bir sonucu aşağıdakilerden hangisidir?",
+    secenekler: ["A) Kümes hayvancılığı tesislerinin azalması", "B) Et ve süt üretim miktarlarında yıldan yıla dalgalanmalar görülmesi", "C) Mera alanlarının tarım arazisine dönüştürülmesi", "D) Tüketici nüfusa yakın yerlerin tercih edilmesi", "E) Suni yem sanayisinin hızla gelişmesi"],
+    cevap: 1,
+    aciklama: "Doğal çayırlara ve yağışa bağlı mera hayvancılığında, kurak geçen yıllarda otlar erken sararacağı için et ve süt verimi düşer; bu yüzden üretimde yıldan yıla dalgalanma yaşanır.",
+  },
+  {
+    id: 12,
+    soru: "Besi ve kümes hayvancılığının İstanbul, İzmir, Bursa, Ankara gibi büyük şehirlerin çevresinde yoğunlaşmasının \"temel sebebi\" aşağıdakilerden hangisidir?",
+    secenekler: ["A) Bu bölgelerin yağış miktarının fazla olması", "B) Geniş Alpin çayırlarının bu illerde bulunması", "C) Tüketici nüfusa (pazara) yakın olmak ve taşıma maliyetlerini düşürmek", "D) Bu illerde yer şekillerinin çok engebeli olması", "E) Devletin bu illerde zorunlu üretim kotası uygulaması"],
+    cevap: 2,
+    aciklama: "Besi ve kümes hayvancılığı kapalı alanda yapıldığı için iklimden etkilenmez. Bu yüzden tesisler bitki örtüsüne göre değil, milyonlarca insanın yaşadığı büyük şehirlere (pazara) yakın kurulur.",
+  },
+  {
+    id: 13,
+    soru: "Arıcılık faaliyeti; bitki çeşitliliğinin zengin, engebeli ve dağlık olduğu arazileri seven, iklim şartlarına bağımlı bir sektördür. Buna göre, Türkiye'de arıcılık faaliyetlerinin \"en yoğun ve gelişmiş\" olduğu merkezler arasında aşağıdakilerden hangisi gösterilemez?",
+    secenekler: ["A) Muğla (Çam balı)", "B) Ordu (Çiçek balı)", "C) Hakkari ve Kars", "D) Ergene (Edirne) Havzası", "E) Doğu Karadeniz Yaylaları"],
+    cevap: 3,
+    aciklama: "Muğla, Ordu, Hakkari ve Kars dağlık yapıları ve bitki çeşitliliği nedeniyle arıcılığın merkezidir. Düz bir ova olan ve bitki çeşitliliği zayıf olan Ergene Havzası arıcılıkta gelişmemiştir.",
+  },
+  {
+    id: 14,
+    soru: "Yaz kuraklığı ve olgunlaşma döneminde yüksek sıcaklık isteyen buğday, arpa, yulaf gibi tahıl ürünlerinin Türkiye genelinde \"üretim miktarında açık ara birinci\" sırada yer alan ilimiz aşağıdakilerden hangisidir?",
+    secenekler: ["A) Şanlıurfa", "B) Konya", "C) Adana", "D) Ankara", "E) Diyarbakır"],
+    cevap: 1,
+    aciklama: "Türkiye'nin tahıl ambarı olarak bilinen, tabaka düzlüğü platolarının geniş yer kapladığı Konya, buğday ve arpa tarımında açık ara liderdir.",
+  },
+  {
+    id: 15,
+    soru: "Milli Eğitim Bakanlığı'nın yeni coğrafya müfredatı güncellemelerinde, \"Ege Denizi\" kavramı yerine artık resmi olarak hangi kavramın kullanılması benimsenmiştir?",
+    secenekler: ["A) Mavi Vatan", "B) Gök Vatan", "C) Adalar Denizi", "D) Yeşil Vatan", "E) Doğu Roma"],
+    cevap: 2,
+    aciklama: "Güncel Milli Eğitim müfredat tablosuna göre; coğrafi terim güncellemelerinde \"Ege Denizi\" kavramı yerine artık \"Adalar Denizi\" kavramı getirilmiştir.",
+  },
+];

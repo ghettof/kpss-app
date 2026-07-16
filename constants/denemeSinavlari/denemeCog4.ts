@@ -1,0 +1,117 @@
+import { DenemeSorusu } from './deneme1';
+
+export const denemeCog4Baslik = "Akarsular ve Göller";
+
+export const denemeCog4: DenemeSorusu[] = [
+  {
+    id: 1,
+    soru: "Aşağıdakilerden hangisi Türkiye akarsularının genel karakteristik özellikleri arasında yer almaz?",
+    secenekler: [
+      "A) İklim yarı kurak olduğu için genel olarak debileri (su miktarları) azdır",
+      "B) Yağış rejimi düzensiz olduğundan nehirlerin rejimleri de genellikle düzensizdir",
+      "C) Ülkemiz yüksek ve engebeli olduğu için akış hızları ve hidroelektrik (HES) potansiyelleri yüksektir",
+      "D) Yatak eğimleri az olduğundan denge profiline ulaşmışlardır ve üzerlerinde ulaşım yaygın olarak yapılır",
+      "E) Erozyonun şiddetli olmasından dolayı bol alüvyon taşırlar ve kıyılarda delta ovaları oluştururlar",
+    ],
+    cevap: 3,
+    aciklama: "Türkiye genç oluşumlu bir ülke olduğundan nehirlerimiz denge profiline ulaşmamıştır; yatak eğimleri fazladır ve akış hızları yüksek olduğundan üzerlerinde ulaşım yapılamaz.",
+  },
+  {
+    id: 2,
+    soru: "Türkiye sınırları içerisinde doğup yine Türkiye sınırları içerisinden denize dökülen, ülkemizin kendi sınırları içindeki \"en uzun\" akarsuyu aşağıdakilerden hangisidir?",
+    secenekler: ["A) Fırat", "B) Dicle", "C) Kızılırmak", "D) Yeşilırmak", "E) Çoruh"],
+    cevap: 2,
+    aciklama: "Türkiye sınırları içinde doğup yine ülkemiz sınırlarından denize dökülen en uzun nehir Kızılırmaktır. (Fırat toplamda daha uzundur ancak sınır ötesine geçer).",
+  },
+  {
+    id: 3,
+    soru: "Coğrafi havzaları düşünüldüğünde \"Türkiye dışında doğup, ülkemiz sınırları içerisinden denize dökülen (İçeri gelen)\" akarsular aşağıdakilerin hangisinde bir arada doğru verilmiştir?",
+    secenekler: ["A) Fırat - Dicle", "B) Meriç - Asi", "C) Aras - Kura", "D) Çoruh - Kızılırmak", "E) Seyhan - Ceyhan"],
+    cevap: 1,
+    aciklama: "Dışarıda doğup bize gelen (içeri gelen) nehirler Bulgaristan'dan gelen Meriç ve Lübnan'dan doğup Hatay'a giren Asi nehridir.",
+  },
+  {
+    id: 4,
+    soru: "Aşağıdaki akarsulardan hangisi, Türkiye sınırlarından doğup başka bir ülkenin topraklarına geçen (Dışarı giden) ve Hazar Denizi kapalı havzasına dökülen nehirlerimiz arasında yer alır?",
+    secenekler: ["A) Fırat", "B) Dicle", "C) Çoruh", "D) Aras", "E) Meriç"],
+    cevap: 3,
+    aciklama: "Aras ve Kura nehirleri Doğu Anadolu'dan doğup sınırları aşarak kapalı bir havza (Hazar Denizi) ne dökülürler.",
+  },
+  {
+    id: 5,
+    soru: "Bir akarsuyun denge profiline ulaşmadığının en kesin ve net kanıtı aşağıdakilerden hangisidir?",
+    secenekler: ["A) Boyunun menderesler çizerek uzaması", "B) Rejiminin yıl boyunca düzensiz olması", "C) Üzerinde ulaşım ve taşımacılık yapılamaması", "D) Karma rejimli bir beslenme havzasına sahip olması", "E) Sularını açık denizlere ulaştırabilmesi"],
+    cevap: 2,
+    aciklama: "Bir akarsuyun yatağını deniz seviyesine kadar aşındıramadığının, yani denge profiline ulaşmadığının en kesin kanıtı ulaşım ve taşımacılığa uygun olmamasıdır.",
+  },
+  {
+    id: 6,
+    soru: "Türkiye'deki akarsuların büyük bir kısmının debisi (su miktarı) en yüksek seviyesine \"İlkbahar\" mevsiminde ulaşır. Bu durumun temel sebebi aşağıdakilerden hangisidir?",
+    secenekler: ["A) İlkbaharda deniz üzerinden gelen nemli hava kütleleri", "B) Sıcaklıkların artmasıyla birlikte dağlardaki kar erimelerinin başlaması", "C) Yaz kuraklığı öncesinde akarsu yataklarının daralması", "D) İlkbaharda Akdeniz üzerinden gelen sıcak yerel rüzgarlar", "E) Baraj kapaklarının bu mevsimde tamamen açılması"],
+    cevap: 1,
+    aciklama: "Türkiye'deki nehirlerin ilkbaharda coşmasının ana sebebi yağmurlar değil, artan sıcaklıklarla birlikte dağlardaki kar erimelerinin suya dönüşmesidir.",
+  },
+  {
+    id: 7,
+    soru: "Akdeniz Bölgesi'nde yer alan Dalaman, Aksu ve Manavgat gibi nehirler bol su taşımalarına ve gür akmalarına rağmen kıyıda büyük delta ovaları oluşturamazlar. Bu durumun temel etkeni aşağıdakilerden hangisidir?",
+    secenekler: ["A) Kıyı akıntılarının çok güçlü olması", "B) Havzadaki kayaçların karstik (kireçli) yapıda olması ve taşınan malzemenin suda eriyip gitmesi", "C) Nehirlerin boylarının çok kısa olması", "D) Bölgede tarımsal sulamanın nehir sularını tüketmesi", "E) Kıyıdaki dağların yükseltisinin çok az olması"],
+    cevap: 1,
+    aciklama: "Batı Toroslar'daki nehirlerin getirdiği kalkerli/kireçli malzeme suda hızla çözünüp eridiği için kıyıda katı bir birikim yapamaz ve büyük deltalar oluşturamazlar.",
+  },
+  {
+    id: 8,
+    soru: "Bir gölün suyunun \"tatlı\" olmasını sağlayan, gölün fazla sularını dışarı boşaltan akarsu hattına ne ad verilir?",
+    secenekler: ["A) Çanak", "B) Senklinal", "C) Polye", "D) Gideğen (Göl Ayağı)", "E) Kaldera"],
+    cevap: 3,
+    aciklama: "Göllerin sularını tazeleyen, fazla suyu dışarı taşıyan göl ayaklarına Gideğen denir. Gideğeni olan göllerin suyu tatlı olur.",
+  },
+  {
+    id: 9,
+    soru: "Türkiye'de \"İSTEKBAM\" şifresiyle hafızaya kazınan Tektonik Göllerimizden aşağıdakilerden hangisi bu şifre grubunda yer almaz?",
+    secenekler: ["A) İznik Gölü", "B) Sapanca Gölü", "C) Tuz Gölü", "D) Salda Gölü", "E) Beyşehir Gölü"],
+    cevap: 3,
+    aciklama: "Tektonik göller İSTEKBAM (İznik, Sapanca, Tuz, Eğirdir, Kovada, Beyşehir, Akşehir, Manyas) şifresiyle kodlanır. Salda Gölü ise kireçli yapıda oluşan net bir karstik göldür.",
+  },
+  {
+    id: 10,
+    soru: "Yaz mevsiminde şiddetli buharlaşma ve kuraklık nedeniyle derinliği azaldığı için \"yüz ölçümü (alanı) yıl içinde en çok değişen\" gölümüz aşağıdakilerden hangisidir?",
+    secenekler: ["A) Van Gölü", "B) Tuz Gölü", "C) İznik Gölü", "D) Sapanca Gölü", "E) Çıldır Gölü"],
+    cevap: 1,
+    aciklama: "Derinliği çok az olan ve kurak İç Anadolu'da yer alan Tuz Gölü, yazın buharlaşmayla neredeyse tamamen kuruyup kışın tekrar su topladığı için alanı en çok değişen gölümüzdür.",
+  },
+  {
+    id: 11,
+    soru: "Eriyen kalkerli arazilerdeki çukurlarda oluşan, Akdeniz Bölgesi'ndeki Göller Yöresi'nde yoğunlaşan ve berrak yapısı nedeniyle \"Türkiye'nin Maldivleri\" olarak anılan karstik gölümüz hangisidir?",
+    secenekler: ["A) Meke Gölü", "B) Nemrut Gölü", "C) Salda Gölü", "D) Manyas Gölü", "E) Akşehir Gölü"],
+    cevap: 2,
+    aciklama: "Burdur sahasında yer alan karstik oluşumlu Salda Gölü, beyaz kumları ve turkuaz suyuyla ünlü olup \"Türkiye'nin Maldivleri\" unvanına sahiptir.",
+  },
+  {
+    id: 12,
+    soru: "Konya'da yer alan ve \"Dünyanın Nazar Boncuğu\" olarak bilinen ünlü volkanik maar gölümüz aşağıdakilerden hangisidir?",
+    secenekler: ["A) Nemrut Kalderası", "B) Meke Maar Gölü", "C) Gölcük Krater Gölü", "D) Salda Gölü", "E) Avlan Gölü"],
+    cevap: 1,
+    aciklama: "Konya'daki patlama çukuru (maar) içinde yer alan Meke Gölü, kuş bakışı görüntüsündeki estetik duruşu nedeniyle \"Dünyanın Nazar Boncuğu\" olarak bilinmektedir.",
+  },
+  {
+    id: 13,
+    soru: "\"BAHÇEVaN\" şifresiyle bilinen volkanik set gölleri arasından, suları sodalı olan Türkiye'nin en büyük gölü aşağıdakilerden hangisidir?",
+    secenekler: ["A) Çıldır Gölü", "B) Haçlı Gölü", "C) Van Gölü", "D) Erçek Gölü", "E) Beyşehir Gölü"],
+    cevap: 2,
+    aciklama: "Doğu Anadolu'daki BAHÇEVaN (Balık, Aktaş, Haçlı, Çıldır, Erçek, Van, Nazik) grubundaki Van Gölü, lav settiyle oluşmuş, sodalı sulara sahip en büyük gölümüzdür.",
+  },
+  {
+    id: 14,
+    soru: "Aşağıdaki göl ikililerinden hangileri \"Hem Karstik hem Tektonik (Tektonokarstik)\" süreçlerin bir arada etkili olduğu karma göllerdir?",
+    secenekler: ["A) Van Gölü - Çıldır Gölü", "B) İznik Gölü - Sapanca Gölü", "C) Beyşehir Gölü - Eğirdir Gölü", "D) Abant Gölü - Yedi Göller", "E) Büyük Çekmece - Küçük Çekmece"],
+    cevap: 2,
+    aciklama: "Göller Yöresi'ndeki Beyşehir ve Eğirdir gölleri, hem tektonik çökme çanaklarında yer almaları hem de tabanlarındaki karstik erimeler nedeniyle \"Tektonokarstik\" karma oluşumlu göllerdir.",
+  },
+  {
+    id: 15,
+    soru: "Aşağıdakilerden hangisi sularından hidroelektrik (enerji) üretilen \"özel beşli\" göl grubunda yer almaz?",
+    secenekler: ["A) Eğirdir Gölü", "B) Tortum Gölü", "C) Çıldır Gölü", "D) Tuz Gölü", "E) Hazar Gölü"],
+    cevap: 3,
+    aciklama: "Sularından elektrik üretilen özel beşli: Eğirdir, Kovada, Hazar, Tortum ve Çıldır'dır. Tuz Gölü'nün bir gideğeni olmadığından ve sığ olduğundan enerji üretimi imkansızdır.",
+  },
+];

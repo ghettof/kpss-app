@@ -1,0 +1,111 @@
+import { DenemeSorusu } from './deneme1';
+
+export const denemeCog9Baslik = "Turizm, Milli Parklar ve UNESCO";
+
+export const denemeCog9: DenemeSorusu[] = [
+  {
+    id: 1,
+    soru: "Türkiye'de UNESCO Dünya Miras Listesi'nde \"Hem Doğal Hem Kültürel Miras (Karma Oluşumlu)\" özelliğine sahip olan \"iki karma oluşumlu alan\" aşağıdakilerin hangisinde birlikte verilmiştir?",
+    secenekler: ["A) Göbeklitepe - Troya Antik Kenti", "B) Hattuşa - Çatalhöyük Neolitik Kenti", "C) Kapadokya (Nevşehir) - Pamukkale (Denizli)", "D) Divriği Ulu Camii - Nemrut Dağı", "E) Ani Harabeleri - Efes Antik Kenti"],
+    cevap: 2,
+    aciklama: "Türkiye'de hem doğal süreçlerle (peri bacaları/traverten) hem de kültürel mirasla şekillenen sadece iki alan vardır: Kapadokya ve Pamukkale.",
+  },
+  {
+    id: 2,
+    soru: "Tarihin sıfır noktası olarak kabul edilen, insanlık tarihinin bilinen en eski kült (tapınak) yapısını bünyesinde barındıran ve Şanlıurfa'da yer alan UNESCO Dünya Miras Alanı aşağıdakilerden hangisidir?",
+    secenekler: ["A) Çatalhöyük", "B) Göbeklitepe", "C) Arslantepe Höyüğü", "D) Gordion Antik Kenti", "E) Hattuşa"],
+    cevap: 1,
+    aciklama: "Şanlıurfa'da yer alan ve \"tarihin sıfır noktası\" olarak tescillenen, dünyanın bilinen en eski kült (tapınak) yapısı Göbeklitepe'dir.",
+  },
+  {
+    id: 3,
+    soru: "Aşağıdaki turizm kollarından hangisi \"iklim şartlarından doğrudan etkilenen\" ve sezon süresi iklime göre değişen bir turizm türüdür?",
+    secenekler: ["A) Termal (Kaplıca) Turizmi", "B) İnanç Turizmi", "C) Deniz (Yaz) Turizmi", "D) Kongre ve Toplantı Turizmi", "E) Kültür Turizmi"],
+    cevap: 2,
+    aciklama: "Termal, inanç, kongre ve kültür turizmi kapalı mekanlarda veya hava durumuna kısıtlı kalmayan alanlarda yılın 12 ayı yapılabilirken; Deniz turizmi doğrudan güneşli gün sayısına ve sıcaklığa (iklime) bağlıdır.",
+  },
+  {
+    id: 4,
+    soru: "Bulutluluk ve yağış gün sayısının fazla olması nedeniyle deniz turizmi sezonunun \"en kısa\" olduğu coğrafi alanımız hangisidir?",
+    secenekler: ["A) Antalya Kıyıları", "B) Kıyı Ege Şeridi", "C) Doğu Karadeniz Kıyı Kuşağı", "D) Güney Marmara Kıyıları", "E) Teke Yarımadası Kıyıları"],
+    cevap: 2,
+    aciklama: "Karadeniz ikliminin hakim olduğu Doğu Karadeniz kıyı kuşağında, her mevsim yağışlı ve bulutlu gün sayısı fazla olduğundan deniz turizmi sezonu Türkiye'nin en kısa olduğu sahadır.",
+  },
+  {
+    id: 5,
+    soru: "Türkiye'de uluslararası Cittaslow (Sakin Şehir) unvanını alan \"İLK Sakin Şehir\" olma özelliği taşıyan kentimiz aşağıdakilerden hangisidir?",
+    secenekler: ["A) Sinop - Gerze", "B) Şanlıurfa - Halfeti", "C) İzmir - Seferihisar", "D) Isparta - Yalvaç", "E) Bolu - Göynük"],
+    cevap: 2,
+    aciklama: "Türkiye'de uluslararası Cittaslow (Sakin Şehir) unvanını alan ilk kentimiz 2009 yılında İzmir - Seferihisar olmuştur.",
+  },
+  {
+    id: 6,
+    soru: "Türkiye Cumhuriyeti sınırları içerisinde koruma altına alınan \"İLK Milli Parkımız\" aşağıdakilerden hangisidir?",
+    secenekler: ["A) Gelibolu Yarımadası Tarihi Milli Parkı", "B) Yozgat Çamlığı Milli Parkı", "C) Yedigöller Milli Parkı", "D) Soğuksu Milli Parkı", "E) Munzur Vadisi Milli Parkı"],
+    cevap: 1,
+    aciklama: "Türkiye'nin ilk ilan edilen milli parkı, zengin bitki florasıyla öne çıkan Yozgat Çamlığı Milli Parkı'dır.",
+  },
+  {
+    id: 7,
+    soru: "Resmi kurumsal kayıtlara ve son verilere göre Türkiye'nin \"EN SON (Güncel) ilan edilen milli parkı\" aşağıdakilerden hangisidir?",
+    secenekler: ["A) Cilo ve Sat Dağları Milli Parkı", "B) Derebucak Çamlık Mağaraları Milli Parkı (Konya)", "C) Karagöl - Sahara Milli Parkı", "D) Nemrut Dağı Milli Parkı", "E) Saklıkent Milli Parkı"],
+    cevap: 1,
+    aciklama: "Resmi olarak Türkiye'nin en son (güncel) ilan edilen milli parkı Konya sınırlarındaki Derebucak Çamlık Mağaraları Milli Parkı'dır.",
+  },
+  {
+    id: 8,
+    soru: "Milli Park olan Nemrut alanı sorulduğunda, devasa taş heykelleri barındıran bu park hangi ilimizin sınırları içerisinde yer almaktadır? (Not: Bitlis'teki Nemrut bir volkanik kaldera/göldür, milli park statüsündeki Nemrut ile karıştırılmamalıdır.)",
+    secenekler: ["A) Bitlis", "B) Adıyaman", "C) Malatya", "D) Diyarbakır", "E) Şanlıurfa"],
+    cevap: 1,
+    aciklama: "Bitlis'teki Nemrut bir volkanik kaldera/göldür. Kommagene Krallığı'na ait dev taş heykellerin yer aldığı ve \"Milli Park\" statüsünde olan ise Adıyaman'daki Nemrut Dağı'dır.",
+  },
+  {
+    id: 9,
+    soru: "İç Anadolu'da yer alan, ormanlık bir vaha özelliği taşımasının yanında, nesli tükenme tehlikesi altında olan \"kara akbabalara\" ev sahipliği yapmasıyla öne çıkan milli parkımız hangisidir?",
+    secenekler: ["A) Yozgat Çamlığı Milli Parkı", "B) Soğuksu Milli Parkı (Ankara)", "C) Ilgaz Dağı Milli Parkı", "D) Gala Gölü Milli Parkı", "E) Nemrut Dağı Milli Parkı"],
+    cevap: 1,
+    aciklama: "Ankara sınırlarında yer alan Soğuksu Milli Parkı, İç Anadolu'daki nadir ormanlık vahalardan biri olup nesli tükenmekte olan \"kara akbabaların\" koruma alanıdır.",
+  },
+  {
+    id: 10,
+    soru: "Heyelan set göllerinden oluşan, özellikle sonbahar mevsiminde yaprak dökümü manzaraları ve doğa fotoğrafçılığı denildiğinde Türkiye'de ilk sırada akla gelen milli park hangisidir?",
+    secenekler: ["A) Yedigöller Milli Parkı (Bolu)", "B) Kaçkar Dağları Milli Parkı", "C) Karagöl - Sahara Milli Parkı", "D) Kuşcenneti Milli Parkı", "E) Munzur Vadisi Milli Parkı"],
+    cevap: 0,
+    aciklama: "Bolu'daki Yedigöller Milli Parkı, heyelan set göllerinin etrafını saran gür orman örtüsüyle özellikle sonbaharda yaprak dökümü fotoğrafçılığının Türkiye'deki merkezidir.",
+  },
+  {
+    id: 11,
+    soru: "Buzul göllerini (sirk), gür Alpin çayırlarını ve yayla turizminin en canlı faaliyetlerini bünyesinde barındıran milli parkımız aşağıdakilerden hangisidir?",
+    secenekler: ["A) Ilgaz Dağı Milli Parkı", "B) Munzur Vadisi Milli Parkı", "C) Kaçkar Dağları Milli Parkı (Rize/Artvin)", "D) Beydağları Sahil Milli Parkı", "E) Köprülü Kanyon Milli Parkı"],
+    cevap: 2,
+    aciklama: "Rize ve Artvin sınırlarında yer alan Kaçkar Dağları Milli Parkı, sirk (buzul) gölleri, gür çayırları ve yaylacılık faaliyetleriyle öne çıkan dağlık bir milli parktır.",
+  },
+  {
+    id: 12,
+    soru: "Aziziye Tabyaları'nı bünyesinde barındıran, Türkiye'nin \"tek tarihi kadın kahraman isimli\" milli parkı aşağıdakilerden hangisidir?",
+    secenekler: ["A) Nene Hatun Tarihi Milli Parkı (Erzurum)", "B) Şerife Bacı Milli Parkı", "C) Kara Fatma Tarihi Alanı", "D) Erzurum Çamlığı Parkı", "E) Palandöken Milli Parkı"],
+    cevap: 0,
+    aciklama: "Erzurum'daki Aziziye Tabyaları direnişini simgeleyen, Türkiye'nin tek tarihi kadın kahraman ismini taşıyan parkı Nene Hatun Tarihi Milli Parkı'dır.",
+  },
+  {
+    id: 13,
+    soru: "Eşen Çayı'nın bir kolu üzerinde yer alan, devasa kanyon yapısıyla doğa ve macera turizminde dünya çapında ün kazanan milli park aşağıdakilerden hangisidir?",
+    secenekler: ["A) Köprülü Kanyon Milli Parkı", "B) Saklıkent Milli Parkı (Muğla/Antalya)", "C) Munzur Vadisi Milli Parkı", "D) Yedigöller Milli Parkı", "E) Derebucak Çamlık Mağaraları"],
+    cevap: 1,
+    aciklama: "Muğla-Antalya sınırında yer alan ve Eşen Çayı'nın bir kolunun aşındırmasıyla oluşan dev kanyon yarılması Saklıkent Milli Parkı'dır.",
+  },
+  {
+    id: 14,
+    soru: "Sedir ormanlarıyla kaplı olan, havasındaki bol oksijen oranı nedeniyle özellikle \"astım hastalarının şifa merkezi\" olarak kabul edilen milli parkımız hangisidir?",
+    secenekler: ["A) Kızıldağ Milli Parkı (Isparta)", "B) Soğuksu Milli Parkı", "C) Ilgaz Dağı Milli Parkı", "D) Yozgat Çamlığı Milli Parkı", "E) Köprülü Kanyon Milli Parkı"],
+    cevap: 0,
+    aciklama: "Isparta'da yer alan Kızıldağ Milli Parkı, barındırdığı geniş sedir ormanlarının ürettiği bol oksijen sayesinde astım ve solunum hastalarının şifa bulduğu bir merkezdir.",
+  },
+  {
+    id: 15,
+    soru: "Kuşadası Limanı'nın arkasındaki dağlık yapı nedeniyle ticaret hacmi (hinterlandı) dar olmasına rağmen, Türkiye'nin en işlek limanları arasında yer almasının \"temel nedeni\" aşağıdakilerden hangisidir?",
+    secenekler: ["A) Sanayi mallarının ihracat merkezi olması", "B) Demiryolu ağının buraya çok gelişmiş bağlanması", "C) Kruvaziyer (Lüks yolcu gemisi) turizminin kalbi olması", "D) Petrol taşımacılığında stratejik üs olması", "E) Balıkçılık faaliyetlerinin bölgede zirvede olması"],
+    cevap: 2,
+    aciklama: "Kuşadası Limanı arkasındaki dağlar ve demiryolu yokluğu nedeniyle ticari olarak sönüktür ancak dev yolcu gemilerini ağırlayan Kruvaziyer turizmi sayesinde Türkiye'nin en işlek limanlarından biridir.",
+  },
+];
