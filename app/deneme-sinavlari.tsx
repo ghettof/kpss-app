@@ -1,6 +1,6 @@
 import { router } from 'expo-router';
 import { SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { DENEME_LISTESI } from '../constants/denemeSinavlari';
+import { DENEME_LISTESI, DERSLER } from '../constants/denemeSinavlari';
 
 const RENK = '#E67E22';
 
@@ -15,25 +15,24 @@ export default function DenemeSinavlariScreen() {
           <Text style={styles.baslik}>Deneme Sınavları</Text>
           <View style={{ width: 50 }} />
         </View>
-        <Text style={styles.altBaslik}>Bir deneme seçin</Text>
+        <Text style={styles.altBaslik}>Bir ders seçin</Text>
 
-        {DENEME_LISTESI.map((d) => (
-          <TouchableOpacity
-            key={d.id}
-            style={styles.kart}
-            onPress={() => router.push(`/deneme-sinavi-coz?id=${d.id}`)}
-          >
-            <View style={styles.numBadge}>
-              <Text style={styles.numText}>{d.id}</Text>
-            </View>
-            <View style={{ flex: 1 }}>
-              <Text style={styles.kartUst}>Deneme {d.id}</Text>
-              <Text style={styles.kartBaslik} numberOfLines={2}>{d.baslik}</Text>
-              <Text style={styles.kartEtiket}>{d.soruSayisi} Soru</Text>
-            </View>
-            <Text style={styles.okIcon}>›</Text>
-          </TouchableOpacity>
-        ))}
+        {DERSLER.map((ders) => {
+          const denemeSayisi = DENEME_LISTESI.filter((d) => d.ders === ders).length;
+          return (
+            <TouchableOpacity
+              key={ders}
+              style={styles.kart}
+              onPress={() => router.push(`/deneme-sinavlari-liste?ders=${encodeURIComponent(ders)}`)}
+            >
+              <View style={{ flex: 1 }}>
+                <Text style={styles.kartBaslik}>{ders}</Text>
+                <Text style={styles.kartEtiket}>{denemeSayisi} deneme</Text>
+              </View>
+              <Text style={styles.okIcon}>›</Text>
+            </TouchableOpacity>
+          );
+        })}
         <View style={{ height: 40 }} />
       </ScrollView>
     </SafeAreaView>
@@ -47,10 +46,7 @@ const styles = StyleSheet.create({
   baslik: { fontSize: 20, fontWeight: 'bold', color: '#fff' },
   altBaslik: { color: '#8899AA', fontSize: 13, textAlign: 'center', marginBottom: 16, marginTop: 4 },
   kart: { marginHorizontal: 16, marginBottom: 12, backgroundColor: '#1A2635', borderRadius: 14, padding: 16, borderLeftWidth: 4, borderLeftColor: RENK, flexDirection: 'row', alignItems: 'center', gap: 14 },
-  numBadge: { width: 40, height: 40, borderRadius: 20, alignItems: 'center', justifyContent: 'center', backgroundColor: RENK },
-  numText: { color: '#fff', fontWeight: 'bold', fontSize: 16 },
-  kartUst: { color: RENK, fontSize: 13, fontWeight: 'bold' },
-  kartBaslik: { color: '#fff', fontSize: 15, fontWeight: 'bold', marginTop: 2 },
+  kartBaslik: { color: '#fff', fontSize: 16, fontWeight: 'bold' },
   kartEtiket: { color: '#8899AA', fontSize: 12, marginTop: 4 },
   okIcon: { color: RENK, fontSize: 28, fontWeight: 'bold' },
 });

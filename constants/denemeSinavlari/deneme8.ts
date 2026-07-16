@@ -1,0 +1,148 @@
+import { DenemeSorusu } from './deneme1';
+
+export const deneme8Baslik = "Muharebeler Dönemi ve Antlaşmalar";
+
+// Not: Kaynak metinde iki ayrı "Soru 20" bulunuyordu (Kapitülasyonlar ve Musul Sorunu).
+// İkisi de değerli, farklı konular olduğu için ikisi de korundu; bu deneme 21 sorudan oluşuyor.
+export const deneme8: DenemeSorusu[] = [
+  {
+    id: 1,
+    soru: "Milli Mücadele Dönemi'nde kurulan \"Düzenli Ordu'nun kazandığı ilk askeri zafer\" aşağıdakilerden hangisidir?",
+    secenekler: ["A) Doğu Cephesi (Gümrü Zaferi)", "B) I. İnönü Savaşı", "C) II. İnönü Savaşı", "D) Sakarya Meydan Muharebesi", "E) Büyük Taarruz"],
+    cevap: 1,
+    aciklama: "TBMM tarafından kurulan Batı Cephesi'ndeki düzenli ordunun kazandığı ilk askeri zafer I. İnönü Savaşı'dır (6-10 Ocak 1921). Doğu Cephesi'ndeki zafer Kolordu düzeyinde kazanılmıştır, sıfırdan kurulan yeni düzenli ordunun başarısı değildir.",
+  },
+  {
+    id: 2,
+    soru: "Milli Mücadele Dönemi'nde açılan \"Doğu Cephesi'ni kapatan\" ve TBMM'nin uluslararası alanda imzaladığı \"ilk siyasi antlaşma\" aşağıdakilerden hangisidir?",
+    secenekler: ["A) Moskova Antlaşması", "B) Kars Antlaşması", "C) Gümrü Antlaşması", "D) Ankara Antlaşması", "E) Mudanya Antlaşması"],
+    cevap: 2,
+    aciklama: "Doğu Cephesi'ndeki Ermeni taarruzunu durduran Kazım Karabekir, 3 Aralık 1920'de Gümrü Antlaşması'nı imzalamıştır. Bu antlaşma TBMM'nin uluslararası alandaki ilk siyasi zaferidir ve Doğu Cephesi'ni kapatmıştır.",
+  },
+  {
+    id: 3,
+    soru: "TBMM'yi uluslararası alanda tanıyan \"ilk devlet\" aşağıdakilerden hangisidir?",
+    secenekler: ["A) Sovyet Rusya", "B) Ermenistan", "C) Fransa", "D) Gürcistan", "E) Afganistan"],
+    cevap: 1,
+    aciklama: "Gümrü Antlaşması'nı imzalayarak TBMM'nin hukuki varlığını ve Misakımilli'yi tanıyan, Sevr'deki iddialarından vazgeçen ilk devlet Ermenistan olmuştur.",
+  },
+  {
+    id: 4,
+    soru: "Kurtuluş Savaşı'nda Batı Cephesi'nde düzenli ordunun \"ilk ve tek yenilgisi\" aşağıdakilerden hangisidir?",
+    secenekler: ["A) I. İnönü Savaşı", "B) II. İnönü Savaşı", "C) Kütahya - Eskişehir Savaşları", "D) Sakarya Meydan Muharebesi", "E) Aslıhanlar - Dumlupınar Taarruzu"],
+    cevap: 2,
+    aciklama: "Batı Cephesi'nde Yunan taarruzu karşısında düzenli ordunun aldığı ilk ve tek yenilgi Kütahya-Eskişehir Savaşları'dır. Bu yenilgi mecliste sert tartışmalara yol açmıştır.",
+  },
+  {
+    id: 5,
+    soru: "TBMM'nin uluslararası alanda imzaladığı ve Misakımilli'yi tanıyan \"ilk büyük Avrupa devleti\" (veya ilk İtilaf devleti) aşağıdakilerden hangisidir?",
+    secenekler: ["A) Sovyet Rusya", "B) Fransa", "C) İngiltere", "D) İtalya", "E) Ermenistan"],
+    cevap: 1,
+    aciklama: "Sakarya Savaşı'ndan sonra imzalanan 1921 Ankara Antlaşması ile Fransa, TBMM'yi ve Misakımilli'yi resmen tanıyan ilk İtilaf devleti olmuştur. Sovyet Rusya ilk büyük Avrupa devletidir ancak İtilaf bloku üyesi değildir.",
+  },
+  {
+    id: 6,
+    soru: "I. İnönü Savaşı'nın kazanılmasının ardından iç politikada hukuki düzeni sağlamak amacıyla kabul edilen \"TBMM'nin ilk anayasası\" aşağıdakilerden hangisidir?",
+    secenekler: ["A) Kanun-i Esasi", "B) Teşkilat-ı Esasiye Kanunu (1921)", "C) 1924 Anayasası", "D) Takrir-i Sükun Kanunu", "E) Hıyanet-i Vataniye Kanunu"],
+    cevap: 1,
+    aciklama: "I. İnönü Savaşı'nın ardından 20 Ocak 1921'de kabul edilen Teşkilat-ı Esasiye Kanunu, yeni Türk devletinin ilk anayasasıdır ve egemenliğin kayıtsız şartsız millete ait olduğunu ilan etmiştir.",
+  },
+  {
+    id: 7,
+    soru: "TBMM Hükümeti, I. İnönü Savaşı'ndan sonra uluslararası arenada meşruiyet kazanmak amacıyla İtilaf Devletleri tarafından aşağıdaki konferansların hangisine davet edilmiştir?",
+    secenekler: ["A) Paris Barış Konferansı", "B) Londra Konferansı", "C) San Remo Konferansı", "D) Lozan Konferansı", "E) Mudanya Konferansı"],
+    cevap: 1,
+    aciklama: "İtilaf Devletleri, I. İnönü zaferinin ardından Sevr Antlaşması'nı yumuşatarak Türk tarafına kabul ettirmek amacıyla TBMM'yi Londra Konferansı'na davet etmişlerdir.",
+  },
+  {
+    id: 8,
+    soru: "TBMM Hükümeti ile Sovyet Rusya arasında imzalanan ve \"Misakımilli'den verilen ilk tavizi (Batum)\" içeren diplomatik antlaşma aşağıdakilerden hangisidir?",
+    secenekler: ["A) Gümrü Antlaşması", "B) Moskova Antlaşması", "C) Kars Antlaşması", "D) Ankara Antlaşması", "E) Brest-Litovsk Antlaşması"],
+    cevap: 1,
+    aciklama: "16 Mart 1921'de imzalanan Moskova Antlaşması ile Sovyet Rusya TBMM'yi tanımıştır. Ancak antlaşma gereğince Batum'un Gürcistan'a bırakılması, Misakımilli'den verilen ilk taviz olmuştur.",
+  },
+  {
+    id: 9,
+    soru: "TBMM ile dostluk antlaşması imzalayan \"ilk Müslüman devlet\" aşağıdakilerden hangisidir?",
+    secenekler: ["A) İran", "B) Afganistan", "C) Irak", "D) Suriye", "E) Hicaz"],
+    cevap: 1,
+    aciklama: "I. İnönü Savaşı sürerken Moskova'ya giden heyetler vasıtasıyla imzalanan Türkiye-Afganistan Dostluk Antlaşması ile Afganistan, TBMM'yi tanıyan ilk Müslüman devlet olmuştur.",
+  },
+  {
+    id: 10,
+    soru: "Kütahya-Eskişehir Savaşları'nda ordunun daha fazla kayıp vermesini engellemek amacıyla orduyu Sakarya Nehri'nin doğusuna çeken ve bu yenilginin ardından meclis tarafından kendisine \"Başkomutanlık\" yetkisi verilen lider kimdir?",
+    secenekler: ["A) İsmet İnönü", "B) Fevzi Çakmak", "C) Mustafa Kemal Paşa", "D) Ali Fuat Cebesoy", "E) Refet Bele"],
+    cevap: 2,
+    aciklama: "Kütahya-Eskişehir yenilgisinin ardından orduyu Sakarya'nın doğusuna çekerek zaman kazanan Mustafa Kemal Paşa'ya, meclis tüm yetkilerini 3 aylığına devrederek Başkomutanlık unvanını vermiştir.",
+  },
+  {
+    id: 11,
+    soru: "Mustafa Kemal'e \"Gazilik\" unvanı ve \"Mareşallik\" rütbesi aşağıdaki savaşların hangisinden sonra TBMM tarafından tevcih edilmiştir?",
+    secenekler: ["A) I. İnönü Savaşı", "B) II. İnönü Savaşı", "C) Sakarya Meydan Muharebesi", "D) Büyük Taarruz", "E) Çanakkale Savaşları"],
+    cevap: 2,
+    aciklama: "Sakarya Meydan Muharebesi'ndeki eşsiz komutası ve zaferi sonrasında TBMM, Mustafa Kemal Paşa'ya \"Gazilik\" unvanı ve \"Mareşallik\" rütbesini vermiştir.",
+  },
+  {
+    id: 12,
+    soru: "Mustafa Kemal Paşa'nın, Sakarya Meydan Muharebesi sırasında \"Hattı müdafaa yoktur, sathı müdafaa vardır. O satıh, bütün vatandır.\" sözünü söylediği mücadele aşağıdakilerden hangisidir?",
+    secenekler: ["A) I. İnönü Savaşı", "B) Sakarya Meydan Muharebesi", "C) Büyük Taarruz", "D) Başkomutanlık Meydan Muharebesi", "E) II. İnönü Savaşı"],
+    cevap: 1,
+    aciklama: "Mustafa Kemal Paşa, topyekun savaş konseptini hayata geçirdiği Sakarya Meydan Muharebesi sırasında ordularına bu meşhur emri vermiştir.",
+  },
+  {
+    id: 13,
+    soru: "Türk ordusunun 1683 II. Viyana Kuşatması'ndan beri süregelen tarihsel \"geri çekilişinin\" sona erdiği ve savunmadan taarruza geçtiği son savunma savaşı aşağıdakilerden hangisidir?",
+    secenekler: ["A) I. İnönü Savaşı", "B) II. İnönü Savaşı", "C) Sakarya Meydan Muharebesi", "D) Büyük Taarruz", "E) Çanakkale Savaşı"],
+    cevap: 2,
+    aciklama: "22 gün 22 gece süren Sakarya Meydan Muharebesi, Türk ordusunun II. Viyana'dan beri devam eden geri çekilmesini sonlandırmış ve Türk tarafını taarruz gücüne ulaştırmıştır.",
+  },
+  {
+    id: 14,
+    soru: "Batı Cephesi'nde kazanılan büyük askeri başarıların ardından imzalanan ve Doğu sınırımızı (Kars, Ardahan, Batum vb.) \"kesin ve nihai\" olarak çizen antlaşma aşağıdakilerden hangisidir?",
+    secenekler: ["A) Moskova Antlaşması", "B) Gümrü Antlaşması", "C) Kars Antlaşması", "D) Ankara Antlaşması", "E) Lozan Antlaşması"],
+    cevap: 2,
+    aciklama: "Kafkas Cumhuriyetleri (Azerbaycan, Ermenistan, Gürcistan) ile TBMM arasında imzalanan Kars Antlaşması (13 Ekim 1921), Doğu sınırımızı kesin ve nihai olarak çizen antlaşmadır.",
+  },
+  {
+    id: 15,
+    soru: "Sakarya Meydan Muharebesi'nin kazanılmasının ardından Fransa ile imzalanan, Güney Cephesi'nin tamamen kapanmasını sağlayan ve Hatay'ın özel bir statüyle dışarıda kalmasıyla \"Misakımilli'den ikinci tavizin\" verildiği antlaşma aşağıdakilerden hangisidir?",
+    secenekler: ["A) 1921 Ankara Antlaşması", "B) Moskova Antlaşması", "C) Mudanya Mütarekesi", "D) Lozan Antlaşması", "E) Kars Antlaşması"],
+    cevap: 0,
+    aciklama: "Sakarya zaferinin ardından Fransa ile imzalanan 1921 Ankara Antlaşması ile Hatay, Fransız mandasındaki Suriye sınırlarında özel bir yönetime sahip olmuştur. Bu durum Misakımilli'den verilen ikinci tavizdir.",
+  },
+  {
+    id: 16,
+    soru: "Milli Mücadele'nin askeri ve silahlı safhasını tamamen bitiren, İstanbul, Boğazlar ve Doğu Trakya'nın \"savaş yapılmadan\" diplomatik yolla kurtarılmasını sağlayan ateşkes antlaşması aşağıdakilerden hangisidir?",
+    secenekler: ["A) Mondros Mütarekesi", "B) Mudanya Ateşkes Antlaşması", "C) Sevr Antlaşması", "D) Lozan Antlaşması", "E) Gümrü Antlaşması"],
+    cevap: 1,
+    aciklama: "11 Ekim 1922'de imzalanan Mudanya Ateşkes Antlaşması ile silahlı mücadele sona ermiş; İstanbul, Boğazlar ve Doğu Trakya tek bir kurşun sıkılmadan teslim alınmıştır.",
+  },
+  {
+    id: 17,
+    soru: "Kurtuluş Savaşı'nın son muharebesi olan ve Yunan ordusunun Anadolu'dan tamamen temizlenmesini sağlayan Başkomutanlık Meydan Muharebesi'nin diğer adı aşağıdakilerden hangisidir?",
+    secenekler: ["A) Dumlupınar (Yurtkurtaran) Savaşı", "B) Subayı Savaşları", "C) Melhame-i Kübra", "D) Taarruz-ı Hakan", "E) Gediz Muharebesi"],
+    cevap: 0,
+    aciklama: "Büyük Taarruz'un karar verici son muharebesi olan Başkomutanlık Meydan Muharebesi, askeri tarihte Dumlupınar (Yurtkurtaran) Savaşı olarak bilinir.",
+  },
+  {
+    id: 18,
+    soru: "Lozan Barış Konferansı'na TBMM Hükümeti adına \"Baş delege (Dışişleri Bakanı)\" olarak katılan ve konferanstaki kararlı duruşuyla bağımsızlığı tescilleyen devlet adamı aşağıdakilerden hangisidir?",
+    secenekler: ["A) Rauf Orbay", "B) İsmet İnönü", "C) Fethi Okyar", "D) Celal Bayar", "E) Ali Fuat Cebesoy"],
+    cevap: 1,
+    aciklama: "Mudanya'daki diplomatik başarısı ve Mudanya mütarekesini imzalaması nedeniyle TBMM, Dışişleri Bakanlığına getirdiği İsmet İnönü'yü Lozan'a baş delege olarak göndermiştir.",
+  },
+  {
+    id: 19,
+    soru: "Lozan Görüşmeleri sırasında, Türkiye Cumhuriyeti'nin tam bağımsızlık ilkesinden taviz vermemek adına konferansta kesinlikle kaldırılmasını talep ettiği ve nitekim tamamen kaldırılan ekonomik sömürü aracı kurum aşağıdakilerden hangisidir?",
+    secenekler: ["A) Düyun-ı Umumiye", "B) Kapitülasyonlar", "C) Reji İdaresi", "D) İzmir İktisat Kongresi Kararları", "E) Kabotaj Kanunu hükümleri"],
+    cevap: 1,
+    aciklama: "Türkiye'nin bağımsızlığını zedeleyen, adli, mali ve idari prangalar vuran kapitülasyonlar, Lozan'da Türk heyetinin taviz vermediği en sert tartışma konusu olmuş ve kesin olarak tamamen kaldırılmıştır.",
+  },
+  {
+    id: 20,
+    soru: "Lozan Barış Konferansı'nda çözüme kavuşturulamayan, daha sonraki yıllarda ikili görüşmelere bırakılan ve \"Musul Sorunu\" olarak da bilinen tek konu aşağıdakilerden hangisidir?",
+    secenekler: ["A) Hatay Meselesi", "B) Boğazlar Meselesi", "C) Irak Sınırı", "D) Suriye Sınırı", "E) Ege Adaları Sorunu"],
+    cevap: 2,
+    aciklama: "Lozan'da çözülemeyen tek sınır konusu Irak Sınırı (Musul Sorunu) olmuştur. İngiltere ile yaşanan bu uyuşmazlığın çözümü, antlaşmadan sonraki 9 ay içinde yapılacak ikili görüşmelere bırakılmıştır.",
+  },
+];

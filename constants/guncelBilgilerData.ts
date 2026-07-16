@@ -183,4 +183,64 @@ export const guncelBilgilerData: GuncelBilgi[] = [
   { id: "gb148", kategori: "Spor", on_yuz: "2026 FIFA Dünya Kupası'nın savunma şampiyonu kimdir?", arka_yuz: "2022 Katar Dünya Kupası'nı kazanarak üçüncü şampiyonluğunu elde eden Arjantin.", zorluk: "kolay", aktif: true },
   { id: "gb149", kategori: "Spor", on_yuz: "Dünya Kupasını en çok kazanan ülke hangisidir?", arka_yuz: "5 şampiyonlukla Brezilya; ardından 4'er şampiyonlukla Almanya ve İtalya gelmektedir.", zorluk: "kolay", aktif: true },
   { id: "gb150", kategori: "Spor", on_yuz: "2026 Dünya Kupası grup kurasının yapıldığı şehir", arka_yuz: "Grup kuraları, 5 Aralık 2025'te ABD'nin başkenti Washington'da çekildi.", zorluk: "zor", aktif: true },
+
+  // ── EKLENTİ 6: 2026 ULUSLARARASI ETKİNLİK TAKVİMİ ─────────
+  { id: "gb151", kategori: "Dünya Gündemi", on_yuz: "2026 G7 Zirvesi nerede yapıldı?", arka_yuz: "Fransa'nın Evian-les-Bains kentinde 15-17 Haziran 2026 tarihlerinde düzenlendi; 52. G7 zirvesidir. Ev sahibi Fransa Cumhurbaşkanı Emmanuel Macron'du.", zorluk: "orta", aktif: true },
+  { id: "gb152", kategori: "Türkiye Gündemi", on_yuz: "TEKNOFEST 2026 nerede düzenlenecek?", arka_yuz: "30 Eylül - 4 Ekim 2026 tarihlerinde Şanlıurfa GAP Havalimanı'nda düzenlenecek. Bir önceki TEKNOFEST İstanbul'da yapılmıştı.", zorluk: "kolay", aktif: true },
+  { id: "gb153", kategori: "Spor", on_yuz: "2026 UEFA Avrupa Ligi Finali nerede oynandı?", arka_yuz: "20 Mayıs 2026'da İstanbul'daki Beşiktaş Park stadyumunda oynandı.", zorluk: "orta", aktif: true },
+  { id: "gb154", kategori: "Spor", on_yuz: "2026 UEFA Şampiyonlar Ligi Finali nerede oynanacak?", arka_yuz: "Macaristan'ın başkenti Budapeşte'de oynanacak.", zorluk: "orta", aktif: true },
+  { id: "gb155", kategori: "Edebiyat/Sanat", on_yuz: "Eurovision Şarkı Yarışması 2026 nerede yapılacak?", arka_yuz: "Avusturya'nın başkenti Viyana'da düzenlenecek.", zorluk: "kolay", aktif: true },
+  { id: "gb156", kategori: "Spor", on_yuz: "2026 Dünya Göçebe Oyunları'na kim ev sahipliği yapacak?", arka_yuz: "Geleneksel göçebe sporlarının yaşatıldığı bu organizasyona Kırgızistan ev sahipliği yapacak.", zorluk: "orta", aktif: true },
+  { id: "gb157", kategori: "Ekonomi", on_yuz: "2026 Dünya Ekonomik Forumu nerede toplanacak?", arka_yuz: "Her yıl olduğu gibi İsviçre'nin Davos kentinde gerçekleştirilecek.", zorluk: "kolay", aktif: true },
+  { id: "gb158", kategori: "Spor", on_yuz: "2026 Asya Oyunları nerede yapılacak?", arka_yuz: "Japonya'nın Aichi-Nagoya bölgesinde gerçekleştirilecek.", zorluk: "orta", aktif: true },
+
+  // ── EKLENTİ 7: MEB MÜFREDAT TERİM DEĞİŞİKLİKLERİ (2026) ───
+  { id: "gb159", kategori: "Türkiye Gündemi", on_yuz: "Yeni müfredatta \"Kurtuluş Savaşı\" yerine hangi kavram kullanılıyor?", arka_yuz: "\"Milli Mücadele\" kavramı kullanılıyor. MEB Bakanı Yusuf Tekin, Cumhuriyet öncesinde de Osmanlı Devleti'nin var olduğunu gerekçe göstererek bu değişikliği açıkladı.", zorluk: "orta", aktif: true },
+  { id: "gb160", kategori: "Türkiye Gündemi", on_yuz: "Yeni müfredatta \"Bizans\" terimi neyle değiştirildi?", arka_yuz: "\"Doğu Roma\" ifadesiyle değiştirildi.", zorluk: "kolay", aktif: true },
+  { id: "gb161", kategori: "Türkiye Gündemi", on_yuz: "Yeni müfredatta \"ormanlarımız\" ifadesi neyle değiştirildi?", arka_yuz: "\"Yeşil Vatan\" ifadesiyle değiştirildi.", zorluk: "orta", aktif: true },
+  { id: "gb162", kategori: "Türkiye Gündemi", on_yuz: "Yeni müfredatta Türkiye'nin deniz yetki alanları nasıl adlandırılıyor?", arka_yuz: "\"Mavi Vatan\" olarak adlandırılıyor.", zorluk: "kolay", aktif: true },
+  { id: "gb163", kategori: "Türkiye Gündemi", on_yuz: "Yeni müfredatta \"Ermeni Meselesi\" başlığı neyle değiştirildi?", arka_yuz: "\"Asılsız Ermeni İddiaları\" şeklinde değiştirildi.", zorluk: "orta", aktif: true },
+  { id: "gb164", kategori: "Türkiye Gündemi", on_yuz: "Yeni müfredatta \"Haçlı Seferleri\" ifadesi neyle değiştirildi?", arka_yuz: "\"Haçlı Saldırıları\" ifadesiyle değiştirildi.", zorluk: "orta", aktif: true },
+  { id: "gb165", kategori: "Türkiye Gündemi", on_yuz: "Yeni müfredatta \"Orta Asya\" terimi yerine ne kullanılıyor?", arka_yuz: "\"Türkistan\" ifadesi kullanılıyor.", zorluk: "orta", aktif: true },
+  { id: "gb166", kategori: "Türkiye Gündemi", on_yuz: "Yeni müfredatta \"Coğrafi Keşifler\" dönemi nasıl adlandırılıyor?", arka_yuz: "\"Sömürgecilik\" (sömürgeciliğin başlangıcı) olarak adlandırılıyor.", zorluk: "zor", aktif: true },
+  { id: "gb167", kategori: "Türkiye Gündemi", on_yuz: "Müfredat içerik yükü ne oranda azaltıldı?", arka_yuz: "Bakan Yusuf Tekin'e göre müfredat içeriği yaklaşık %35 oranında sadeleştirildi.", zorluk: "orta", aktif: true },
+
+  // ── EKLENTİ 8: ULUSLARARASI ÖRGÜT MERKEZLERİ (EK) ─────────
+  { id: "gb168", kategori: "Dünya Gündemi", on_yuz: "WTO ve ILO'nun ortak merkezi neresidir?", arka_yuz: "İsviçre'nin Cenevre kentidir (WHO ile aynı şehir).", zorluk: "orta", aktif: true },
+  { id: "gb169", kategori: "Dünya Gündemi", on_yuz: "OECD'nin merkezi neresidir?", arka_yuz: "Fransa'nın Paris kentidir (UNESCO ile aynı şehir).", zorluk: "orta", aktif: true },
+  { id: "gb170", kategori: "Dünya Gündemi", on_yuz: "FAO'nun (Gıda ve Tarım Örgütü) merkezi neresidir?", arka_yuz: "İtalya'nın Roma kentidir.", zorluk: "orta", aktif: true },
+  { id: "gb171", kategori: "Türkiye Gündemi", on_yuz: "Türk Devletleri Teşkilatı, D-8 ve KEİ'nin ortak merkezi neresidir?", arka_yuz: "Üçünün de genel merkezi İstanbul'dur.", zorluk: "orta", aktif: true },
+  { id: "gb172", kategori: "Dünya Gündemi", on_yuz: "Şanghay İşbirliği Örgütü'nün merkezi neresidir?", arka_yuz: "Çin'in başkenti Pekin'dir.", zorluk: "orta", aktif: true },
+  { id: "gb173", kategori: "Dünya Gündemi", on_yuz: "Ekonomik İşbirliği Teşkilatı'nın (EİT) merkezi neresidir?", arka_yuz: "İran'ın başkenti Tahran'dır.", zorluk: "zor", aktif: true },
+  { id: "gb174", kategori: "Dünya Gündemi", on_yuz: "Arap Birliği'nin merkezi neresidir?", arka_yuz: "Mısır'ın başkenti Kahire'dir.", zorluk: "kolay", aktif: true },
+  { id: "gb175", kategori: "Dünya Gündemi", on_yuz: "Afrika Birliği'nin merkezi neresidir?", arka_yuz: "Etiyopya'nın başkenti Addis Ababa'dır.", zorluk: "orta", aktif: true },
+
+  // ── EKLENTİ 9: TARİHE YÖN VEREN MUCİTLER VE İLKLER ────────
+  { id: "gb176", kategori: "Bilim", on_yuz: "Telgrafı kim icat etmiştir?", arka_yuz: "İngiliz mucitler William Cooke ve Charles Wheatstone.", zorluk: "orta", aktif: true },
+  { id: "gb177", kategori: "Bilim", on_yuz: "Mors alfabesini kim geliştirmiştir?", arka_yuz: "Samuel Morse.", zorluk: "kolay", aktif: true },
+  { id: "gb178", kategori: "Bilim", on_yuz: "Telefonu kim icat etmiştir?", arka_yuz: "Graham Bell.", zorluk: "kolay", aktif: true },
+  { id: "gb179", kategori: "Bilim", on_yuz: "Cep telefonunu kim icat etmiştir?", arka_yuz: "Martin Cooper, Motorola şirketinde çalışırken icat etmiştir.", zorluk: "orta", aktif: true },
+  { id: "gb180", kategori: "Bilim", on_yuz: "Radyoyu kim icat etmiştir?", arka_yuz: "Guglielmo Marconi.", zorluk: "kolay", aktif: true },
+  { id: "gb181", kategori: "Bilim", on_yuz: "İzafiyet Teorisi'ni kim geliştirmiştir?", arka_yuz: "Albert Einstein.", zorluk: "kolay", aktif: true },
+  { id: "gb182", kategori: "Bilim", on_yuz: "İlk antibiyotik olan penisilini kim keşfetmiştir?", arka_yuz: "Alexander Fleming.", zorluk: "kolay", aktif: true },
+  { id: "gb183", kategori: "Bilim", on_yuz: "Çocuk felci (polio) aşısını kim geliştirmiştir?", arka_yuz: "Jonas Salk.", zorluk: "orta", aktif: true },
+  { id: "gb184", kategori: "Bilim", on_yuz: "Röntgen ışınlarını (X-Ray) kim keşfetmiştir?", arka_yuz: "Wilhelm Conrad Röntgen.", zorluk: "orta", aktif: true },
+  { id: "gb185", kategori: "Bilim", on_yuz: "Richter Ölçeği'ni kim geliştirmiştir?", arka_yuz: "Charles Francis Richter.", zorluk: "orta", aktif: true },
+  { id: "gb186", kategori: "Türkiye İlkleri", on_yuz: "İlk dünya haritasını kim çizmiştir?", arka_yuz: "Osmanlı denizci ve haritacı Piri Reis.", zorluk: "kolay", aktif: true },
+  { id: "gb187", kategori: "Bilim", on_yuz: "İlk elektronik genel amaçlı bilgisayar hangisidir?", arka_yuz: "ENIAC'tır.", zorluk: "orta", aktif: true },
+  { id: "gb188", kategori: "Türkiye İlkleri", on_yuz: "Osmanlı'nın ilk denizaltısı hangisidir?", arka_yuz: "İbrahim Efendi tarafından tasarlanan Tahtelbahir'dir.", zorluk: "zor", aktif: true },
+  { id: "gb189", kategori: "Bilim", on_yuz: "Televizyonu kim icat etmiştir?", arka_yuz: "John Logie Baird.", zorluk: "kolay", aktif: true },
+  { id: "gb190", kategori: "Bilim", on_yuz: "Matbaayı kim icat etmiştir?", arka_yuz: "Johann Gutenberg.", zorluk: "kolay", aktif: true },
+
+  // ── EKLENTİ 10: UNESCO YARATICI ŞEHİRLER AĞI (TR, 2026) ───
+  { id: "gb191", kategori: "Türkiye İlkleri", on_yuz: "UNESCO Yaratıcı Şehirler Ağı'na giren ilk Türk şehri hangisidir?", arka_yuz: "Gaziantep, 2015 yılında Gastronomi dalında ağa kabul edilen ilk Türk şehridir. Ardından Hatay (Gastronomi, 2017), İstanbul (Tasarım, 2017) ve Kütahya (Zanaat ve Halk Sanatları, 2017) katılmıştır.", zorluk: "orta", aktif: true },
+  { id: "gb192", kategori: "Türkiye İlkleri", on_yuz: "UNESCO Yaratıcı Şehirler Ağı'na en son kabul edilen Türk şehri hangisidir?", arka_yuz: "Kahramanmaraş, 2025 yılında Edebiyat dalında ağa kabul edildi.", zorluk: "zor", aktif: true },
+
+  // ── EKLENTİ 11: 2026 OSCAR ÖDÜLLERİ (98. AKADEMİ ÖDÜLLERİ) ─
+  { id: "gb193", kategori: "Edebiyat/Sanat", on_yuz: "2026 Oscar Ödülleri'nde En İyi Film hangisi oldu?", arka_yuz: "Paul Thomas Anderson'ın yönettiği \"One Battle After Another\" (Savaş Üstüne Savaş), toplam 6 dalda ödül kazanarak En İyi Film oldu.", zorluk: "orta", aktif: true },
+  { id: "gb194", kategori: "Edebiyat/Sanat", on_yuz: "2026 Oscar En İyi Yönetmen ödülünü kim kazandı?", arka_yuz: "Paul Thomas Anderson, \"One Battle After Another\" filmiyle kazandı.", zorluk: "orta", aktif: true },
+  { id: "gb195", kategori: "Edebiyat/Sanat", on_yuz: "2026 Oscar En İyi Erkek/Kadın Oyuncu ödüllerini kimler kazandı?", arka_yuz: "Michael B. Jordan (\"Sinners\") En İyi Erkek Oyuncu, Jessie Buckley (\"Hamnet\") En İyi Kadın Oyuncu ödülünü kazandı.", zorluk: "orta", aktif: true },
+
+  // ── EKLENTİ 12: UZAY GÜNDEMİ ───────────────────────────────
+  { id: "gb196", kategori: "Otomotiv/Teknoloji", on_yuz: "NASA'nın Artemis II göreviyle Ay'a gidecek ilk kadın astronot kimdir?", arka_yuz: "Christina Koch.", zorluk: "orta", aktif: true },
 ];
