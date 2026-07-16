@@ -1,257 +1,210 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Ionicons } from '@expo/vector-icons';
+import { useFocusEffect } from '@react-navigation/native';
 import { router } from 'expo-router';
-import { useEffect, useState } from 'react';
-import { Platform, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { guncelBilgilerData, GuncelBilgi } from '../constants/guncelBilgilerData';
+import { useCallback, useMemo, useState } from 'react';
+import { FlatList, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { GuncelBilgi, guncelBilgilerData } from '../constants/guncelBilgilerData';
+import { FAVORI_KEY, getIdSet, OKUNAN_KEY } from '../utils/guncelBilgilerStorage';
 
-const STORAGE_KEY = 'ogrenilen_guncel_kartlar';
+const RENK = '#C0392B';
+const BG = '#0F1923';
+const KART_BG = '#1A2635';
 
-const storage = {
-  getItem: async (key: string) => {
-    if (Platform.OS === 'web') return localStorage.getItem(key);
-    return AsyncStorage.getItem(key);
-  },
-  setItem: async (key: string, value: string) => {
-    if (Platform.OS === 'web') { localStorage.setItem(key, value); return; }
-    return AsyncStorage.setItem(key, value);
-  },
-};
-
-const KATEGORILER = ['Tümü', ...Array.from(new Set(guncelBilgilerData.map(c => c.kategori))), '⭐ Öğrendiklerim'];
+type Filtre = 'tumu' | 'okunmadi' | 'okundu';
 
 export default function GuncelBilgilerScreen() {
-  const [index, setIndex] = useState(0);
-  const [kategori, setKategori] = useState('Tümü');
-  const [ogrenilenIds, setOgrenilenIds] = useState<Set<string>>(new Set());
-  const [yuklendi, setYuklendi] = useState(false);
+  const [okunanIds, setOkunanIds] = useState<Set<string>>(new Set());
+  const [favoriIds, setFavoriIds] = useState<Set<string>>(new Set());
+  const [filtre, setFiltre] = useState<Filtre>('tumu');
+  const [aramaAcik, setAramaAcik] = useState(false);
+  const [arama, setArama] = useState('');
+  const [sadeceFavoriler, setSadeceFavoriler] = useState(false);
 
-  useEffect(() => {
-    const load = async () => {
-      try {
-        const saved = await storage.getItem(STORAGE_KEY);
-        if (saved) setOgrenilenIds(new Set(JSON.parse(saved)));
-      } catch (e) {}
-      setYuklendi(true);
-    };
-    load();
-  }, []);
+  useFocusEffect(
+    useCallback(() => {
+      (async () => {
+        setOkunanIds(await getIdSet(OKUNAN_KEY));
+        setFavoriIds(await getIdSet(FAVORI_KEY));
+      })();
+    }, [])
+  );
 
-  const filteredCards: GuncelBilgi[] = (() => {
-    if (kategori === '⭐ Öğrendiklerim') return guncelBilgilerData.filter(c => c.aktif && ogrenilenIds.has(c.id));
-    if (kategori === 'Tümü') return guncelBilgilerData.filter(c => c.aktif);
-    return guncelBilgilerData.filter(c => c.aktif && c.kategori === kategori);
-  })();
+  const tumVeri = useMemo(() => guncelBilgilerData.filter((b) => b.aktif), []);
+  const toplam = guncelBilgilerData.length;
+  const okunanSayisi = useMemo(
+    () => guncelBilgilerData.filter((b) => okunanIds.has(b.id)).length,
+    [okunanIds]
+  );
+  const yuzde = toplam > 0 ? Math.round((okunanSayisi / toplam) * 100) : 0;
 
-  const safeIndex = Math.min(index, Math.max(filteredCards.length - 1, 0));
-  const card = filteredCards[safeIndex] ?? null;
+  const filtreliVeri = useMemo(() => {
+    let liste = tumVeri;
+    if (filtre === 'okunmadi') liste = liste.filter((b) => !okunanIds.has(b.id));
+    else if (filtre === 'okundu') liste = liste.filter((b) => okunanIds.has(b.id));
+    if (sadeceFavoriler) liste = liste.filter((b) => favoriIds.has(b.id));
+    const q = arama.trim().toLocaleLowerCase('tr');
+    if (q) {
+      liste = liste.filter(
+        (b) =>
+          b.on_yuz.toLocaleLowerCase('tr').includes(q) ||
+          b.arka_yuz.toLocaleLowerCase('tr').includes(q)
+      );
+    }
+    return liste;
+  }, [tumVeri, filtre, okunanIds, favoriIds, sadeceFavoriler, arama]);
 
-  const handleKategori = (k: string) => {
-    setKategori(k);
-    setIndex(0);
+  const kartaGit = (id: string) => {
+    router.push({ pathname: '/guncel-bilgi-detay', params: { id } });
   };
 
-  const goPrev = () => setIndex(i => Math.max(0, i - 1));
-  const goNext = () => setIndex(i => Math.min(filteredCards.length - 1, i + 1));
-
-  const markOgrenildi = async () => {
-    if (!card) return;
-    const newSet = new Set(ogrenilenIds);
-    newSet.add(card.id);
-    setOgrenilenIds(newSet);
-    try { await storage.setItem(STORAGE_KEY, JSON.stringify([...newSet])); } catch (e) {}
-    if (safeIndex < filteredCards.length - 1) setIndex(safeIndex + 1);
-  };
-
-  const unmarkOgrenildi = async () => {
-    if (!card) return;
-    const newSet = new Set(ogrenilenIds);
-    newSet.delete(card.id);
-    setOgrenilenIds(newSet);
-    try { await storage.setItem(STORAGE_KEY, JSON.stringify([...newSet])); } catch (e) {}
-  };
-
-  const isOgrenildi = card ? ogrenilenIds.has(card.id) : false;
-
-  if (!yuklendi) return (
-    <View style={s.centered}>
-      <Text style={{ color: '#fff' }}>Yükleniyor...</Text>
-    </View>
+  const renderItem = ({ item }: { item: GuncelBilgi }) => (
+    <TouchableOpacity style={styles.kart} activeOpacity={0.8} onPress={() => kartaGit(item.id)}>
+      <Text style={styles.kartMetin} numberOfLines={2}>
+        {item.on_yuz}
+      </Text>
+      <Text style={styles.simsek}>⚡</Text>
+    </TouchableOpacity>
   );
 
   return (
-    <View style={s.container}>
-      {/* Header */}
-      <View style={s.header}>
-        <TouchableOpacity onPress={() => router.back()}>
-          <Text style={s.geri}>← Geri</Text>
+    <View style={styles.container}>
+      <View style={styles.header}>
+        <TouchableOpacity onPress={() => router.back()} style={styles.headerBtn}>
+          <Ionicons name="arrow-back" size={22} color="#fff" />
         </TouchableOpacity>
-        <Text style={s.title}>📰 Güncel Bilgiler</Text>
-        <Text style={s.progress}>
-          {filteredCards.length > 0 ? `${safeIndex + 1} / ${filteredCards.length}` : '0 / 0'}
-        </Text>
+        <Text style={styles.headerBaslik}>KPSS Güncel Bilgiler</Text>
+        <View style={styles.headerSag}>
+          <TouchableOpacity onPress={() => setAramaAcik((v) => !v)} style={styles.headerBtn}>
+            <Ionicons name="search-outline" size={22} color={aramaAcik ? RENK : '#fff'} />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => setSadeceFavoriler((v) => !v)} style={styles.headerBtn}>
+            <Ionicons
+              name={sadeceFavoriler ? 'heart' : 'heart-outline'}
+              size={22}
+              color={sadeceFavoriler ? RENK : '#fff'}
+            />
+          </TouchableOpacity>
+        </View>
       </View>
 
-      {/* Öğrenilen banner */}
-      <View style={s.bannerRow}>
-        <View style={s.banner}>
-          <Text style={s.bannerTxt}>⭐ {ogrenilenIds.size} / {guncelBilgilerData.length} öğrenildi</Text>
-        </View>
-        {/* Progress bar */}
-        <View style={s.progBarBg}>
-          <View style={[s.progBarFill, { width: `${guncelBilgilerData.length > 0 ? (ogrenilenIds.size / guncelBilgilerData.length) * 100 : 0}%` as any }]} />
-        </View>
-      </View>
-
-      {/* Kategori filtreleri */}
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} style={s.tagScroll} contentContainerStyle={s.tagRow}>
-        {KATEGORILER.map(k => (
-          <TouchableOpacity key={k} style={[s.tag, kategori === k && s.tagActive]} onPress={() => handleKategori(k)}>
-            <Text style={[s.tagTxt, kategori === k && s.tagTxtActive]}>{k}</Text>
-          </TouchableOpacity>
-        ))}
-      </ScrollView>
-
-      {/* Kart alanı */}
-      {filteredCards.length === 0 ? (
-        <View style={s.centered}>
-          <Text style={{ fontSize: 48, marginBottom: 16 }}>
-            {kategori === '⭐ Öğrendiklerim' ? '📚' : '😕'}
-          </Text>
-          <Text style={s.emptyTxt}>
-            {kategori === '⭐ Öğrendiklerim'
-              ? 'Henüz öğrendiğin kart yok.\nKartları çalışmaya başla!'
-              : 'Bu kategoride kart bulunamadı.'}
-          </Text>
-        </View>
-      ) : (
-        <View style={s.cardArea}>
-          <View style={[s.card, isOgrenildi && s.cardOgrenildi]}>
-            {/* Üst kısım: kategori + öğrenildi rozeti */}
-            <View style={s.cardTop}>
-              <View style={s.badge}>
-                <Text style={s.badgeTxt}>{card!.kategori}</Text>
-              </View>
-              <View style={[s.zorlukBadge, { backgroundColor: card!.zorluk === 'kolay' ? '#1E5E3B' : card!.zorluk === 'orta' ? '#5E4B1E' : '#5E1E1E' }]}>
-                <Text style={s.zorlukTxt}>{card!.zorluk}</Text>
-              </View>
-              {isOgrenildi && (
-                <View style={s.ogrenildiChip}>
-                  <Text style={s.ogrenildiChipTxt}>✓ Öğrenildi</Text>
-                </View>
-              )}
-            </View>
-
-            {/* Başlık (on_yuz) */}
-            <View style={s.onYuzBox}>
-              <Text style={s.onYuz}>{card!.on_yuz}</Text>
-            </View>
-
-            {/* Ayraç */}
-            <View style={s.divider} />
-
-            {/* Açıklama (arka_yuz) */}
-            <ScrollView style={s.arkaYuzScroll} showsVerticalScrollIndicator={false}>
-              <Text style={s.arkaYuz}>{card!.arka_yuz}</Text>
-            </ScrollView>
-          </View>
-        </View>
-      )}
-
-      {/* Navigasyon butonları */}
-      {filteredCards.length > 0 && (
-        <View style={s.navRow}>
-          <TouchableOpacity
-            style={[s.navBtn, safeIndex === 0 && s.navBtnDisabled]}
-            onPress={goPrev}
-            disabled={safeIndex === 0}
-          >
-            <Text style={[s.navBtnTxt, safeIndex === 0 && s.navBtnTxtDisabled]}>‹</Text>
-          </TouchableOpacity>
-
-          {isOgrenildi ? (
-            <TouchableOpacity style={s.unmarkBtn} onPress={unmarkOgrenildi}>
-              <Text style={s.unmarkBtnTxt}>✓ Öğrenildi</Text>
-            </TouchableOpacity>
-          ) : (
-            <TouchableOpacity style={s.ogrendinBtn} onPress={markOgrenildi}>
-              <Text style={s.ogrendinBtnTxt}>✓ Öğrendim</Text>
+      {aramaAcik && (
+        <View style={styles.aramaKutu}>
+          <Ionicons name="search-outline" size={16} color="#8899AA" />
+          <TextInput
+            style={styles.aramaInput}
+            placeholder="Ara..."
+            placeholderTextColor="#8899AA"
+            value={arama}
+            onChangeText={setArama}
+            autoFocus
+          />
+          {arama.length > 0 && (
+            <TouchableOpacity onPress={() => setArama('')}>
+              <Ionicons name="close-circle" size={16} color="#8899AA" />
             </TouchableOpacity>
           )}
-
-          <TouchableOpacity
-            style={[s.navBtn, safeIndex === filteredCards.length - 1 && s.navBtnDisabled]}
-            onPress={goNext}
-            disabled={safeIndex === filteredCards.length - 1}
-          >
-            <Text style={[s.navBtnTxt, safeIndex === filteredCards.length - 1 && s.navBtnTxtDisabled]}>›</Text>
-          </TouchableOpacity>
         </View>
       )}
+
+      <View style={styles.ilerlemeKart}>
+        <View style={styles.ilerlemeUst}>
+          <Text style={styles.ilerlemeEtiket}>Güncel Bilgiler</Text>
+          <Text style={styles.ilerlemeYuzde}>
+            %{yuzde} · {okunanSayisi}/{toplam} Okunan
+          </Text>
+        </View>
+        <View style={styles.progressTrack}>
+          <View style={[styles.progressDolu, { width: `${yuzde}%` }]} />
+        </View>
+      </View>
+
+      <View style={styles.sekmeler}>
+        {(
+          [
+            { key: 'tumu', etiket: 'Tümü' },
+            { key: 'okunmadi', etiket: 'Okunmadı' },
+            { key: 'okundu', etiket: 'Okundu' },
+          ] as { key: Filtre; etiket: string }[]
+        ).map((s) => (
+          <TouchableOpacity
+            key={s.key}
+            style={[styles.sekme, filtre === s.key && styles.sekmeAktif]}
+            onPress={() => setFiltre(s.key)}
+          >
+            <Text style={[styles.sekmeMetin, filtre === s.key && styles.sekmeMetinAktif]}>
+              {s.etiket}
+            </Text>
+          </TouchableOpacity>
+        ))}
+      </View>
+
+      <FlatList
+        data={filtreliVeri}
+        keyExtractor={(item) => item.id}
+        renderItem={renderItem}
+        contentContainerStyle={styles.liste}
+        ListEmptyComponent={
+          <Text style={styles.bosMetin}>Bu filtreye uyan bir madde bulunamadı.</Text>
+        }
+      />
     </View>
   );
 }
 
-const s = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#0F1923' },
-  centered: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 20 },
-  emptyTxt: { color: '#8899AA', fontSize: 15, textAlign: 'center', lineHeight: 24 },
-
-  header: { paddingTop: 60, paddingHorizontal: 20, paddingBottom: 10, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
-  geri: { color: '#E74C3C', fontSize: 16, fontWeight: 'bold', minWidth: 60 },
-  title: { fontSize: 18, fontWeight: 'bold', color: '#fff' },
-  progress: { color: '#C0392B', fontSize: 15, fontWeight: 'bold', minWidth: 60, textAlign: 'right' },
-
-  bannerRow: { paddingHorizontal: 16, marginBottom: 6, gap: 6 },
-  banner: { backgroundColor: '#1A2635', borderRadius: 10, paddingVertical: 5, paddingHorizontal: 14, alignSelf: 'flex-start' },
-  bannerTxt: { color: '#FFD700', fontSize: 12, fontWeight: 'bold' },
-  progBarBg: { height: 4, backgroundColor: '#1A2635', borderRadius: 4, marginHorizontal: 0 },
-  progBarFill: { height: 4, backgroundColor: '#27AE60', borderRadius: 4 },
-
-  tagScroll: { maxHeight: 48, flexGrow: 0 },
-  tagRow: { flexDirection: 'row', paddingHorizontal: 16, gap: 8, alignItems: 'center', paddingVertical: 6 },
-  tag: { paddingHorizontal: 12, paddingVertical: 6, borderRadius: 20, backgroundColor: '#1A2635' },
-  tagActive: { backgroundColor: '#C0392B' },
-  tagTxt: { color: '#8899AA', fontSize: 12 },
-  tagTxtActive: { color: '#fff', fontWeight: 'bold' },
-
-  cardArea: { flex: 1, paddingHorizontal: 16, paddingTop: 8, paddingBottom: 4 },
-  card: {
-    flex: 1,
-    backgroundColor: '#1A2635',
-    borderRadius: 24,
-    padding: 22,
-    borderWidth: 2,
-    borderColor: '#2A3645',
+const styles = StyleSheet.create({
+  container: { flex: 1, backgroundColor: BG },
+  header: {
+    paddingTop: 56,
+    paddingHorizontal: 12,
+    paddingBottom: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
   },
-  cardOgrenildi: {
-    borderColor: '#27AE60',
-    backgroundColor: '#152820',
+  headerBtn: { padding: 6 },
+  headerBaslik: { flex: 1, textAlign: 'center', fontSize: 18, fontWeight: 'bold', color: '#fff' },
+  headerSag: { flexDirection: 'row' },
+  aramaKutu: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: KART_BG,
+    borderRadius: 10,
+    marginHorizontal: 16,
+    marginBottom: 10,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    gap: 8,
   },
-
-  cardTop: { flexDirection: 'row', gap: 8, alignItems: 'center', marginBottom: 14, flexWrap: 'wrap' },
-  badge: { backgroundColor: '#C0392B', borderRadius: 10, paddingHorizontal: 12, paddingVertical: 3 },
-  badgeTxt: { color: '#fff', fontSize: 11, fontWeight: 'bold' },
-  zorlukBadge: { borderRadius: 10, paddingHorizontal: 10, paddingVertical: 3 },
-  zorlukTxt: { color: '#fff', fontSize: 11 },
-  ogrenildiChip: { backgroundColor: '#27AE60', borderRadius: 10, paddingHorizontal: 10, paddingVertical: 3 },
-  ogrenildiChipTxt: { color: '#fff', fontSize: 11, fontWeight: 'bold' },
-
-  onYuzBox: { marginBottom: 14 },
-  onYuz: { fontSize: 18, fontWeight: 'bold', color: '#fff', lineHeight: 26 },
-
-  divider: { height: 1, backgroundColor: '#2A3645', marginBottom: 14 },
-
-  arkaYuzScroll: { flex: 1 },
-  arkaYuz: { fontSize: 15, color: '#C8D8E8', lineHeight: 24 },
-
-  navRow: { flexDirection: 'row', alignItems: 'center', gap: 10, paddingHorizontal: 16, paddingBottom: 24, paddingTop: 8 },
-  navBtn: { width: 52, height: 52, borderRadius: 26, backgroundColor: '#1A2635', alignItems: 'center', justifyContent: 'center' },
-  navBtnDisabled: { opacity: 0.3 },
-  navBtnTxt: { color: '#fff', fontSize: 28, fontWeight: 'bold', lineHeight: 32 },
-  navBtnTxtDisabled: { color: '#8899AA' },
-
-  ogrendinBtn: { flex: 1, backgroundColor: '#27AE60', borderRadius: 16, paddingVertical: 14, alignItems: 'center' },
-  ogrendinBtnTxt: { color: '#fff', fontSize: 16, fontWeight: 'bold' },
-  unmarkBtn: { flex: 1, backgroundColor: '#1E5E3B', borderRadius: 16, paddingVertical: 14, alignItems: 'center', borderWidth: 2, borderColor: '#27AE60' },
-  unmarkBtnTxt: { color: '#27AE60', fontSize: 16, fontWeight: 'bold' },
+  aramaInput: { flex: 1, color: '#fff', fontSize: 14 },
+  ilerlemeKart: {
+    backgroundColor: KART_BG,
+    borderRadius: 14,
+    marginHorizontal: 16,
+    padding: 14,
+    marginBottom: 12,
+  },
+  ilerlemeUst: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 },
+  ilerlemeEtiket: { color: '#fff', fontSize: 14, fontWeight: '700' },
+  ilerlemeYuzde: { color: RENK, fontSize: 13, fontWeight: '700' },
+  progressTrack: { height: 8, borderRadius: 4, backgroundColor: '#2A3645', overflow: 'hidden' },
+  progressDolu: { height: 8, borderRadius: 4, backgroundColor: RENK },
+  sekmeler: { flexDirection: 'row', gap: 8, paddingHorizontal: 16, marginBottom: 12 },
+  sekme: { flex: 1, paddingVertical: 8, borderRadius: 20, backgroundColor: KART_BG, alignItems: 'center' },
+  sekmeAktif: { backgroundColor: RENK },
+  sekmeMetin: { color: '#8899AA', fontSize: 13, fontWeight: '600' },
+  sekmeMetinAktif: { color: '#fff' },
+  liste: { paddingHorizontal: 16, paddingBottom: 40 },
+  kart: {
+    backgroundColor: KART_BG,
+    borderRadius: 14,
+    padding: 16,
+    marginBottom: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 10,
+  },
+  kartMetin: { flex: 1, color: '#fff', fontSize: 15, fontWeight: '600', lineHeight: 21 },
+  simsek: { fontSize: 18 },
+  bosMetin: { color: '#8899AA', fontSize: 14, textAlign: 'center', marginTop: 40 },
 });

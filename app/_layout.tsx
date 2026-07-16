@@ -23,6 +23,8 @@ export default function RootLayout() {
         <Stack.Screen name="rozetler" options={{ headerShown: false }} />
         <Stack.Screen name="denemeler" options={{ headerShown: false }} />
         <Stack.Screen name="flashcard" options={{ headerShown: false }} />
+        <Stack.Screen name="guncel-bilgiler" options={{ headerShown: false }} />
+        <Stack.Screen name="guncel-bilgi-detay" options={{ headerShown: false }} />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>
