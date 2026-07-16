@@ -18,7 +18,9 @@ export default function RootLayout() {
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
         <Stack.Screen name="cikmis-sorular" options={{ headerShown: false }} />
-        <Stack.Screen name="deneme-sinavi" options={{ headerShown: false }} />
+        <Stack.Screen name="deneme-sinavlari" options={{ headerShown: false }} />
+        <Stack.Screen name="deneme-sinavi-coz" options={{ headerShown: false }} />
+        <Stack.Screen name="deneme-sinavi-sonuc" options={{ headerShown: false }} />
         <Stack.Screen name="istatistik" options={{ headerShown: false }} />
         <Stack.Screen name="rozetler" options={{ headerShown: false }} />
         <Stack.Screen name="denemeler" options={{ headerShown: false }} />

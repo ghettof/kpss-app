@@ -22,10 +22,10 @@ export default function HomeScreen() {
           <Text style={styles.cardDesc}>Konuya göre sorular</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={[styles.card, { backgroundColor: '#E67E22' }]} onPress={() => router.push('/deneme-sinavi')}>
+        <TouchableOpacity style={[styles.card, { backgroundColor: '#E67E22' }]} onPress={() => router.push('/deneme-sinavlari')}>
           <Text style={styles.cardEmoji}>📝</Text>
-          <Text style={styles.cardTitle}>Deneme Sınavı</Text>
-          <Text style={styles.cardDesc}>120 soruluk deneme</Text>
+          <Text style={styles.cardTitle}>Deneme Sınavları</Text>
+          <Text style={styles.cardDesc}>Numaralı deneme sınavları</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={[styles.card, { backgroundColor: '#C0392B' }]} onPress={() => router.push('/guncel-bilgiler')}>
