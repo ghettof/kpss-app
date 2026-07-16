@@ -1,0 +1,118 @@
+import { DenemeSorusu } from './deneme1';
+
+export const denemeGB3Baslik = "Güncel Bilgiler - Deneme 3";
+
+export const denemeGB3: DenemeSorusu[] = [
+  {
+    id: 1,
+    soru: "Milli Eğitim Bakanlığı müfredat güncellemelerinde \"Bizans\" kavramı yerine aşağıdakilerden hangisi getirilmiştir?",
+    secenekler: ["A) Doğu Roma", "B) Türkistan", "C) Adalar Denizi", "D) Gök Vatan", "E) Haçlı Saldırıları"],
+    cevap: 0,
+    aciklama: "MEB müfredatında \"Bizans\" kavramı \"Doğu Roma\" olarak değiştirilmiştir.",
+  },
+  {
+    id: 2,
+    soru: "2026 yılında düzenlenecek olan \"FIFA Dünya Kupası\" aşağıdaki ülkelerin hangilerinde ortaklaşa düzenlenecektir?",
+    secenekler: ["A) ABD - Kanada - Meksika", "B) İtalya - İspanya - Fransa", "C) Brezilya - Arjantin - Uruguay", "D) İngiltere - İskoçya - Galler", "E) Katar - Suudi Arabistan - BAE"],
+    cevap: 0,
+    aciklama: "2026 FIFA Dünya Kupası ABD, Kanada ve Meksika'nın ortaklığında düzenlenecektir.",
+  },
+  {
+    id: 3,
+    soru: "Gıda ve Tarım Örgütü (FAO) genel merkezi aşağıdaki şehirlerin hangisinde yer almaktadır?",
+    secenekler: ["A) Paris", "B) Brüksel", "C) Roma", "D) Cenevre", "E) Viyana"],
+    cevap: 2,
+    aciklama: "Gıda ve Tarım Örgütü (FAO) genel merkezi İtalya'nın Roma şehrindedir.",
+  },
+  {
+    id: 4,
+    soru: "İlk cep telefonunu icat ederek iletişim teknolojisinde çığır açan mucit aşağıdakilerden hangisidir?",
+    secenekler: ["A) Graham Bell", "B) Martin Cooper", "C) Guglielmo Marconi", "D) John Logie Baird", "E) Thomas Edison"],
+    cevap: 1,
+    aciklama: "Cep telefonunun mucidi Martin Cooper'dır.",
+  },
+  {
+    id: 5,
+    soru: "2025 yılı Oscar Ödülleri'nde \"En İyi Erkek Oyuncu\" ödülünü alan ünlü aktör kimdir?",
+    secenekler: ["A) Michael B. Jordan", "B) Adrien Brody", "C) Cillian Murphy", "D) Brendan Fraser", "E) Will Smith"],
+    cevap: 1,
+    aciklama: "2025 yılı Oscar En İyi Erkek Oyuncu ödülünü Adrien Brody (Anora filmiyle) almıştır.",
+  },
+  {
+    id: 6,
+    soru: "2026 yılında \"Dünya Göçebe Oyunları\" aşağıdaki ülkelerin hangisinde düzenlenecektir?",
+    secenekler: ["A) Türkiye", "B) Kırgızistan", "C) Kazakistan", "D) Moğolistan", "E) Özbekistan"],
+    cevap: 1,
+    aciklama: "2026 Dünya Göçebe Oyunları Kırgızistan'da düzenlenecektir.",
+  },
+  {
+    id: 7,
+    soru: "Arap Birliği örgütünün merkez ofisi aşağıdaki şehirlerin hangisinde bulunmaktadır?",
+    secenekler: ["A) Cidde", "B) Tahran", "C) Kahire", "D) İstanbul", "E) Addis Ababa"],
+    cevap: 2,
+    aciklama: "Arap Birliği genel merkezi Mısır'ın Kahire kentindedir.",
+  },
+  {
+    id: 8,
+    soru: "Milli Eğitim müfredatında \"Ege Denizi\" kavramı yerine aşağıdaki kullanımlardan hangisi benimsenmiştir?",
+    secenekler: ["A) Mavi Vatan", "B) Yeşil Vatan", "C) Gök Vatan", "D) Adalar Denizi", "E) Doğu Roma"],
+    cevap: 3,
+    aciklama: "Müfredat kapsamında \"Ege Denizi\" yerine \"Adalar Denizi\" kavramı kabul edilmiştir.",
+  },
+  {
+    id: 9,
+    soru: "2026 yılında \"Kış Olimpiyatları\" aşağıdaki ülkelerin hangisinde, hangi şehirlerde düzenlenecektir?",
+    secenekler: ["A) İtalya - Milano & Cortina", "B) Fransa - Chamonix", "C) İsviçre - Davos", "D) Avusturya - Innsbruck", "E) Japonya - Sapporo"],
+    cevap: 0,
+    aciklama: "2026 Kış Olimpiyatları İtalya'nın Milano ve Cortina şehirlerinde yapılacaktır.",
+  },
+  {
+    id: 10,
+    soru: "Tarihte \"çocuk felci aşısını\" bularak milyonlarca çocuğun hayatını kurtaran bilim insanı aşağıdakilerden hangisidir?",
+    secenekler: ["A) Alexander Fleming", "B) Jonas Salk", "C) Wilhelm Röntgen", "D) Louis Pasteur", "E) Albert Einstein"],
+    cevap: 1,
+    aciklama: "Çocuk felci aşısının mucidi Jonas Salk'tır.",
+  },
+  {
+    id: 11,
+    soru: "Avrupa Güvenlik ve İşbirliği Teşkilatı (AGİT) genel merkezi aşağıdaki şehirlerin hangisindedir?",
+    secenekler: ["A) Brüksel", "B) Viyana", "C) Cenevre", "D) Paris", "E) Roma"],
+    cevap: 1,
+    aciklama: "AGİT genel merkezi Avusturya'nın Viyana kentindedir.",
+  },
+  {
+    id: 12,
+    soru: "Türkiye'nin ilk astronotu Alper Gezeravcı, uzay seyahatini aşağıdaki ülkelerden hangisinin roketiyle (SpaceX firmasıyla) gerçekleştirmiştir?",
+    secenekler: ["A) Rusya", "B) ABD", "C) Çin", "D) Fransa", "E) Japonya"],
+    cevap: 1,
+    aciklama: "Alper Gezeravcı, ABD merkezli SpaceX firmasının roketiyle uzaya gitmiştir.",
+  },
+  {
+    id: 13,
+    soru: "2024 yılı Oscar Ödülleri'nde \"En İyi Film\" ve \"En İyi Yönetmen\" (Christopher Nolan) ödüllerini toplayan sinema filmi hangisidir?",
+    secenekler: ["A) Oppenheimer", "B) Anora", "C) Nomadland", "D) CODA", "E) Parasite"],
+    cevap: 0,
+    aciklama: "2024 yılı Oscar En İyi Film ödülünü \"Oppenheimer\" kazanmıştır.",
+  },
+  {
+    id: 14,
+    soru: "UNESCO Yaratıcı Şehirler Ağı'na \"Tasarım\" alanında 2017 yılında Türkiye'den katılan tek şehir aşağıdakilerden hangisidir?",
+    secenekler: ["A) Ankara", "B) İzmir", "C) İstanbul", "D) Bursa", "E) Eskişehir"],
+    cevap: 2,
+    aciklama: "Tasarım alanında 2017 yılında ağa katılan tek şehrimiz İstanbul'dur.",
+  },
+  {
+    id: 15,
+    soru: "Milli Eğitim müfredatında \"Haçlı Seferleri\" kavramı yerine aşağıdakilerden hangisi getirilmiştir?",
+    secenekler: ["A) Sömürgeciliğin Başlangıcı", "B) Haçlı Saldırıları", "C) Doğu Roma İstilaları", "D) Asılsız Ermeni İddiaları", "E) Türkistan Akınları"],
+    cevap: 1,
+    aciklama: "Yeni müfredatta \"Haçlı Seferleri\" yerine \"Haçlı Saldırıları\" kavramı getirilmiştir.",
+  },
+  {
+    id: 16,
+    soru: "Televizyonun icadını gerçekleştirerek görüntüyü elektromanyetik olarak iletmeyi başaran mucit kimdir?",
+    secenekler: ["A) John Logie Baird", "B) Guglielmo Marconi", "C) Martin Cooper", "D) Graham Bell", "E) Samuel Morse"],
+    cevap: 0,
+    aciklama: "Televizyonun mucidi John Logie Baird'dir.",
+  },
+];
