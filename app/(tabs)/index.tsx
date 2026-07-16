@@ -40,12 +40,6 @@ export default function HomeScreen() {
           <Text style={styles.cardDesc}>Swipe ile hızlı tekrar</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={[styles.card, { backgroundColor: '#8E44AD' }]} onPress={() => router.push('/ai-soru')}>
-          <Text style={styles.cardEmoji}>🤖</Text>
-          <Text style={styles.cardTitle}>AI Soru Üret</Text>
-          <Text style={styles.cardDesc}>Yapay zeka soruları</Text>
-        </TouchableOpacity>
-
         <TouchableOpacity style={[styles.card, { backgroundColor: '#16A085' }]} onPress={() => router.push('/istatistik')}>
           <Text style={styles.cardEmoji}>📊</Text>
           <Text style={styles.cardTitle}>İstatistikler</Text>

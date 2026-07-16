@@ -19,7 +19,6 @@ export default function RootLayout() {
         <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
         <Stack.Screen name="cikmis-sorular" options={{ headerShown: false }} />
         <Stack.Screen name="deneme-sinavi" options={{ headerShown: false }} />
-        <Stack.Screen name="ai-soru" options={{ headerShown: false }} />
         <Stack.Screen name="istatistik" options={{ headerShown: false }} />
         <Stack.Screen name="rozetler" options={{ headerShown: false }} />
         <Stack.Screen name="denemeler" options={{ headerShown: false }} />
