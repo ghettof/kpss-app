@@ -4,8 +4,8 @@ import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-nati
 const DERSLER = [
   { id: 'tarih-notlar', label: 'Tarih', emoji: '📜', renk: '#e67e22', aciklama: 'Osmanlı, Kurtuluş Savaşı, Cumhuriyet' },
   { id: 'cografya-notlar', label: 'Coğrafya', emoji: '🌍', renk: '#27ae60', aciklama: 'Türkiye ve Dünya Coğrafyası' },
-  { id: 'turkce-notlar', label: 'Türkçe', emoji: '📝', renk: '#e74c3c', aciklama: 'Dil bilgisi, Anlam bilgisi' },
   { id: 'vatandaslik-notlar', label: 'Vatandaşlık', emoji: '⚖️', renk: '#9b59b6', aciklama: 'Anayasa, Hukuk, İdare' },
+  { id: 'turkce-notlar', label: 'Türkçe', emoji: '📝', renk: '#e74c3c', aciklama: 'Dil bilgisi, Anlam bilgisi' },
 ];
 
 export default function KonuCalis() {
