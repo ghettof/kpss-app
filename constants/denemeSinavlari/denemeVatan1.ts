@@ -1,0 +1,117 @@
+import { DenemeSorusu } from './deneme1';
+
+export const denemeVatan1Baslik = "Hukukun Temel Kavramları, Sosyal Hayatı Düzenleyen Kurallar ve Yaptırım Türleri";
+
+export const denemeVatan1: DenemeSorusu[] = [
+  {
+    id: 1,
+    soru: "Toplum hayatında bireylerin birbirleriyle ve toplumla olan ilişkilerini düzenleyen, uyulması devlet gücüyle desteklenmemiş olan ancak ihlal edildiğinde ayıplama, kınama veya dışlama gibi tepkilerle karşılaşan kurallar arasında aşağıdakilerden hangisi gösterilemez?",
+    secenekler: ["A) Din Kuralları", "B) Ahlak Kuralları", "C) Görgü Kuralları", "D) Örf ve Adet Kuralları", "E) Hukuk Kuralları"],
+    cevap: 4,
+    aciklama: "Hukuk kuralları devlet gücüyle desteklenmiş, maddi yaptırımlı kurallardır. Diğerleri ise manevi yaptırımlıdır.",
+  },
+  {
+    id: 2,
+    soru: "Hukuk kurallarını, sosyal hayatı düzenleyen diğer kural türlerinden (din, ahlak, görgü) ayıran en temel ve karakteristik fark aşağıdakilerden hangisidir?",
+    secenekler: ["A) Soyut ve genel nitelikte olması", "B) Kişilik dışı kurallar olması", "C) Maddi yaptırıma dayalı olması", "D) Yazılı kaynaklar halinde bulunması", "E) Toplumsal düzeni amaçlaması"],
+    cevap: 2,
+    aciklama: "Din, ahlak ve görgü kurallarının yaptırımı manevi (dışlama, kınama vb.) iken, hukuk kurallarının en temel farkı maddi yaptırıma (ceza, icra vb.) dayanmasıdır.",
+  },
+  {
+    id: 3,
+    soru: "Yetkili makamlar tarafından usulüne uygun olarak yürürlüğe konulmuş olan ve kamu gücüyle desteklenen bir hukuk kuralına aykırı davranılması durumunda, devlet gücüyle karşılaşılacak olan tepkiye ne ad verilir?",
+    secenekler: ["A) Cebri İcra", "B) Yaptırım (Müeyyide)", "C) Hükümsüzlük", "D) Tazminat", "E) İptal"],
+    cevap: 1,
+    aciklama: "Hukuk kurallarına aykırılık halinde devlet eliyle uygulanan yaptırımın genel adı müeyyide ya da yaptırımdır.",
+  },
+  {
+    id: 4,
+    soru: "Borçlu olan bir kimsenin borcunu kendi rızasıyla ödememesi halinde, alacaklının talebiyle devletin yetkili organları (icra daireleri) aracılığıyla borcun zorla tahsil edilmesi sürecini ifade eden maddi yaptırım türü aşağıdakilerden hangisidir?",
+    secenekler: ["A) Ceza", "B) Tazminat", "C) Hükümsüzlük", "D) Cebri İcra", "E) İptal"],
+    cevap: 3,
+    aciklama: "Devlet organları vasıtasıyla borcun zorla yerine getirilmesini sağlayan yaptırım türü cebri icradır.",
+  },
+  {
+    id: 5,
+    soru: "Hukuka aykırı bir eylem veya sözleşme sonucunda başkasına verilen zararın, zarar veren kişi tarafından parasal ya da maddi olarak giderilmesini öngören yaptırım türü aşağıdakilerden hangisidir?",
+    secenekler: ["A) İptal", "B) Tazminat", "C) Yokluk", "D) Nisbi Butlan", "E) Cebri İcra"],
+    cevap: 1,
+    aciklama: "Zararın maddi ya da manevi olarak tazmin edilmesi, yani ödenmesi \"Tazminat\" yaptırımıdır.",
+  },
+  {
+    id: 6,
+    soru: "Kanunun suç işleyen kişilere yönelik olarak uygulanmasını öngördüğü, hürriyeti bağlayıcı ya da adli para cezası şeklindeki yaptırım türü aşağıdakilerden hangisidir?",
+    secenekler: ["A) Ceza", "B) Cebri İcra", "C) Hükümsüzlük", "D) İptal", "E) Teczziye"],
+    cevap: 0,
+    aciklama: "Kanunun suç işleyen kişilere doğrudan öngördüğü yaptırım \"Ceza\"dır.",
+  },
+  {
+    id: 7,
+    soru: "İdari makamlar tarafından tesis edilen hukuka aykırı bir işlemin (örneğin usulsüz bir memur atamasının ya da yıkım kararının) idari yargı mercii tarafından ortadan kaldırılması sürecini ifade eden yaptırım türü aşağıdakilerden hangisidir?",
+    secenekler: ["A) Butlan", "B) Yokluk", "C) İptal", "D) Ceza", "E) Tazminat"],
+    cevap: 2,
+    aciklama: "İdari işlemlerin yargı yoluyla ortadan kaldırılması \"İptal\" yaptırımıdır.",
+  },
+  {
+    id: 8,
+    soru: "Hukuki işlemlerin kanunun emrettiği kurucu unsurlardan en az birinin eksik olması nedeniyle, işlemin baştan itibaren hiç yapılmamış sayılması ve hukuken doğmaması durumuna ne ad verilir?",
+    secenekler: ["A) Yokluk", "B) Mutlak Butlan", "C) Nisbi Butlan", "D) İptal", "E) Askıda Geçersizlik"],
+    cevap: 0,
+    aciklama: "Kurucu unsurlardan birinin dahi eksik olması halinde işlemin hiç doğmamış sayılmasına \"Yokluk\" denir.",
+  },
+  {
+    id: 9,
+    soru: "Aynı cinsten iki kişinin (örneğin iki erkeğin veya iki kadının) evlenmesi ya da resmi evlendirme memuru önünde yapılmayan bir evlilik işlemi hukuken hangi yaptırım türüne tabi olur?",
+    secenekler: ["A) Nisbi Butlan", "B) Mutlak Butlan", "C) İptal", "D) Yokluk", "E) Tek Taraflı Bağlamazlık"],
+    cevap: 3,
+    aciklama: "Resmi memur önünde yapılmayan evlilik veya hemcins evliliği kurucu unsur (evlendirme memuru ve farklı cins) yokluğundan ötürü \"Yokluk\" yaptırımına tabidir.",
+  },
+  {
+    id: 10,
+    soru: "Kanunun emredici hükümlerine, ahlaka, kamu düzenine veya kişilik haklarına aykırı olarak yapılan ya da konusu imkansız olan bir sözleşmenin hukuken geçersiz sayılması durumu aşağıdakilerden hangisidir?",
+    secenekler: ["A) Yokluk", "B) Mutlak Butlan", "C) Nisbi Butlan", "D) İptal", "E) Tek Taraflı Bağlamazlık"],
+    cevap: 1,
+    aciklama: "Kanunun emredici hükümlerine aykırılık durumunda geçersizlik türü \"Mutlak Butlan\"dır.",
+  },
+  {
+    id: 11,
+    soru: "Sözleşme yapılırken taraflardan birinin iradesinde sakatlık olması (örneğin hile, korkutma veya yanılma) durumunda ya da sarhoş bir kişinin yaptığı işlemlerde söz konusu olan yaptırım türü aşağıdakilerden hangisidir?",
+    secenekler: ["A) Mutlak Butlan", "B) Yokluk", "C) İptal", "D) Nisbi Butlan", "E) Cebri İcra"],
+    cevap: 3,
+    aciklama: "İradede sakatlık (hile, korkutma) veya geçici ehliyetsizlik (sarhoşluk) durumunda yapılan işlem \"Nisbi Butlan\"a tabidir.",
+  },
+  {
+    id: 12,
+    soru: "Ayırt etme gücünden sürekli olarak yoksun (akli dengesi bozuk) bir kişinin yaptığı bir satış veya bağışlama sözleşmesi hukuken hangi yaptırıma tabi tutulur?",
+    secenekler: ["A) Yokluk", "B) Nisbi Butlan", "C) Mutlak Butlan", "D) İptal", "E) Tek Taraflı Bağlamazlık"],
+    cevap: 2,
+    aciklama: "Akıl hastası birinin yaptığı işlemler kurucu unsurları tam olsa da ehliyetsizlikten dolayı \"Mutlak Butlan\" ile batıldır.",
+  },
+  {
+    id: 13,
+    soru: "Hukuk kurallarının özellikleriyle ilgili olarak aşağıda verilen ifadelerden hangisi yanlıştır?",
+    secenekler: [
+      "A) Hukuk kuralları soyuttur; olay bazlı değil, genel durumları düzenler.",
+      "B) Hukuk kuralları geneldir; aynı durumdaki herkese uygulanır.",
+      "C) Hukuk kuralları süreklidir; yeni bir kanunla kaldırılmadığı sürece yürürlükte kalır.",
+      "D) Hukuk kuralları objektiftir ve kişilik dışıdır.",
+      "E) Hukuk kuralları manevi yaptırıma dayalıdır.",
+    ],
+    cevap: 4,
+    aciklama: "Hukuk kuralları manevi değil, maddi yaptırıma dayalıdır.",
+  },
+  {
+    id: 14,
+    soru: "Aşağıdakilerden hangisi bir devlet memuruna uygulanabilecek disiplin cezalarından biri değildir?",
+    secenekler: ["A) Uyarma", "B) Kınama", "C) Aylıktan Kesme", "D) Görevden Uzaklaştırma", "E) Kademe İlerlemesinin Durdurulması"],
+    cevap: 3,
+    aciklama: "Uyarma, kınama, aylıktan kesme, kademe ilerlemesinin durdurulması ve devlet memurluğundan çıkarma disiplin cezasıdır. Ancak \"Görevden uzaklaştırma\" bir ceza değil, geçici bir idari tedbirdir.",
+  },
+  {
+    id: 15,
+    soru: "Kanunda suç olarak tanımlanan bir fiili bilerek ve isteyerek gerçekleştirme iradesine hukukta ne ad verilir?",
+    secenekler: ["A) Taksir", "B) Kast", "C) İhmal", "D) Hata", "E) Kusur"],
+    cevap: 1,
+    aciklama: "Suçun bilerek ve istenerek işlenmesine \"Kast\", istemeyerek ancak tedbirsizlik ve ihmal sonucu işlenmesine \"Taksir\" denir.",
+  },
+];

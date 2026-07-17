@@ -1,0 +1,111 @@
+import { DenemeSorusu } from './deneme1';
+
+export const denemeVatan3Baslik = "Türk Anayasa Tarihi ile Temel Hak ve Hürriyetler";
+
+export const denemeVatan3: DenemeSorusu[] = [
+  {
+    id: 1,
+    soru: "Değiştirilmesi normal kanunların değiştirilmesine oranla daha zor şartlara bağlanan, değiştirilemeyecek maddeler (sertlik unsurları) içeren anayasa türü aşağıdakilerden hangisidir?",
+    secenekler: ["A) Yumuşak Anayasa", "B) Çerçeve Anayasa", "C) Kazuistik Anayasa", "D) Sert Anayasa", "E) Tarihi Anayasa"],
+    cevap: 3,
+    aciklama: "Değiştirilmesi özel şartlara bağlı, değiştirilemez hükümler barındıran anayasalar \"Sert Anayasa\"dır.",
+  },
+  {
+    id: 2,
+    soru: "Türk anayasa tarihindeki tek yumuşak ve tek çerçeve anayasa aşağıdakilerden hangisidir?",
+    secenekler: ["A) 1876 Kanun-i Esasi", "B) 1921 Anayasası (Teşkilat-ı Esasiye)", "C) 1924 Anayasası", "D) 1961 Anayasası", "E) 1982 Anayasası"],
+    cevap: 1,
+    aciklama: "1921 Anayasası hem tek yumuşak (değiştirilme usulü normal kanunla aynı) hem de tek çerçeve (kısa ve öz) anayasamızdır.",
+  },
+  {
+    id: 3,
+    soru: "Türk tarihinin ilk yazılı anayasası aşağıdakilerden hangisidir?",
+    secenekler: ["A) Sened-i İttifak", "B) Tanzimat Fermanı", "C) Islahat Fermanı", "D) 1876 Kanun-i Esasi", "E) 1921 Anayasası"],
+    cevap: 3,
+    aciklama: "İlk yazılı Türk anayasası 1876 yılında ilan edilen Kanun-i Esasi'dir.",
+  },
+  {
+    id: 4,
+    soru: "Türk anayasa tarihinde \"Sosyal Devlet\" ilkesi ilk kez hangi anayasada açıkça yer almıştır?",
+    secenekler: ["A) 1921 Anayasası", "B) 1924 Anayasası", "C) 1961 Anayasası", "D) 1982 Anayasası", "E) 1876 Kanun-i Esasi (1909 Değişikliği)"],
+    cevap: 2,
+    aciklama: "Sosyal devlet, hukuk devleti ilkeleri ilk kez 1961 Anayasası ile sistemimize girmiştir.",
+  },
+  {
+    id: 5,
+    soru: "Türk anayasaları içerisinde \"Milli Egemenlik\" ilkesine ilk kez yer veren anayasa hangisidir?",
+    secenekler: ["A) 1876 Kanun-i Esasi", "B) 1921 Anayasası", "C) 1924 Anayasası", "D) 1961 Anayasası", "E) 1982 Anayasası"],
+    cevap: 1,
+    aciklama: "\"Egemenlik kayıtsız şartsız milletindir\" diyerek milli egemenliği ilk kez getiren anayasa 1921 Anayasası'dır.",
+  },
+  {
+    id: 6,
+    soru: "Türk anayasa tarihinde kadınlara milletvekili seçme ve seçilme hakkı ilk kez hangi yılda yapılan anayasa değişikliği ile getirilmiştir?",
+    secenekler: ["A) 1930", "B) 1933", "C) 1934", "D) 1937", "E) 1950"],
+    cevap: 2,
+    aciklama: "Kadınlara seçme ve seçilme hakkı 1934 yılında yapılan anayasa değişikliği ile tam olarak tanınmıştır.",
+  },
+  {
+    id: 7,
+    soru: "Cumhuriyet döneminde çok partili hayata ilk kez geçiş denemesi hangi yılda gerçekleştirilmiştir?",
+    secenekler: ["A) 1921", "B) 1924", "C) 1930", "D) 1946", "E) 1950"],
+    cevap: 1,
+    aciklama: "Çok partili hayata geçiş yönündeki ilk denemeler (Terakkiperver Cumhuriyet Fırkası vb.) 1924 yılında olmuştur. (Sorunsuz geçen ilk seçim ise 1946'dır.)",
+  },
+  {
+    id: 8,
+    soru: "Türk anayasa tarihinde \"Anayasa Mahkemesi\" ilk kez hangi anayasa ile kurulmuştur?",
+    secenekler: ["A) 1924 Anayasası", "B) 1961 Anayasası", "C) 1982 Anayasası", "D) 1876 Kanun-i Esasi", "E) 1921 Anayasası"],
+    cevap: 1,
+    aciklama: "Anayasa Mahkemesi ilk kez 1961 Anayasası ile kurulmuştur.",
+  },
+  {
+    id: 9,
+    soru: "Türk anayasa tarihinde çift meclisli (iki kamaralı) parlamento yapısını benimseyen anayasalar hangileridir?",
+    secenekler: ["A) 1921 ve 1924 Anayasaları", "B) 1876 Kanun-i Esasi ve 1961 Anayasası", "C) 1961 ve 1982 Anayasaları", "D) 1876 Kanun-i Esasi ve 1982 Anayasası", "E) 1924 ve 1961 Anayasaları"],
+    cevap: 1,
+    aciklama: "1876 Anayasası'nda Meclis-i Mebusan ve Meclis-i Ayan; 1961 Anayasası'nda ise Millet Meclisi ve Cumhuriyet Senatosu olmak üzere çift meclisli yapı uygulanmıştır.",
+  },
+  {
+    id: 10,
+    soru: "Savaş, OHAL ve seferberlik gibi en olağanüstü durumlarda dahi dokunulamayan, sınırlandırılamayan haklara \"Çekirdek Haklar\" denir. Aşağıdakilerden hangisi bu çekirdek haklar arasında yer almaz?",
+    secenekler: ["A) Kişinin yaşama hakkı", "B) Maddi ve manevi varlığının bütünlüğü", "C) Din, vicdan, düşünce ve kanaatlerini açıklamaya zorlanamama", "D) Suç ve cezaların geçmişe yürütülememesi", "E) Mülkiyet hakkı"],
+    cevap: 4,
+    aciklama: "Yaşama hakkı, maddi-manevi bütünlük, din ve vicdan hürriyeti, suç ve cezaların geçmişe yürümemesi ve masumiyet karinesi çekirdek haklardandır. Mülkiyet hakkı ise çekirdek hak değildir.",
+  },
+  {
+    id: 11,
+    soru: "1982 Anayasası'na göre aşağıdakilerden hangisi milletvekili genel seçimlerinde oy kullanma hakkına sahiptir?",
+    secenekler: ["A) Silah altında bulunan er ve erbaşlar", "B) Askeri öğrenciler", "C) Taksirli suçlardan hüküm giyenler", "D) Ceza infaz kurumunda bulunan kasıtlı suçtan hükümlüler", "E) 18 yaşını doldurmamış T.C. vatandaşları"],
+    cevap: 2,
+    aciklama: "Er-erbaş, askeri öğrenci ve kasıtlı suçtan hükümlüler oy kullanamaz. Taksirli suçtan hüküm giyenler ise oy kullanabilir.",
+  },
+  {
+    id: 12,
+    soru: "1982 Anayasası'na göre aşağıdakilerden hangisi siyasi partilere üye olabilir?",
+    secenekler: ["A) Hakimler ve Savcılar", "B) Sayıştay mensupları dahil yüksek yargı organı üyeleri", "C) Silahlı kuvvetler mensupları", "D) Yükseköğretim öğrencileri", "E) Devlet memurları"],
+    cevap: 3,
+    aciklama: "Memurlar, hakim-savcılar, askerler siyasi partilere üye olamaz ancak yükseköğretim (üniversite) öğrencileri üye olabilir.",
+  },
+  {
+    id: 13,
+    soru: "Türkiye'de gizli oy, açık sayım ve döküm ilkesi ilk kez hangi seçim yılında uygulanmaya başlanmıştır?",
+    secenekler: ["A) 1924", "B) 1934", "C) 1946", "D) 1950", "E) 1961"],
+    cevap: 3,
+    aciklama: "Gizli oy - açık tasnif ilkesi ilk kez demokratik standartlara tam uygun şekilde 1950 seçimlerinde uygulanmıştır.",
+  },
+  {
+    id: 14,
+    soru: "Türkiye Cumhuriyeti'nde tek dereceli seçim sistemi ilk kez hangi yıldan itibaren uygulanmaya başlanmıştır?",
+    secenekler: ["A) 1921", "B) 1924", "C) 1946", "D) 1950", "E) 1961"],
+    cevap: 2,
+    aciklama: "İki dereceli seçimden tek dereceli seçime ilk kez 1946 yılında geçilmiştir.",
+  },
+  {
+    id: 15,
+    soru: "Anayasa değişikliği teklifi için en az kaç milletvekilinin yazılı teklifi (imzası) gerekmektedir?",
+    secenekler: ["A) 110", "B) 180", "C) 200", "D) 300", "E) 360"],
+    cevap: 2,
+    aciklama: "Anayasa değişikliği teklif edilebilmesi için üye tamsayısının en az 1/3'ünün, yani 200 milletvekilinin imzası şarttır.",
+  },
+];

@@ -1,0 +1,111 @@
+import { DenemeSorusu } from './deneme1';
+
+export const denemeVatan5Baslik = "Yargı Organı ve İdare Hukuku";
+
+export const denemeVatan5: DenemeSorusu[] = [
+  {
+    id: 1,
+    soru: "Anayasa Mahkemesi toplam kaç üyeden oluşur ve üyelerin görev süresi kaç yıldır?",
+    secenekler: ["A) 11 üye - 7 yıl", "B) 15 üye - 12 yıl", "C) 17 üye - 10 yıl", "D) 15 üye - 5 yıl", "E) 12 üye - 12 yıl"],
+    cevap: 1,
+    aciklama: "Anayasa Mahkemesi 15 üyeden oluşur ve üyeler 12 yıl için seçilir.",
+  },
+  {
+    id: 2,
+    soru: "Anayasa Mahkemesi üyelerini görev süreleri bittikten sonra tekrar seçilmek üzere görevlendirmek mümkün müdür ve üyeler en fazla kaç yaşına kadar görev yapabilirler?",
+    secenekler: ["A) Tekrar seçilebilirler - Yaş sınırı yoktur", "B) Tekrar seçilemezler - En fazla 65 yaşına kadar görev yapabilirler", "C) Tekrar seçilebilirler - 65 yaş sınırı vardır", "D) Tekrar seçilemezler - Yaş sınırı yoktur", "E) Tekrar seçilemezler - En fazla 67 yaşına kadar görev yapabilirler"],
+    cevap: 1,
+    aciklama: "AYM üyeleri tekrar seçilemezler ve 65 yaşını doldurunca emekliye ayrılırlar.",
+  },
+  {
+    id: 3,
+    soru: "Cumhurbaşkanı, Cumhurbaşkanı yardımcıları ve bakanları görevleriyle ilgili suçlardan dolayı Yüce Divan sıfatıyla yargılayan mahkeme aşağıdakilerden hangisidir?",
+    secenekler: ["A) Yargıtay", "B) Danıştay", "C) Anayasa Mahkemesi", "D) Uyuşmazlık Mahkemesi", "E) Hâkimler ve Savcılar Kurulu (HSK)"],
+    cevap: 2,
+    aciklama: "Yüce Divan sıfatıyla yargılama yapma görevi Anayasa Mahkemesi'ne aittir.",
+  },
+  {
+    id: 4,
+    soru: "Yüce Divan'da savcılık (iddia makamı) görevini üstlenen merci aşağıdakilerden hangisidir?",
+    secenekler: ["A) Adalet Bakanı", "B) Yargıtay Cumhuriyet Başsavcısı", "C) Danıştay Başkanı", "D) Anayasa Mahkemesi Üyeleri", "E) TBMM Başkanı"],
+    cevap: 1,
+    aciklama: "Yüce Divan yargılamalarında savcılık görevini Yargıtay Cumhuriyet Başsavcısı yürütür.",
+  },
+  {
+    id: 5,
+    soru: "Adli mahkemelerce (hukuk ve ceza mahkemeleri) verilen karar ve hükümlerin son inceleme (temyiz) mercii aşağıdakilerden hangisidir?",
+    secenekler: ["A) Danıştay", "B) Sayıştay", "C) Yargıtay", "D) Uyuşmazlık Mahkemesi", "E) Anayasa Mahkemesi"],
+    cevap: 2,
+    aciklama: "Adli yargının en yüksek karar mercii Yargıtay'dır.",
+  },
+  {
+    id: 6,
+    soru: "İdari mahkemelerce verilen karar ve hükümlerin son inceleme (temyiz) mercii olan yüksek mahkeme aşağıdakilerden hangisidir?",
+    secenekler: ["A) Yargıtay", "B) Danıştay", "C) Sayıştay", "D) Bölge İdare Mahkemesi", "E) Uyuşmazlık Mahkemesi"],
+    cevap: 1,
+    aciklama: "İdari yargının en yüksek karar mercii Danıştay'dır.",
+  },
+  {
+    id: 7,
+    soru: "Danıştay üyelerinin seçimi ile ilgili olarak aşağıda verilen ifadelerden hangisi doğrudur?",
+    secenekler: ["A) Tamamını Hâkimler ve Savcılar Kurulu (HSK) seçer.", "B) Tamamını Cumhurbaşkanı seçer.", "C) 1/4'ünü Cumhurbaşkanı, 3/4'ünü Hâkimler ve Savcılar Kurulu (HSK) seçer.", "D) Yarısını Cumhurbaşkanı, yarısını TBMM seçer.", "E) 1/4'ünü TBMM, 3/4'ünü HSK seçer."],
+    cevap: 2,
+    aciklama: "Danıştay üyelerinin 1/4'ünü Cumhurbaşkanı, kalan 3/4'ünü ise HSK seçer.",
+  },
+  {
+    id: 8,
+    soru: "Adli ve idari yargı mercileri arasındaki görev ve hüküm uyuşmazlıklarını kesin olarak çözüme kavuşturan mahkeme hangisidir?",
+    secenekler: ["A) Anayasa Mahkemesi", "B) Uyuşmazlık Mahkemesi", "C) Sayıştay", "D) Danıştay", "E) Yargıtay"],
+    cevap: 1,
+    aciklama: "Adli ve idari yargı arasındaki uyuşmazlıkları çözen merci Uyuşmazlık Mahkemesi'dir.",
+  },
+  {
+    id: 9,
+    soru: "Kamu idareleri ile Sosyal Güvenlik Kurumu'nun (SGK) bütün gelir ve giderlerini, mallarını TBMM adına denetlemekle görevli olan ancak anayasaya göre yüksek mahkeme olarak sayılmayan denetim organı hangisidir?",
+    secenekler: ["A) Danıştay", "B) Sayıştay", "C) Devlet Denetleme Kurulu", "D) Kamu Görevlileri Etik Kurulu", "E) Uyuşmazlık Mahkemesi"],
+    cevap: 1,
+    aciklama: "Sayıştay, TBMM adına mali denetim yapar. Kararları kesindir ancak kendisi bir yüksek mahkeme olarak sayılmaz (Yüksek mahkemeler: AYM, Yargıtay, Danıştay, Uyuşmazlık Mahkemesi).",
+  },
+  {
+    id: 10,
+    soru: "Hâkimler ve Savcılar Kurulu'nun (HSK) başkanı aşağıdakilerden hangisidir?",
+    secenekler: ["A) Yargıtay Başkanı", "B) En Kıdemli Üye", "C) Adalet Bakanı", "D) Adalet Bakanlığı Müsteşarı (Bakan Yardımcısı)", "E) Cumhurbaşkanı"],
+    cevap: 2,
+    aciklama: "Hâkimler ve Savcılar Kurulu'nun başkanı Adalet Bakanı'dır.",
+  },
+  {
+    id: 11,
+    soru: "İl genel idaresinin başında bulunan, Cumhurbaşkanı kararı ile atanan ve illerde yetki genişliği ilkesine sahip olan tek idari makam aşağıdakilerden hangisidir?",
+    secenekler: ["A) Kaymakam", "B) Vali", "C) Belediye Başkanı", "D) İl Genel Meclisi Başkanı", "E) Muhtar"],
+    cevap: 1,
+    aciklama: "İllerde yetki genişliğine sahip olan, Cumhurbaşkanı kararı ile atanan en yetkili amir Vali'dir.",
+  },
+  {
+    id: 12,
+    soru: "İlçe genel idaresinin başında bulunan ve Cumhurbaşkanı onayı ile atanan mülki idare amiri aşağıdakilerden hangisidir?",
+    secenekler: ["A) Vali", "B) Kaymakam", "C) İlçe Belediye Başkanı", "D) Yazı İşleri Müdürü", "E) Bucak Müdürü"],
+    cevap: 1,
+    aciklama: "İlçelerin başında bulunan ve Cumhurbaşkanı onayı ile atanan kişi Kaymakam'dır.",
+  },
+  {
+    id: 13,
+    soru: "Görevleriyle ilgili bir suç soruşturması nedeniyle görevden uzaklaştırılması gereken bir belediye başkanını geçici olarak görevden uzaklaştırmaya yetkili makam aşağıdakilerden hangisidir?",
+    secenekler: ["A) Vali", "B) İçişleri Bakanlığı", "C) Danıştay", "D) Cumhurbaşkanı", "E) Kaymakam"],
+    cevap: 1,
+    aciklama: "Belediye başkanını geçici olarak görevden uzaklaştırmaya İçişleri Bakanlığı yetkilidir.",
+  },
+  {
+    id: 14,
+    soru: "Bir belediye başkanının görevine kesin ve sürekli olarak son verme (belediye başkanlığını düşürme) yetkisi hangi mercie aittir?",
+    secenekler: ["A) İçişleri Bakanlığı", "B) Danıştay", "C) Yargıtay", "D) Vali", "E) Cumhurbaşkanı"],
+    cevap: 1,
+    aciklama: "Belediye başkanının görevine kesin ve sürekli olarak son verme (düşürme) kararı yargı yoluyla, yani Danıştay tarafından verilir.",
+  },
+  {
+    id: 15,
+    soru: "Belediye başkanının mazeretsiz ve kesintisiz olarak kaç gün görevine gelmemesi durumunda görevden uzaklaştırılması süreci gündeme gelir?",
+    secenekler: ["A) 5 gün", "B) 10 gün", "C) 15 gün", "D) 20 gün", "E) 30 gün"],
+    cevap: 3,
+    aciklama: "Belediye başkanının kesintisiz ve mazeretsiz olarak 20 gün görevine gelmemesi durumunda görevden uzaklaştırılması/düşürülmesi süreci tetiklenir.",
+  },
+];

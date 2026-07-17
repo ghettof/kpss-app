@@ -23,6 +23,11 @@ import { denemeCog7, denemeCog7Baslik } from './denemeCog7';
 import { denemeCog8, denemeCog8Baslik } from './denemeCog8';
 import { denemeCog9, denemeCog9Baslik } from './denemeCog9';
 import { denemeCog10, denemeCog10Baslik } from './denemeCog10';
+import { denemeVatan1, denemeVatan1Baslik } from './denemeVatan1';
+import { denemeVatan2, denemeVatan2Baslik } from './denemeVatan2';
+import { denemeVatan3, denemeVatan3Baslik } from './denemeVatan3';
+import { denemeVatan4, denemeVatan4Baslik } from './denemeVatan4';
+import { denemeVatan5, denemeVatan5Baslik } from './denemeVatan5';
 
 export type { DenemeSorusu };
 
@@ -64,4 +69,9 @@ export const DENEME_LISTESI: DenemeSinavi[] = [
   { id: 23, ders: 'Coğrafya', baslik: denemeCog8Baslik, soruSayisi: 15, sorular: denemeCog8 },
   { id: 24, ders: 'Coğrafya', baslik: denemeCog9Baslik, soruSayisi: 15, sorular: denemeCog9 },
   { id: 25, ders: 'Coğrafya', baslik: denemeCog10Baslik, soruSayisi: 15, sorular: denemeCog10 },
+  { id: 26, ders: 'Vatandaşlık', baslik: denemeVatan1Baslik, soruSayisi: 15, sorular: denemeVatan1 },
+  { id: 27, ders: 'Vatandaşlık', baslik: denemeVatan2Baslik, soruSayisi: 15, sorular: denemeVatan2 },
+  { id: 28, ders: 'Vatandaşlık', baslik: denemeVatan3Baslik, soruSayisi: 15, sorular: denemeVatan3 },
+  { id: 29, ders: 'Vatandaşlık', baslik: denemeVatan4Baslik, soruSayisi: 15, sorular: denemeVatan4 },
+  { id: 30, ders: 'Vatandaşlık', baslik: denemeVatan5Baslik, soruSayisi: 15, sorular: denemeVatan5 },
 ];

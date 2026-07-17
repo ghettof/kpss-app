@@ -1,0 +1,111 @@
+import { DenemeSorusu } from './deneme1';
+
+export const denemeVatan4Baslik = "Yasama ve Yürütme Organı (TBMM ve Cumhurbaşkanı)";
+
+export const denemeVatan4: DenemeSorusu[] = [
+  {
+    id: 1,
+    soru: "1982 Anayasası'na göre TBMM ve Cumhurbaşkanlığı seçimleri olağan şartlarda kaç yılda bir, aynı günde gerçekleştirilir?",
+    secenekler: ["A) 3", "B) 4", "C) 5", "D) 6", "E) 7"],
+    cevap: 2,
+    aciklama: "TBMM ve Cumhurbaşkanı seçimleri 5 yılda bir aynı günde yapılır.",
+  },
+  {
+    id: 2,
+    soru: "1982 Anayasası'na göre, Meclis çalışmalarını özürsüz veya izinsiz olarak 1 ay içinde toplam kaç birleşim günü takip etmeyen milletvekilinin milletvekilliği TBMM kararı ile düşürülebilir?",
+    secenekler: ["A) 3", "B) 5", "C) 7", "D) 10", "E) 15"],
+    cevap: 1,
+    aciklama: "Meclis çalışmalarına mazeretsiz ve izinsiz olarak 1 ayda toplam 5 birleşim günü katılmayanların vekilliği Meclis kararıyla düşürülebilir.",
+  },
+  {
+    id: 3,
+    soru: "Milletvekilliğinin düşürülmesine ilişkin karar alan TBMM Genel Kurulu kararına karşı, ilgili milletvekili kaç gün içinde Anayasa Mahkemesine iptal davası açabilir?",
+    secenekler: ["A) 7 gün", "B) 15 gün", "C) 30 gün", "D) 45 gün", "E) 60 gün"],
+    cevap: 0,
+    aciklama: "Milletvekilliğinin düşürülmesine karşı 7 gün içinde AYM'ye iptal başvurusu yapılabilir. AYM kararı 15 gün içinde verir.",
+  },
+  {
+    id: 4,
+    soru: "TBMM'nin bir yasama yılında yapabileceği tatil süresi en fazla ne kadardır?",
+    secenekler: ["A) 15 gün", "B) 1 ay", "C) 2 ay", "D) 3 ay", "E) 4 ay"],
+    cevap: 3,
+    aciklama: "TBMM bir yasama yılında en fazla 3 ay tatil yapabilir.",
+  },
+  {
+    id: 5,
+    soru: "TBMM tatildeyken veya ara vermedeyken Meclis'i doğrudan (aracısız) toplantıya çağırmaya yetkili olan makamlar aşağıdakilerden hangisinde birlikte verilmiştir?",
+    secenekler: ["A) Cumhurbaşkanı - TBMM Başkanı", "B) Cumhurbaşkanı - Başbakan", "C) TBMM Başkanı - İçişleri Bakanı", "D) Cumhurbaşkanı Yardımcısı - TBMM Başkanı", "E) Siyasi Parti Grup Başkanları - Cumhurbaşkanı"],
+    cevap: 0,
+    aciklama: "TBMM tatildeyken Meclis'i doğrudan toplantıya çağırma yetkisi yalnızca Cumhurbaşkanı ve TBMM Başkanı'na aittir.",
+  },
+  {
+    id: 6,
+    soru: "Savaş sebebiyle seçimlerin yapılmasına imkan görülmezse, TBMM seçimlerin geriye bırakılmasına (ertelenmesine) karar verebilir. Bu erteleme kararı en fazla kaç yıl için verilebilir?",
+    secenekler: ["A) 6 ay", "B) 1 yıl", "C) 2 yıl", "D) 3 yıl", "E) 5 yıl"],
+    cevap: 1,
+    aciklama: "Savaş nedeniyle seçimler en fazla 1 yıl süreyle ertelenebilir.",
+  },
+  {
+    id: 7,
+    soru: "Anayasa'ya göre milletlerarası antlaşmaları onaylamaya uygun bulan merci ve nihai olarak onaylayıp yayımlayan makam sırasıyla aşağıdakilerden hangisidir?",
+    secenekler: ["A) Cumhurbaşkanı - TBMM", "B) TBMM - Cumhurbaşkanı", "C) Anayasa Mahkemesi - TBMM", "D) TBMM - Dışişleri Bakanlığı", "E) Cumhurbaşkanı - Dışişleri Bakanlığı"],
+    cevap: 1,
+    aciklama: "Antlaşmaları uygun bulan merci TBMM iken, onaylayan ve yayımlayan makam Cumhurbaşkanı'dır.",
+  },
+  {
+    id: 8,
+    soru: "Kanun teklif etmeye yetkili merci aşağıdakilerden hangisidir?",
+    secenekler: ["A) Cumhurbaşkanı", "B) En az 1 Milletvekili", "C) Cumhurbaşkanı Yardımcısı", "D) Bakanlar Kurulu", "E) Anayasa Mahkemesi"],
+    cevap: 1,
+    aciklama: "Kanun teklif etme yetkisi en az 1 milletvekiline aittir. Cumhurbaşkanı bütçe kanunu hariç kanun teklif edemez.",
+  },
+  {
+    id: 9,
+    soru: "Cumhurbaşkanlığı seçimine katılabilmek için adayın en az kaç yaşını doldurmuş olması ve hangi düzeyde eğitim şartına sahip olması gerekir?",
+    secenekler: ["A) 30 yaş - Ortaöğretim", "B) 40 yaş - Yükseköğrenim (Lisans/Önlisans)", "C) 18 yaş - Yükseköğrenim", "D) 40 yaş - Ortaöğretim", "E) 35 yaş - Yükseköğrenim"],
+    cevap: 1,
+    aciklama: "Cumhurbaşkanı seçilme şartları: En az 40 yaşını doldurmak ve yükseköğrenim (üniversite) mezunu olmaktır.",
+  },
+  {
+    id: 10,
+    soru: "Aşağıdakilerden hangisi Cumhurbaşkanlığına aday gösterme yetkisine sahip gruplar veya yapılar arasında yer almaz?",
+    secenekler: ["A) Siyasi parti grupları", "B) En son yapılan genel seçimlerde toplam geçerli oyların tek başına veya birlikte en az %5'ini almış olan siyasi partiler", "C) En az 100 bin seçmen", "D) TBMM Başkanı", "E) %5 barajını geçen partilerin ortak kararı"],
+    cevap: 3,
+    aciklama: "Cumhurbaşkanlığına aday gösterme hakkı; siyasi parti gruplarına, son seçimde en az %5 oy alan partilere ve 100 bin seçmene aittir. TBMM Başkanı aday gösteremez.",
+  },
+  {
+    id: 11,
+    soru: "Herhangi bir nedenle Cumhurbaşkanlığı makamının boşalması durumunda (ölüm, istifa vb.), yenisi seçilene kadar Cumhurbaşkanlığına kim vekalet eder?",
+    secenekler: ["A) TBMM Başkanı", "B) En yaşlı Cumhurbaşkanı Yardımcısı", "C) Görevlendirilen Cumhurbaşkanı Yardımcısı", "D) Anayasa Mahkemesi Başkanı", "E) İçişleri Bakanı"],
+    cevap: 2,
+    aciklama: "Cumhurbaşkanı makamı boşaldığında vekalet yetkisi görevlendirilen Cumhurbaşkanı Yardımcısı'na aittir.",
+  },
+  {
+    id: 12,
+    soru: "Cumhurbaşkanının tek başına ilan edebileceği Olağanüstü Hal (OHAL) süresi en fazla kaç ayı geçemez?",
+    secenekler: ["A) 1 ay", "B) 2 ay", "C) 3 ay", "D) 4 ay", "E) 6 ay"],
+    cevap: 4,
+    aciklama: "Cumhurbaşkanı en fazla 6 ayı geçmemek üzere OHAL ilan edebilir.",
+  },
+  {
+    id: 13,
+    soru: "Cumhurbaşkanı tarafından ilan edilen Olağanüstü Hal (OHAL) süresini uzatmaya veya tamamen kaldırmaya yetkili merci hangisidir?",
+    secenekler: ["A) Cumhurbaşkanı", "B) TBMM", "C) Anayasa Mahkemesi", "D) Milli Güvenlik Kurulu", "E) İçişleri Bakanlığı"],
+    cevap: 1,
+    aciklama: "OHAL'i uzatma (her defasında en fazla 4 ayı geçmemek üzere), kısaltma veya kaldırma yetkisi yalnızca TBMM'ye aittir.",
+  },
+  {
+    id: 14,
+    soru: "Milli Güvenlik Kurulu (MGK) olağan olarak kaç ayda bir toplanır?",
+    secenekler: ["A) Her ay", "B) 2 ayda bir", "C) 3 ayda bir", "D) 6 ayda bir", "E) Yılda bir"],
+    cevap: 1,
+    aciklama: "MGK kural olarak 2 ayda bir Cumhurbaşkanı başkanlığında toplanır.",
+  },
+  {
+    id: 15,
+    soru: "Devlet Denetleme Kurulu (DDK) nereye bağlıdır ve üyeleri ile başkanını kim atar?",
+    secenekler: ["A) TBMM'ye bağlıdır - TBMM seçer", "B) Cumhurbaşkanlığına bağlıdır - Cumhurbaşkanı atar", "C) Başbakanlığa bağlıdır - Cumhurbaşkanı atar", "D) Adalet Bakanlığına bağlıdır - HSK atar", "E) İçişleri Bakanlığına bağlıdır - Cumhurbaşkanı atar"],
+    cevap: 1,
+    aciklama: "Devlet Denetleme Kurulu, Cumhurbaşkanlığına bağlıdır ve tüm üyeleri ile başkanını Cumhurbaşkanı atar.",
+  },
+];

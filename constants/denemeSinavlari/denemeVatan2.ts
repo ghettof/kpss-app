@@ -1,0 +1,111 @@
+import { DenemeSorusu } from './deneme1';
+
+export const denemeVatan2Baslik = "Hukukun Türleri, Boşluk Kavramları, Haklar ve Kişilik Hukuku";
+
+export const denemeVatan2: DenemeSorusu[] = [
+  {
+    id: 1,
+    soru: "Bir ülkede belli bir dönemde yürürlükte olan, sadece yetkili resmi makamlar tarafından konulmuş olan yazılı kuralların tamamına ne ad verilir?",
+    secenekler: ["A) Pozitif Hukuk", "B) Mevzu Hukuk (Mevzuat)", "C) İdeal Hukuk", "D) Tarihi Hukuk", "E) Doğal Hukuk"],
+    cevap: 1,
+    aciklama: "Yalnızca yetkili makamlarca konulan yazılı kuralların bütünü \"Mevzu Hukuk\" (mevzuat) olarak adlandırılır.",
+  },
+  {
+    id: 2,
+    soru: "Bir ülkede yürürlükte olan, hem yetkili makamlarca konulan yazılı kuralları hem de toplumda uygulanan yazısız örf ve adet kurallarını kapsayan hukuka ne ad verilir?",
+    secenekler: ["A) Mevzu Hukuk", "B) Pozitif (Müsbet) Hukuk", "C) İdeal Hukuk", "D) Tarihi Hukuk", "E) Subjektif Hukuk"],
+    cevap: 1,
+    aciklama: "Yazılı ve yazısız tüm yürürlükteki kuralları kapsayan geniş küme \"Pozitif Hukuk\" (Müsbet Hukuk) adını alır.",
+  },
+  {
+    id: 3,
+    soru: "Yürürlükten kalkmış olan, günümüzde artık herhangi bir bağlayıcılığı ve uygulanabilirliği kalmayan hukuk kurallarına ne ad verilir?",
+    secenekler: ["A) Tarihi Hukuk", "B) Mevzu Hukuk", "C) Doğal Hukuk", "D) İdeal Hukuk", "E) Pozitif Hukuk"],
+    cevap: 0,
+    aciklama: "Yürürlükten kalkan, tarihsel nitelik kazanan hukuk \"Tarihi Hukuk\"tur.",
+  },
+  {
+    id: 4,
+    soru: "Toplumun ihtiyaçlarını gözeterek \"olması gereken\", adil ve idealize edilen hukuk düzenini savunan hukuk türü aşağıdakilerden hangisidir?",
+    secenekler: ["A) Tarihi Hukuk", "B) Mevzu Hukuk", "C) Pozitif Hukuk", "D) İdeal (Tabii/Doğal) Hukuk", "E) Maddi Hukuk"],
+    cevap: 3,
+    aciklama: "Olması gereken, adil ve ideal olan hukuk \"İdeal Hukuk\" (Tabii hukuk) olarak tanımlanır.",
+  },
+  {
+    id: 5,
+    soru: "Hakların kullanılması ve borçların yerine getirilmesinde (ifa edilmesinde) geçerli olan temel dürüstlük ilkesine ne ad verilir?",
+    secenekler: ["A) Subjektif İyi Niyet", "B) Objektif Dürüstlük", "C) Hakkaniyet", "D) Kazandırıcı Zaman Aşımı", "E) İyiniyet"],
+    cevap: 1,
+    aciklama: "Hakların kullanılması ve borçların yerine getirilmesinde dürüst davranma ilkesi \"Objektif dürüstlük\" ilkesidir.",
+  },
+  {
+    id: 6,
+    soru: "Bir hakkın henüz kazanılması (iktisap edilmesi) aşamasında kişinin durumdaki eksikliği veya kusuru bilmemesini ya da bilecek durumda olmamasını ifade eden ilke aşağıdakilerden hangisidir?",
+    secenekler: ["A) Objektif Dürüstlük", "B) Subjektif İyi Niyet (İyi Niyet)", "C) Hakkaniyet", "D) Kanuni İptal", "E) Ahde Vefa"],
+    cevap: 1,
+    aciklama: "Hakların kazanılmasında kişinin bilmemesi gereken bir durumu bilmemesi \"Subjektif iyi niyet\" (iyi niyet) ilkesidir.",
+  },
+  {
+    id: 7,
+    soru: "Somut bir hukuki uyuşmazlıkta, hakimin önüne gelen olayda uygulanabilecek yazılı kaynaklarda hiçbir hükmün bulunmaması durumunda ortaya çıkan boşluk türü hangisidir?",
+    secenekler: ["A) Hukuk Boşluğu", "B) Kural İçi Boşluk", "C) Kanun Boşluğu", "D) Örtülü Boşluk", "E) Gerçek Dışı Boşluk"],
+    cevap: 2,
+    aciklama: "Yazılı kaynaklarda hüküm yoksa \"Kanun Boşluğu\" oluşur. Hakim bu durumda yazısız örf ve adet hukukuna bakar.",
+  },
+  {
+    id: 8,
+    soru: "Somut bir olayda uygulanacak hem yazılı hem de yazısız kaynaklarda hiçbir hükmün bulunmaması durumunda ortaya çıkan boşluk türü aşağıdakilerden hangisidir?",
+    secenekler: ["A) Kanun Boşluğu", "B) Hukuk Boşluğu", "C) Kural İçi Boşluk", "D) Açık Boşluk", "E) Örtülü Boşluk"],
+    cevap: 1,
+    aciklama: "Hem yazılı hem yazısız kaynaklarda hüküm yoksa \"Hukuk Boşluğu\" vardır. Hakim bu durumda \"Hukuk yaratır\".",
+  },
+  {
+    id: 9,
+    soru: "Kanun koyucu tarafından bilerek ve istenerek, hakimin somut olayın özelliklerine göre karar verebilmesi amacıyla bırakılan boşluklara ne ad verilir?",
+    secenekler: ["A) Kanun Boşluğu", "B) Hukuk Boşluğu", "C) Kural İçi Boşluk", "D) Açık Boşluk", "E) Örtülü Boşluk"],
+    cevap: 2,
+    aciklama: "Kanun koyucunun bilerek bıraktığı boşluk \"Kural İçi Boşluk\"tur.",
+  },
+  {
+    id: 10,
+    soru: "Kanunda kural içi boşluk bulunması halinde hakim, kararını verirken aşağıdaki yetkilerden hangisini kullanır?",
+    secenekler: ["A) Hukuk Yaratma Yetkisi", "B) Takdir Yetkisi", "C) Kıyas Yetkisi", "D) Kanun Yapma Yetkisi", "E) İçtihadı Birleştirme Yetkisi"],
+    cevap: 1,
+    aciklama: "Kural içi boşlukta hakimin \"Takdir Yetkisi\" bulunur. Hukuk boşluğunda ise hakim hukuk yaratır.",
+  },
+  {
+    id: 11,
+    soru: "Türk Medeni Kanunu'na göre, gerçek kişilik tam olarak hangi anda ve nasıl başlar?",
+    secenekler: ["A) Ana rahmine düşüldüğü anda", "B) Sağ ve tam doğum ile", "C) Ergin olunduğu anda", "D) 18 yaşın doldurulmasıyla", "E) Nüfus kütüğüne kayıtla"],
+    cevap: 1,
+    aciklama: "Gerçek kişilik \"tam ve sağ doğum\" şartıyla başlar.",
+  },
+  {
+    id: 12,
+    soru: "Hak sahibi olabilme, yani borç altına girebilme ve haklardan yararlanabilme ehliyetine ne ad verilir?",
+    secenekler: ["A) Fiil Ehliyeti", "B) Hak Ehliyeti", "C) İmza Ehliyeti", "D) Dava Ehliyeti", "E) Sorumluluk Ehliyeti"],
+    cevap: 1,
+    aciklama: "Haklara sahip olabilme ehliyeti \"Hak Ehliyeti\"dir. Sağ ve tam doğmak şartıyla ana rahmine düşüldüğü an başlar.",
+  },
+  {
+    id: 13,
+    soru: "Kişinin kendi işlem ve eylemleriyle hak kazanabilmesi, borç altına girebilmesi ve kendi iradesiyle hukuki işlemler yapabilmesi ehliyetine ne ad verilir?",
+    secenekler: ["A) Hak Ehliyeti", "B) Fiil Ehliyeti", "C) Temyiz Ehliyeti", "D) Sorumluluk Ehliyeti", "E) Kişilik Ehliyeti"],
+    cevap: 1,
+    aciklama: "Kendi işlemleriyle borç altına girme ve hakları kullanma ehliyeti \"Fiil Ehliyeti\"dir.",
+  },
+  {
+    id: 14,
+    soru: "Aşağıdakilerden hangisi bir kişinin tam anlamıyla fiil ehliyetine sahip olabilmesi için gereken şartlar arasında yer almaz?",
+    secenekler: ["A) Ayırt etme gücüne sahip olmak", "B) Ergin (reşit) olmak", "C) Kısıtlı olmamak", "D) T.C. vatandaşı olmak", "E) Temyiz kudretine sahip olmak"],
+    cevap: 3,
+    aciklama: "Fiil ehliyeti şartları: Ayırt etme gücü, Ergin olmak ve Kısıtlı olmamaktır. T.C. Vatandaşlığı fiil ehliyetinin genel şartı değildir.",
+  },
+  {
+    id: 15,
+    soru: "En az 7 kişi tarafından önceden izin alınmadan kurulan, kazanç paylaşma amacı gütmeyen, kişi topluluğu niteliğindeki özel hukuk tüzel kişisi aşağıdakilerden hangisidir?",
+    secenekler: ["A) Vakıf", "B) Şirket", "C) Dernek", "D) Kooperatif", "E) Sendika"],
+    cevap: 2,
+    aciklama: "İzin almadan en az 7 kişiyle kurulan, kazanç paylaşma amacı gütmeyen kişi topluluğu \"Dernek\"tir.",
+  },
+];
