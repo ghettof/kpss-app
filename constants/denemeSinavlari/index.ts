@@ -28,6 +28,11 @@ import { denemeVatan2, denemeVatan2Baslik } from './denemeVatan2';
 import { denemeVatan3, denemeVatan3Baslik } from './denemeVatan3';
 import { denemeVatan4, denemeVatan4Baslik } from './denemeVatan4';
 import { denemeVatan5, denemeVatan5Baslik } from './denemeVatan5';
+import { denemeTurkce1, denemeTurkce1Baslik } from './denemeTurkce1';
+import { denemeTurkce2, denemeTurkce2Baslik } from './denemeTurkce2';
+import { denemeTurkce3, denemeTurkce3Baslik } from './denemeTurkce3';
+import { denemeTurkce4, denemeTurkce4Baslik } from './denemeTurkce4';
+import { denemeTurkce5, denemeTurkce5Baslik } from './denemeTurkce5';
 
 export type { DenemeSorusu };
 
@@ -74,4 +79,9 @@ export const DENEME_LISTESI: DenemeSinavi[] = [
   { id: 28, ders: 'Vatandaşlık', baslik: denemeVatan3Baslik, soruSayisi: 15, sorular: denemeVatan3 },
   { id: 29, ders: 'Vatandaşlık', baslik: denemeVatan4Baslik, soruSayisi: 15, sorular: denemeVatan4 },
   { id: 30, ders: 'Vatandaşlık', baslik: denemeVatan5Baslik, soruSayisi: 15, sorular: denemeVatan5 },
+  { id: 31, ders: 'Türkçe', baslik: denemeTurkce1Baslik, soruSayisi: 15, sorular: denemeTurkce1 },
+  { id: 32, ders: 'Türkçe', baslik: denemeTurkce2Baslik, soruSayisi: 15, sorular: denemeTurkce2 },
+  { id: 33, ders: 'Türkçe', baslik: denemeTurkce3Baslik, soruSayisi: 15, sorular: denemeTurkce3 },
+  { id: 34, ders: 'Türkçe', baslik: denemeTurkce4Baslik, soruSayisi: 15, sorular: denemeTurkce4 },
+  { id: 35, ders: 'Türkçe', baslik: denemeTurkce5Baslik, soruSayisi: 15, sorular: denemeTurkce5 },
 ];
