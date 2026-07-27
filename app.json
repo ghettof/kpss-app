@@ -14,7 +14,7 @@
     },
     "android": {
       "package": "com.ghettoof.kpss2026app",
-      "versionCode": 13,
+      "versionCode": 14,
       "adaptiveIcon": {
         "backgroundColor": "#0F1923",
         "foregroundImage": "./assets/images/android-icon-foreground.png",

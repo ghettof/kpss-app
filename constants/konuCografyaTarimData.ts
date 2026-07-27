@@ -1,0 +1,65 @@
+import { KonuNotu } from './konuVatandaslikData';
+
+// Bu dosya, Türkiye Tarım Coğrafyası (tahıl, endüstri bitkileri, meyve-sebze, tarım politikaları)
+// konu notlarını içerir. constants/konuCografyaData.ts dosyasındaki mevcut diziye eklenecektir.
+export const konuCografyaTarimData: KonuNotu[] = [
+  // ── TAHIL TARIMI ─────────────────────────────────────────
+  { id: "cgt001", kategori: "Tahıl Tarımı", on_yuz: "Tahıllar içerisinde en fazla üretilen ürün hangisidir?", arka_yuz: "Buğdaydır.", zorluk: "kolay", aktif: true },
+  { id: "cgt002", kategori: "Tahıl Tarımı", on_yuz: "Buğday üretiminde ilk sırada yer alan bölgemiz hangisidir?", arka_yuz: "İç Anadolu Bölgesi'dir.", zorluk: "kolay", aktif: true },
+  { id: "cgt003", kategori: "Tahıl Tarımı", on_yuz: "Buğday ekim alanlarının kısıtlı olduğu alanlar nerelerdir?", arka_yuz: "Karadeniz kıyılarında yağış rejiminden, Doğu Anadolu'da düşük sıcaklıklardan olumsuz etkilenir. Ege ve Akdeniz kıyılarında ise daha fazla gelir sağlayan ürünlerden dolayı ekimi yaygın değildir.", zorluk: "orta", aktif: true },
+  { id: "cgt004", kategori: "Tahıl Tarımı", on_yuz: "Buğday ekim alanının son yıllarda en fazla daraldığı bölgemiz hangisidir?", arka_yuz: "Güneydoğu Anadolu Bölgesi'dir (GAP sonrası pamuğa kaymıştır).", zorluk: "orta", aktif: true },
+  { id: "cgt005", kategori: "Tahıl Tarımı", on_yuz: "Arpa üretiminde ilk sırada hangi bölgemiz yer alır?", arka_yuz: "İç Anadolu Bölgesi'dir.", zorluk: "kolay", aktif: true },
+  { id: "cgt006", kategori: "Tahıl Tarımı", on_yuz: "Arpa hangi alanlarda daha çok kullanılır?", arka_yuz: "Hayvan yemi ve bira sanayiinde kullanılır.", zorluk: "kolay", aktif: true },
+  { id: "cgt007", kategori: "Tahıl Tarımı", on_yuz: "Mısır tarımına en uygun bölge Karadeniz iken üretimde Akdeniz Bölgesi'nin ilk sıralarda yer almasının nedeni nedir?", arka_yuz: "Sanayi bitkisi olarak değerinin fazla olması; Akdeniz Bölgesi'nde tarımın yapılacağı geniş arazilerin ve sulama imkanlarının varlığı.", zorluk: "orta", aktif: true },
+  { id: "cgt008", kategori: "Tahıl Tarımı", on_yuz: "Mısırın Karadeniz Bölgesi'nde ticari değerinin düşük olmasının nedeni nedir?", arka_yuz: "Buğday yetiştirilemediğinden halkın temel tüketim maddesi olarak bölge içinde tüketilmesidir.", zorluk: "orta", aktif: true },
+
+  // ── ENDÜSTRİ BİTKİLERİ ────────────────────────────────────
+  { id: "cgt009", kategori: "Endüstri Bitkileri", on_yuz: "Pirinç (çeltik) yetişme alanlarında hangi özelliklerin olması gerekir?", arka_yuz: "Yetişme dönemi boyunca bol su ve sıcaklık gerekir.", zorluk: "kolay", aktif: true },
+  { id: "cgt010", kategori: "Endüstri Bitkileri", on_yuz: "Çeltik (pirinç) tarımının devlet kontrolünde yapılmasının nedeni nedir?", arka_yuz: "Sulak yerlerde yetiştirildiği için sıtma hastalıklarına neden olabilmesidir.", zorluk: "orta", aktif: true },
+  { id: "cgt011", kategori: "Endüstri Bitkileri", on_yuz: "Pirinç üretiminde ilk sırada yer alan bölgemiz hangisidir?", arka_yuz: "Marmara Bölgesi'dir.", zorluk: "orta", aktif: true },
+  { id: "cgt012", kategori: "Endüstri Bitkileri", on_yuz: "Şeker pancarı üretiminde ilk sırayı hangi bölgemiz alır?", arka_yuz: "İç Anadolu Bölgesi'dir.", zorluk: "kolay", aktif: true },
+  { id: "cgt013", kategori: "Endüstri Bitkileri", on_yuz: "Şeker pancarı ekim alanları çevresinde ahır hayvancılığının gelişmesinin nedeni nedir?", arka_yuz: "Şeker pancarı küspesinin hayvan yemi olarak kullanılmasıdır.", zorluk: "orta", aktif: true },
+  { id: "cgt014", kategori: "Endüstri Bitkileri", on_yuz: "Şeker fabrikalarının ülkemizde çok yaygın olmasının nedeni nedir?", arka_yuz: "Şeker pancarı çabuk bozulduğundan hasattan hemen sonra işlenmesi gerekir; bu yüzden üretim alanlarının yakınlarında fabrikaların bulunması gerekir.", zorluk: "orta", aktif: true },
+  { id: "cgt015", kategori: "Endüstri Bitkileri", on_yuz: "Ülkemizde şeker fabrikasının bulunmadığı tek bölge hangisidir?", arka_yuz: "Güneydoğu Anadolu Bölgesi'dir.", zorluk: "orta", aktif: true },
+  { id: "cgt016", kategori: "Endüstri Bitkileri", on_yuz: "Pamuk üretiminde ilk üç sırada yer alan bölgelerimiz hangileridir?", arka_yuz: "Güneydoğu Anadolu Bölgesi, Ege Bölgesi ve Akdeniz Bölgesi'dir.", zorluk: "kolay", aktif: true },
+  { id: "cgt017", kategori: "Endüstri Bitkileri", on_yuz: "Pamuk üretiminin yapılmadığı kıyı bölgemiz hangisidir?", arka_yuz: "Karadeniz Bölgesi'dir.", zorluk: "kolay", aktif: true },
+  { id: "cgt018", kategori: "Endüstri Bitkileri", on_yuz: "Pamuk hangi alanlarda kullanılır?", arka_yuz: "Dokuma, tekstil sanayii ve yemeklik yağ üretiminde kullanılır.", zorluk: "kolay", aktif: true },
+  { id: "cgt019", kategori: "Endüstri Bitkileri", on_yuz: "Son yıllarda pamuğun ekim alanının en fazla arttığı bölge ve nedeni nedir?", arka_yuz: "Güneydoğu Anadolu Bölgesi'dir; nedeni GAP sulama projesidir.", zorluk: "orta", aktif: true },
+  { id: "cgt020", kategori: "Endüstri Bitkileri", on_yuz: "Ülkemizde en fazla istihdam sağlayan tarım ürünü hangisidir?", arka_yuz: "Pamuktur.", zorluk: "orta", aktif: true },
+  { id: "cgt021", kategori: "Endüstri Bitkileri", on_yuz: "Tütün üretiminde ilk sırada yer alan bölgemiz hangisidir?", arka_yuz: "Ege Bölgesi'dir.", zorluk: "kolay", aktif: true },
+  { id: "cgt022", kategori: "Endüstri Bitkileri", on_yuz: "Yağı boyacılıkta, lifleri dokuma endüstrisinde kullanılan, tohumları uyuşturucu özelliği gösterdiğinden üretimi devlet kontrolünde yapılan endüstri bitkisi hangisidir?", arka_yuz: "Kenevirdir.", zorluk: "orta", aktif: true },
+  { id: "cgt023", kategori: "Endüstri Bitkileri", on_yuz: "Ege Bölgesi'nde üretiminin çoğu ihraç edilen, ilaç endüstrisinde ham madde olarak kullanılan, devlet kontrolünde üretilen sanayi ürünü hangisidir?", arka_yuz: "Haşhaştır.", zorluk: "orta", aktif: true },
+  { id: "cgt024", kategori: "Endüstri Bitkileri", on_yuz: "Ayçiçeği üretiminde ilk sırada hangi bölgemiz yer alır?", arka_yuz: "Marmara Bölgesi, özellikle Ergene Bölümü (%80) yer alır.", zorluk: "kolay", aktif: true },
+  { id: "cgt025", kategori: "Endüstri Bitkileri", on_yuz: "Ayçiçeği üretiminin kısıtlı olduğu alanlar nerelerdir?", arka_yuz: "Doğu Karadeniz kıyı kesimi ve Erzurum-Kars Platosu'dur.", zorluk: "orta", aktif: true },
+
+  // ── MEYVE VE SEBZE TARIMI ──────────────────────────────────
+  { id: "cgt026", kategori: "Meyve ve Sebze Tarımı", on_yuz: "Soya fasulyesi en çok hangi bölgemizde yetiştirilir?", arka_yuz: "Akdeniz Bölgesi'nde yetiştirilir.", zorluk: "orta", aktif: true },
+  { id: "cgt027", kategori: "Meyve ve Sebze Tarımı", on_yuz: "Yer fıstığı üretiminde ilk sırada hangi bölgemiz yer alır?", arka_yuz: "Akdeniz Bölgesi'dir.", zorluk: "orta", aktif: true },
+  { id: "cgt028", kategori: "Meyve ve Sebze Tarımı", on_yuz: "Yağı kozmetik sanayiinde kullanılan, en fazla Göller Yöresi'nde üretilen tarım ürünü hangisidir?", arka_yuz: "Güldür.", zorluk: "orta", aktif: true },
+  { id: "cgt029", kategori: "Meyve ve Sebze Tarımı", on_yuz: "Yıllık yağışın bol ve düzenli olduğu yerlerde yetişen, üretimde Ordu-Giresun ile Karadeniz Bölgesi'nin (%80) ilk sırada, Marmara Bölgesi'nin (%20) ikinci sırada olduğu ürün hangisidir?", arka_yuz: "Fındıktır.", zorluk: "kolay", aktif: true },
+  { id: "cgt030", kategori: "Meyve ve Sebze Tarımı", on_yuz: "Soğuğa dayanıklı, meyve olarak tüketildiği gibi şarap yapımında da kullanılan, üretimde Ege Bölgesi'nin birinci sırada olduğu ürün hangisidir?", arka_yuz: "Üzümdür.", zorluk: "kolay", aktif: true },
+  { id: "cgt031", kategori: "Meyve ve Sebze Tarımı", on_yuz: "Turunçgillerin ülkemizde yetiştirilebildiği alanlar nerelerdir?", arka_yuz: "Akdeniz Bölgesi, Ege Bölgesi ve Rize'dir.", zorluk: "orta", aktif: true },
+  { id: "cgt032", kategori: "Meyve ve Sebze Tarımı", on_yuz: "Üzümden sonra yetişme alanı ve miktarı en çok olan, soğuğa dayanıklı, en fazla İç Anadolu Bölgesi'nde yetiştirilen meyve hangisidir?", arka_yuz: "Elmadır.", zorluk: "orta", aktif: true },
+  { id: "cgt033", kategori: "Meyve ve Sebze Tarımı", on_yuz: "Doğal yetişme alanı en dar olan, yalnız Akdeniz kıyılarında Anamur çevresinde yetiştirilen, ihtiyacın %20'sinin ithal edildiği ürün hangisidir?", arka_yuz: "Muzdur.", zorluk: "orta", aktif: true },
+  { id: "cgt034", kategori: "Meyve ve Sebze Tarımı", on_yuz: "Tamamı Doğu Karadeniz'de yetişen tarım ürünü hangisidir?", arka_yuz: "Çaydır.", zorluk: "kolay", aktif: true },
+  { id: "cgt035", kategori: "Meyve ve Sebze Tarımı", on_yuz: "Zeytin üretiminde ilk sırada yer alan bölgemiz hangisidir?", arka_yuz: "Ege Bölgesi'dir.", zorluk: "kolay", aktif: true },
+  { id: "cgt036", kategori: "Meyve ve Sebze Tarımı", on_yuz: "Asıl iklim bölgesi Akdeniz olmasına rağmen zeytin üretiminde Akdeniz Bölgesi'nin Ege Bölgesi'nin gerisinde kalmasının nedeni nedir?", arka_yuz: "Zeytin bir yıl bol ürün verirken diğer yıl verimi düşer (periyodisite); bu nedenle Akdeniz Bölgesi'nde daha kârlı ürünlerin üretimi tercih edilir.", zorluk: "zor", aktif: true },
+  { id: "cgt037", kategori: "Meyve ve Sebze Tarımı", on_yuz: "Mercimek üretiminde önde olan bölgelerimiz hangileridir?", arka_yuz: "Kırmızı mercimekte Güneydoğu Anadolu Bölgesi, yeşil mercimekte İç Anadolu Bölgesi öndedir.", zorluk: "orta", aktif: true },
+  { id: "cgt038", kategori: "Meyve ve Sebze Tarımı", on_yuz: "Seracılık faaliyetlerinin en fazla geliştiği bölgeler hangileridir?", arka_yuz: "Kış ılıklığının fazla olması nedeniyle Akdeniz ve Ege Bölgesi'dir.", zorluk: "orta", aktif: true },
+  { id: "cgt039", kategori: "Meyve ve Sebze Tarımı", on_yuz: "Seracılık faaliyetlerinin gelişmediği bölgeler hangileridir?", arka_yuz: "Karadeniz ve Doğu Anadolu Bölgeleridir.", zorluk: "orta", aktif: true },
+  { id: "cgt040", kategori: "Meyve ve Sebze Tarımı", on_yuz: "Ülkemizde ekim alanı en geniş olan ürünler hangileridir?", arka_yuz: "Buğday, arpa, çavdar, mısır, ayçiçeği, üzüm, şekerpancarı, elmadır.", zorluk: "orta", aktif: true },
+
+  // ── TARIM POLİTİKALARI VE KURULUŞLAR ───────────────────────
+  { id: "cgt041", kategori: "Tarım Politikaları ve Kuruluşlar", on_yuz: "Milli gelir içindeki payı bakımından tarım sektörü, hizmet ve sanayiye göre kaçıncı sıradadır?", arka_yuz: "3. sıradadır (yaklaşık %10).", zorluk: "orta", aktif: true },
+  { id: "cgt042", kategori: "Tarım Politikaları ve Kuruluşlar", on_yuz: "Cumhuriyet tarihi boyunca tarımın Türkiye ekonomisindeki yeri nasıl değişmiştir?", arka_yuz: "Ekonomiye katkısı miktar olarak artmış, fakat oransal olarak ekonomideki payı sürekli azalmıştır.", zorluk: "orta", aktif: true },
+  { id: "cgt043", kategori: "Tarım Politikaları ve Kuruluşlar", on_yuz: "Türkiye tarımının en önemli problemleri nelerdir?", arka_yuz: "Sulama ve gübrelemedir.", zorluk: "kolay", aktif: true },
+  { id: "cgt044", kategori: "Tarım Politikaları ve Kuruluşlar", on_yuz: "Tarımda sulama ihtiyacının olmadığı, nadas yönteminin uygulanmadığı bölgemiz hangisidir?", arka_yuz: "Karadeniz Bölgesi'dir.", zorluk: "orta", aktif: true },
+  { id: "cgt045", kategori: "Tarım Politikaları ve Kuruluşlar", on_yuz: "En fazla ürün çeşitliliğine sahip bölgemiz hangisidir?", arka_yuz: "İklim çeşitliliğine bağlı olarak Marmara Bölgesi'dir.", zorluk: "orta", aktif: true },
+  { id: "cgt046", kategori: "Tarım Politikaları ve Kuruluşlar", on_yuz: "Tarım ürünleri içerisinde en fazla ihraç ettiklerimiz hangileridir?", arka_yuz: "Fındık, incir, pamuk, tütün, kuru üzüm, turunçgiller, zeytin, kayısı, sebzedir.", zorluk: "orta", aktif: true },
+  { id: "cgt047", kategori: "Tarım Politikaları ve Kuruluşlar", on_yuz: "Tarımsal verimi artırma yöntemleri nelerdir?", arka_yuz: "Sulama, toprak bakımı, gübreleme, tohum ıslahı, makineleşme, ilaçlama, pazarlama ve devlet desteğidir.", zorluk: "orta", aktif: true },
+  { id: "cgt048", kategori: "Tarım Politikaları ve Kuruluşlar", on_yuz: "Türkiye'de tarımda yaşanan en büyük sorun olan sulama sorununun giderilmesiyle hangi sonuçlar ortaya çıkar?", arka_yuz: "Nadas yöntemi sona erer, fazla ürün alma imkanı doğar, iklime bağlılık azalır, verim artar, milli gelir içinde tarımın payı artar, endüstriyel ürünlerin ekim alanı artar.", zorluk: "orta", aktif: true },
+  { id: "cgt049", kategori: "Tarım Politikaları ve Kuruluşlar", on_yuz: "Türkiye'de destekleme alımlarının yapılmasının amaçları nelerdir?", arka_yuz: "Ürünlerin çiftçinin elinde kalmasının önlenmesi, üreticinin fiyatlardaki iniş çıkışlarla zarar görmesinin engellenmesi, ürünlerin uygun fiyata piyasaya sunulmasıdır.", zorluk: "orta", aktif: true },
+  { id: "cgt050", kategori: "Tarım Politikaları ve Kuruluşlar", on_yuz: "Tarım işleme metotları nelerdir?", arka_yuz: "İntansif, ekstansif, nadas, seracılık, organik tarımdır.", zorluk: "orta", aktif: true },
+  { id: "cgt051", kategori: "Tarım Politikaları ve Kuruluşlar", on_yuz: "Türkiye'de tarımı destekleyen kuruluşlar hangileridir?", arka_yuz: "TZDK, DSİ, TİGEM, TMO, EBK, TARİŞ, ÇAYKUR, FİSKOBİRLİK, Ziraat Bankası, Ziraat Fakülteleridir.", zorluk: "orta", aktif: true },
+  { id: "cgt052", kategori: "Tarım Politikaları ve Kuruluşlar", on_yuz: "Ekili alanlarda en çok yetiştirilen tarım ürünleri hangileridir?", arka_yuz: "Tahıllardır.", zorluk: "kolay", aktif: true },
+];

@@ -1,3 +1,5 @@
+import { konuCografyaTarimData } from './konuCografyaTarimData';
+
 export interface KonuNotu {
   id: string;
   kategori: string;
@@ -7,7 +9,7 @@ export interface KonuNotu {
   aktif: boolean;
 }
 
-export const konuCografyaData: KonuNotu[] = [
+const konuCografyaDataBase: KonuNotu[] = [
   { id: 'cografya-1-1', kategori: 'Türkiye\'nin Genel Coğrafyası', on_yuz: 'Yüz ölçümü', arka_yuz: '783.562 km² (Dünya\'da 37. büyük)', zorluk: 'orta', aktif: true },
   { id: 'cografya-1-2', kategori: 'Türkiye\'nin Genel Coğrafyası', on_yuz: '81 il (son eklenen: Düzce)', arka_yuz: '', zorluk: 'orta', aktif: true },
   { id: 'cografya-1-3', kategori: 'Türkiye\'nin Genel Coğrafyası', on_yuz: '7 coğrafi bölge', arka_yuz: '', zorluk: 'orta', aktif: true },
@@ -49,3 +51,5 @@ export const konuCografyaData: KonuNotu[] = [
   { id: 'cografya-6-7', kategori: 'Dünya Coğrafyası', on_yuz: 'Afrika\'da 54 bağımsız ülke var', arka_yuz: '', zorluk: 'orta', aktif: true },
   { id: 'cografya-6-8', kategori: 'Dünya Coğrafyası', on_yuz: 'Güney Afrika\'nın 3 başkenti', arka_yuz: 'Pretoria, Cape Town, Bloemfontein', zorluk: 'orta', aktif: true },
 ];
+
+export const konuCografyaData: KonuNotu[] = [...konuCografyaDataBase, ...konuCografyaTarimData];
