@@ -9,11 +9,10 @@ export default function Rozetler() {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.header}>
+        <Text style={styles.baslik}>🏆 Rozetler</Text>
         <TouchableOpacity onPress={() => router.back()} style={styles.geriDokunma} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
           <Text style={styles.geri}>← Geri</Text>
         </TouchableOpacity>
-        <Text style={styles.baslik}>🏆 Rozetler</Text>
-        <View style={{ width: 50 }} />
       </View>
 
       <View style={styles.ozet}>
@@ -52,10 +51,10 @@ export default function Rozetler() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#0F1923' },
-  header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 20, paddingTop: 55 },
+  header: { padding: 20, paddingTop: 55 },
   geri: { color: '#4A90D9', fontSize: 16 },
-  geriDokunma: { paddingVertical: 10, paddingHorizontal: 8, marginVertical: -10, marginLeft: -8 },
-  baslik: { fontSize: 20, fontWeight: 'bold', color: '#fff' },
+  geriDokunma: { alignSelf: 'flex-start', marginTop: 6, marginLeft: -8, paddingVertical: 10, paddingHorizontal: 8 },
+  baslik: { fontSize: 20, fontWeight: 'bold', color: '#fff', textAlign: 'center' },
   ozet: { margin: 16, backgroundColor: '#1A2635', borderRadius: 20, padding: 24, alignItems: 'center' },
   ozetSayi: { fontSize: 40, fontWeight: 'bold', color: '#F1C40F' },
   ozetLabel: { color: '#aaa', fontSize: 14, marginTop: 4, marginBottom: 16 },

@@ -53,9 +53,8 @@ export default function SPKSinav() {
     <SafeAreaView style={s.container}>
       <ScrollView>
         <View style={s.header}>
-          <TouchableOpacity onPress={() => router.back()} style={s.geriDokunma} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}><Text style={s.geri}>← Geri</Text></TouchableOpacity>
           <Text style={s.baslik}>SPK Deneme Sınavları</Text>
-          <View style={{ width: 50 }} />
+          <TouchableOpacity onPress={() => router.back()} style={s.geriDokunma} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}><Text style={s.geri}>← Geri</Text></TouchableOpacity>
         </View>
         <Text style={s.altBaslikHeader}>Bir deneme seçin</Text>
         {DENEMELER.map(d => (
@@ -168,10 +167,10 @@ export default function SPKSinav() {
 
 const s = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#0F1923' },
-  header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 16, paddingTop: 20 },
+  header: { padding: 16, paddingTop: 20 },
   geri: { color: '#4A90D9', fontSize: 16 },
-  geriDokunma: { paddingVertical: 10, paddingHorizontal: 8, marginVertical: -10, marginLeft: -8 },
-  baslik: { fontSize: 20, fontWeight: 'bold', color: '#fff' },
+  geriDokunma: { alignSelf: 'flex-start', marginTop: 6, marginLeft: -8, paddingVertical: 10, paddingHorizontal: 8 },
+  baslik: { fontSize: 20, fontWeight: 'bold', color: '#fff', textAlign: 'center' },
   altBaslikHeader: { color: '#8899AA', fontSize: 13, textAlign: 'center', marginBottom: 16, marginTop: 4 },
   sinavKart: { marginHorizontal: 12, marginBottom: 10, backgroundColor: '#1A2635', borderRadius: 14, padding: 16, borderLeftWidth: 4, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   kartSol: { flexDirection: 'row', alignItems: 'center', gap: 14, flex: 1 },

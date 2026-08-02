@@ -25,10 +25,10 @@ export default function CografyaNotlar() {
 
   return (
     <ScrollView style={styles.container}>
+      <Text style={[styles.baslik, { color: RENK }]}>🌍 Coğrafya Notları</Text>
       <TouchableOpacity onPress={() => router.back()} style={styles.geriDon} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
         <Text style={styles.geriDonText}>← Geri</Text>
       </TouchableOpacity>
-      <Text style={[styles.baslik, { color: RENK }]}>🌍 Coğrafya Notları</Text>
       {kategoriler.length === 0 && (
         <Text style={styles.bosMetin}>Henüz içerik eklenmedi.</Text>
       )}
@@ -65,9 +65,9 @@ export default function CografyaNotlar() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#0a0a1a', padding: 16 },
-  geriDon: { marginTop: 40, marginBottom: -2, marginLeft: -8, paddingVertical: 10, paddingHorizontal: 8 },
+  geriDon: { marginTop: 6, marginBottom: 10, marginLeft: -8, paddingVertical: 10, paddingHorizontal: 8 },
   geriDonText: { color: '#6c63ff', fontSize: 16 },
-  baslik: { fontSize: 24, fontWeight: 'bold', marginBottom: 20 },
+  baslik: { fontSize: 24, fontWeight: 'bold', marginTop: 40, marginBottom: 6, textAlign: 'center' },
   bosMetin: { color: '#888', fontSize: 14, textAlign: 'center', marginTop: 40 },
   konuKart: { backgroundColor: '#1a1a2e', borderRadius: 14, padding: 16, marginBottom: 10, borderWidth: 1 },
   konuBaslikRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },

@@ -61,14 +61,13 @@ export default function DenemeSinaviCozScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => router.back()} style={styles.geriDokunma} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
-          <Text style={styles.geri}>← Çık</Text>
-        </TouchableOpacity>
         <View style={styles.headerOrta}>
           <Text style={styles.soruNo}>{soruIndex + 1} / {sorular.length}</Text>
           <Text style={styles.denemeAdi} numberOfLines={1}>{deneme.baslik}</Text>
         </View>
-        <View style={{ width: 40 }} />
+        <TouchableOpacity onPress={() => router.back()} style={styles.geriDokunma} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
+          <Text style={styles.geri}>← Çık</Text>
+        </TouchableOpacity>
       </View>
 
       <View style={styles.progressBar}>
@@ -121,9 +120,9 @@ const styles = StyleSheet.create({
   bosMetin: { color: '#8899AA', fontSize: 15, marginBottom: 16 },
   geriBtn: { backgroundColor: '#1A2635', borderRadius: 10, paddingHorizontal: 20, paddingVertical: 12 },
   geriBtnMetin: { color: '#4A90D9', fontSize: 15, fontWeight: 'bold' },
-  header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 16, paddingTop: 20 },
+  header: { padding: 16, paddingTop: 20 },
   geri: { color: '#4A90D9', fontSize: 16 },
-  geriDokunma: { paddingVertical: 10, paddingHorizontal: 8, marginVertical: -10, marginLeft: -8 },
+  geriDokunma: { alignSelf: 'flex-start', marginTop: 6, marginLeft: -8, paddingVertical: 10, paddingHorizontal: 8 },
   headerOrta: { alignItems: 'center' },
   soruNo: { color: '#fff', fontSize: 15, fontWeight: 'bold' },
   denemeAdi: { color: '#8899AA', fontSize: 11, marginTop: 2, maxWidth: 200 },

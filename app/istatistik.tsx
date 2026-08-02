@@ -60,11 +60,10 @@ export default function Istatistik() {
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.content}>
       <View style={styles.header}>
+        <Text style={styles.baslik}>İstatistikler</Text>
         <TouchableOpacity onPress={() => router.back()} style={styles.geriDokunma} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
           <Text style={styles.geri}>← Geri</Text>
         </TouchableOpacity>
-        <Text style={styles.baslik}>İstatistikler</Text>
-        <View style={styles.headerSpacer} />
       </View>
 
       <View style={styles.heroKart}>
@@ -169,11 +168,10 @@ export default function Istatistik() {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#0F1923' },
   content: { padding: 16, paddingTop: 52, paddingBottom: 40 },
-  header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 18 },
+  header: { marginBottom: 18 },
   geri: { color: '#4A90D9', fontSize: 16 },
-  geriDokunma: { paddingVertical: 10, paddingHorizontal: 8, marginVertical: -10, marginLeft: -8 },
-  baslik: { color: '#FFFFFF', fontSize: 22, fontWeight: '700' },
-  headerSpacer: { width: 48 },
+  geriDokunma: { alignSelf: 'flex-start', marginTop: 6, marginLeft: -8, paddingVertical: 10, paddingHorizontal: 8 },
+  baslik: { color: '#FFFFFF', fontSize: 22, fontWeight: '700', textAlign: 'center' },
   heroKart: { backgroundColor: '#1A2635', borderRadius: 24, padding: 24, marginBottom: 16 },
   heroEtiket: { color: '#8DA3B9', fontSize: 13, textTransform: 'uppercase', letterSpacing: 1 },
   heroYuzde: { color: '#FFFFFF', fontSize: 46, fontWeight: '800', marginTop: 10 },

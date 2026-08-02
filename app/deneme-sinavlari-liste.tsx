@@ -12,11 +12,10 @@ export default function DenemeSinavlariListeScreen() {
     <SafeAreaView style={styles.container}>
       <ScrollView>
         <View style={styles.header}>
+          <Text style={styles.baslik}>{ders}</Text>
           <TouchableOpacity onPress={() => router.back()} style={styles.geriDokunma} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
             <Text style={styles.geri}>← Geri</Text>
           </TouchableOpacity>
-          <Text style={styles.baslik}>{ders}</Text>
-          <View style={{ width: 50 }} />
         </View>
         <Text style={styles.altBaslik}>Bir deneme seçin</Text>
 
@@ -51,10 +50,10 @@ export default function DenemeSinavlariListeScreen() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#0F1923' },
-  header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 16, paddingTop: 20 },
+  header: { padding: 16, paddingTop: 20 },
   geri: { color: '#4A90D9', fontSize: 16 },
-  geriDokunma: { paddingVertical: 10, paddingHorizontal: 8, marginVertical: -10, marginLeft: -8 },
-  baslik: { fontSize: 20, fontWeight: 'bold', color: '#fff' },
+  geriDokunma: { alignSelf: 'flex-start', marginTop: 6, marginLeft: -8, paddingVertical: 10, paddingHorizontal: 8 },
+  baslik: { fontSize: 20, fontWeight: 'bold', color: '#fff', textAlign: 'center' },
   altBaslik: { color: '#8899AA', fontSize: 13, textAlign: 'center', marginBottom: 16, marginTop: 4 },
   bosContainer: { alignItems: 'center', justifyContent: 'center', padding: 32 },
   bosMetin: { color: '#8899AA', fontSize: 14, textAlign: 'center' },
