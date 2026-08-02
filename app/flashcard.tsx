@@ -123,7 +123,7 @@ export default function FlashcardScreen() {
 
   if (cards.length === 0) return (
     <View style={s.centered}>
-      <TouchableOpacity onPress={() => router.back()} style={{ position: 'absolute', top: 60, left: 20 }}>
+      <TouchableOpacity onPress={() => router.back()} style={s.geriAbsolute} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
         <Text style={{ color: '#6C63FF', fontSize: 16, fontWeight: 'bold' }}>← Geri</Text>
       </TouchableOpacity>
       <Text style={s.emoji}>{kategori === '⭐ Öğrendiklerim' ? '📚' : '😕'}</Text>
@@ -134,7 +134,7 @@ export default function FlashcardScreen() {
 
   if (bitti) return (
     <View style={s.centered}>
-      <TouchableOpacity onPress={() => router.back()} style={{ position: 'absolute', top: 60, left: 20 }}>
+      <TouchableOpacity onPress={() => router.back()} style={s.geriAbsolute} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
         <Text style={{ color: '#6C63FF', fontSize: 16, fontWeight: 'bold' }}>← Geri</Text>
       </TouchableOpacity>
       <Text style={s.emoji}>🎉</Text>
@@ -155,7 +155,7 @@ export default function FlashcardScreen() {
   return (
     <View style={s.container}>
       <View style={s.header}>
-        <TouchableOpacity onPress={() => router.back()}>
+        <TouchableOpacity onPress={() => router.back()} style={s.geriDokunma} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
           <Text style={{ color: '#6C63FF', fontSize: 16, fontWeight: 'bold' }}>← Geri</Text>
         </TouchableOpacity>
         <Text style={s.title}>Bilgi Kartları</Text>
@@ -211,6 +211,8 @@ const s = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#0F1923' },
   centered: { flex: 1, backgroundColor: '#0F1923', alignItems: 'center', justifyContent: 'center', padding: 20 },
   header: { paddingTop: 60, paddingHorizontal: 20, paddingBottom: 6, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  geriDokunma: { paddingVertical: 10, paddingHorizontal: 8, marginVertical: -10, marginLeft: -8 },
+  geriAbsolute: { position: 'absolute', top: 50, left: 12, paddingVertical: 10, paddingHorizontal: 8, zIndex: 10 },
   title: { fontSize: 22, fontWeight: 'bold', color: '#fff' },
   sub: { color: '#8899AA', fontSize: 14, textAlign: 'center' },
   emoji: { fontSize: 60, marginBottom: 16 },
