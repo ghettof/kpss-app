@@ -61,7 +61,7 @@ export default function DenemeSinaviCozScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => router.back()}>
+        <TouchableOpacity onPress={() => router.back()} style={styles.geriDokunma} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
           <Text style={styles.geri}>← Çık</Text>
         </TouchableOpacity>
         <View style={styles.headerOrta}>
@@ -123,6 +123,7 @@ const styles = StyleSheet.create({
   geriBtnMetin: { color: '#4A90D9', fontSize: 15, fontWeight: 'bold' },
   header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 16, paddingTop: 20 },
   geri: { color: '#4A90D9', fontSize: 16 },
+  geriDokunma: { paddingVertical: 10, paddingHorizontal: 8, marginVertical: -10, marginLeft: -8 },
   headerOrta: { alignItems: 'center' },
   soruNo: { color: '#fff', fontSize: 15, fontWeight: 'bold' },
   denemeAdi: { color: '#8899AA', fontSize: 11, marginTop: 2, maxWidth: 200 },

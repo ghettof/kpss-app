@@ -69,15 +69,15 @@ export default function GuncelBilgilerScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => router.back()} style={styles.headerBtn}>
+        <TouchableOpacity onPress={() => router.back()} style={styles.headerBtn} hitSlop={{ top: 6, bottom: 6, left: 6, right: 6 }}>
           <Ionicons name="arrow-back" size={22} color="#fff" />
         </TouchableOpacity>
         <Text style={styles.headerBaslik}>KPSS Güncel Bilgiler</Text>
         <View style={styles.headerSag}>
-          <TouchableOpacity onPress={() => setAramaAcik((v) => !v)} style={styles.headerBtn}>
+          <TouchableOpacity onPress={() => setAramaAcik((v) => !v)} style={styles.headerBtn} hitSlop={{ top: 6, bottom: 6, left: 6, right: 6 }}>
             <Ionicons name="search-outline" size={22} color={aramaAcik ? RENK : '#fff'} />
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => setSadeceFavoriler((v) => !v)} style={styles.headerBtn}>
+          <TouchableOpacity onPress={() => setSadeceFavoriler((v) => !v)} style={styles.headerBtn} hitSlop={{ top: 6, bottom: 6, left: 6, right: 6 }}>
             <Ionicons
               name={sadeceFavoriler ? 'heart' : 'heart-outline'}
               size={22}
@@ -161,7 +161,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
   },
-  headerBtn: { padding: 6 },
+  headerBtn: { padding: 8 },
   headerBaslik: { flex: 1, textAlign: 'center', fontSize: 18, fontWeight: 'bold', color: '#fff' },
   headerSag: { flexDirection: 'row' },
   aramaKutu: {

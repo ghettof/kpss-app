@@ -47,7 +47,7 @@ export default function Istatistik() {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => router.back()}>
+        <TouchableOpacity onPress={() => router.back()} style={styles.geriDokunma} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
           <Text style={styles.geri}>← Geri</Text>
         </TouchableOpacity>
         <Text style={styles.baslik}>📊 İstatistikler</Text>
@@ -155,6 +155,7 @@ const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#0F1923' },
   header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 20, paddingTop: 55 },
   geri: { color: '#4A90D9', fontSize: 16 },
+  geriDokunma: { paddingVertical: 10, paddingHorizontal: 8, marginVertical: -10, marginLeft: -8 },
   baslik: { fontSize: 20, fontWeight: 'bold', color: '#fff' },
   ozet: { margin: 16, backgroundColor: '#1A2635', borderRadius: 20, padding: 20, flexDirection: 'row', alignItems: 'center' },
   ozetDaire: { width: 90, height: 90, borderRadius: 45, backgroundColor: '#4A90D9', alignItems: 'center', justifyContent: 'center', marginRight: 20 },

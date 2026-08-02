@@ -11,7 +11,7 @@ const DERSLER = [
 export default function KonuCalis() {
   return (
     <ScrollView style={styles.container}>
-      <TouchableOpacity onPress={() => router.back()} style={styles.geriDon}>
+      <TouchableOpacity onPress={() => router.back()} style={styles.geriDon} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
         <Text style={styles.geriDonText}>← Geri</Text>
       </TouchableOpacity>
 
@@ -39,7 +39,7 @@ export default function KonuCalis() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#0a0a1a', padding: 16 },
-  geriDon: { marginTop: 50, marginBottom: 8 },
+  geriDon: { marginTop: 40, marginBottom: -2, marginLeft: -8, paddingVertical: 10, paddingHorizontal: 8 },
   geriDonText: { color: '#6c63ff', fontSize: 16 },
   baslik: { fontSize: 26, fontWeight: 'bold', color: '#fff', marginBottom: 6 },
   altBaslik: { fontSize: 14, color: '#888', marginBottom: 24 },

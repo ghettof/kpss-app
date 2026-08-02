@@ -53,7 +53,7 @@ export default function SPKSinav() {
     <SafeAreaView style={s.container}>
       <ScrollView>
         <View style={s.header}>
-          <TouchableOpacity onPress={() => router.back()}><Text style={s.geri}>← Geri</Text></TouchableOpacity>
+          <TouchableOpacity onPress={() => router.back()} style={s.geriDokunma} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}><Text style={s.geri}>← Geri</Text></TouchableOpacity>
           <Text style={s.baslik}>SPK Deneme Sınavları</Text>
           <View style={{ width: 50 }} />
         </View>
@@ -111,7 +111,7 @@ export default function SPKSinav() {
   return (
     <SafeAreaView style={s.container}>
       <View style={s.soruHeader}>
-        <TouchableOpacity onPress={() => setEkran('denemeListe')}><Text style={s.geri}>← Çık</Text></TouchableOpacity>
+        <TouchableOpacity onPress={() => setEkran('denemeListe')} style={s.geriDokunma} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}><Text style={s.geri}>← Çık</Text></TouchableOpacity>
         <View style={s.soruHeaderOrta}>
           <Text style={s.soruNo}>{soruIndex + 1} / {aktifSorular.length}</Text>
           <Text style={s.soruDenemeAdi}>{secilenDeneme?.baslik}</Text>
@@ -170,6 +170,7 @@ const s = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#0F1923' },
   header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 16, paddingTop: 20 },
   geri: { color: '#4A90D9', fontSize: 16 },
+  geriDokunma: { paddingVertical: 10, paddingHorizontal: 8, marginVertical: -10, marginLeft: -8 },
   baslik: { fontSize: 20, fontWeight: 'bold', color: '#fff' },
   altBaslikHeader: { color: '#8899AA', fontSize: 13, textAlign: 'center', marginBottom: 16, marginTop: 4 },
   sinavKart: { marginHorizontal: 12, marginBottom: 10, backgroundColor: '#1A2635', borderRadius: 14, padding: 16, borderLeftWidth: 4, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },

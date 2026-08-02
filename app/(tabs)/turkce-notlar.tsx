@@ -25,7 +25,7 @@ export default function TurkceNotlar() {
 
   return (
     <ScrollView style={styles.container}>
-      <TouchableOpacity onPress={() => router.back()} style={styles.geriDon}>
+      <TouchableOpacity onPress={() => router.back()} style={styles.geriDon} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
         <Text style={styles.geriDonText}>← Geri</Text>
       </TouchableOpacity>
       <Text style={[styles.baslik, { color: RENK }]}>📝 Türkçe Notları</Text>
@@ -65,7 +65,7 @@ export default function TurkceNotlar() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#0a0a1a', padding: 16 },
-  geriDon: { marginTop: 50, marginBottom: 8 },
+  geriDon: { marginTop: 40, marginBottom: -2, marginLeft: -8, paddingVertical: 10, paddingHorizontal: 8 },
   geriDonText: { color: '#6c63ff', fontSize: 16 },
   baslik: { fontSize: 24, fontWeight: 'bold', marginBottom: 20 },
   bosMetin: { color: '#888', fontSize: 14, textAlign: 'center', marginTop: 40 },

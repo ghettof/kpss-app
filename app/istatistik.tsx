@@ -60,7 +60,7 @@ export default function Istatistik() {
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.content}>
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => router.back()}>
+        <TouchableOpacity onPress={() => router.back()} style={styles.geriDokunma} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
           <Text style={styles.geri}>← Geri</Text>
         </TouchableOpacity>
         <Text style={styles.baslik}>İstatistikler</Text>
@@ -171,6 +171,7 @@ const styles = StyleSheet.create({
   content: { padding: 16, paddingTop: 52, paddingBottom: 40 },
   header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 18 },
   geri: { color: '#4A90D9', fontSize: 16 },
+  geriDokunma: { paddingVertical: 10, paddingHorizontal: 8, marginVertical: -10, marginLeft: -8 },
   baslik: { color: '#FFFFFF', fontSize: 22, fontWeight: '700' },
   headerSpacer: { width: 48 },
   heroKart: { backgroundColor: '#1A2635', borderRadius: 24, padding: 24, marginBottom: 16 },
