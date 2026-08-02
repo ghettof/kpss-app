@@ -1,6 +1,6 @@
 import { router } from 'expo-router';
-import { useState } from 'react';
-import { SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { useEffect, useState } from 'react';
+import { BackHandler, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { TUM_SORULAR as SORULAR } from '../constants/sorular';
 import { useProgress } from '../hooks/useProgress';
 import { useRozetler } from '../hooks/useRozetler';
@@ -61,11 +61,34 @@ export default function CikmisSorular() {
     if (soruIndex + 1 >= filtreliSorular.length) {
       setBitti(true);
     } else {
-      setSoruIndex(i => i + 1);
-      setSecilen(null);
-      setCevapVerildi(false);
+      const yeniIndex = soruIndex + 1;
+      const oncekiCevap = cevaplar[yeniIndex] ?? null;
+      setSoruIndex(yeniIndex);
+      setSecilen(oncekiCevap);
+      setCevapVerildi(oncekiCevap !== null);
     }
   };
+
+  const oncekiSoru = () => {
+    if (soruIndex === 0) return;
+    const yeniIndex = soruIndex - 1;
+    const oncekiCevap = cevaplar[yeniIndex] ?? null;
+    setSoruIndex(yeniIndex);
+    setSecilen(oncekiCevap);
+    setCevapVerildi(oncekiCevap !== null);
+  };
+
+  useEffect(() => {
+    const backAction = () => {
+      if (secilenYil && !bitti && soruIndex > 0) {
+        oncekiSoru();
+        return true;
+      }
+      return false;
+    };
+    const subscription = BackHandler.addEventListener('hardwareBackPress', backAction);
+    return () => subscription.remove();
+  }, [secilenYil, bitti, soruIndex, cevaplar]);
 
   const resetle = () => {
     setSoruIndex(0);
@@ -159,7 +182,11 @@ export default function CikmisSorular() {
       <ScrollView stickyHeaderIndices={[0]}>
         <View style={styles.stickyHeader}>
           <View style={styles.headerRow}>
-            <TouchableOpacity onPress={() => setSecilenYil(null)}>
+            <TouchableOpacity
+              onPress={() => setSecilenYil(null)}
+              style={styles.geriDokunma}
+              hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
+            >
               <Text style={styles.geri}>← {secilenYil}</Text>
             </TouchableOpacity>
             <Text style={styles.baslik}>Çıkmış Sorular</Text>
@@ -221,6 +248,13 @@ export default function CikmisSorular() {
 
             <View style={styles.butonlar}>
               <TouchableOpacity
+                style={[styles.geriBtn, soruIndex === 0 && styles.btnDisabled]}
+                onPress={oncekiSoru}
+                disabled={soruIndex === 0}
+              >
+                <Text style={styles.geriBtnText}>← Geri</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
                 style={[styles.onaylaBtn, !cevapVerildi && styles.btnDisabled]}
                 onPress={sonrakiSoru}
                 disabled={!cevapVerildi}
@@ -243,6 +277,7 @@ const styles = StyleSheet.create({
   headerRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingHorizontal: 16, paddingTop: 12, paddingBottom: 10 },
   stickyHeader: { backgroundColor: '#0F1923', paddingBottom: 8 },
   geri: { color: '#4A90D9', fontSize: 16 },
+  geriDokunma: { paddingVertical: 10, paddingHorizontal: 8, marginVertical: -10, marginLeft: -8 },
   baslik: { fontSize: 18, fontWeight: 'bold', color: '#fff' },
   skor: { flexDirection: 'row', gap: 10 },
   dogruText: { color: '#2ECC71', fontSize: 16, fontWeight: 'bold' },
@@ -274,8 +309,10 @@ const styles = StyleSheet.create({
   aciklamaKutuYanlis: { backgroundColor: '#2A1A1A', borderColor: '#E74C3C' },
   aciklamaBaslik: { color: '#fff', fontSize: 15, fontWeight: 'bold', marginBottom: 8 },
   aciklamaMetin: { color: '#CCC', fontSize: 14, lineHeight: 22 },
-  butonlar: { marginHorizontal: 12, marginBottom: 24 },
-  onaylaBtn: { backgroundColor: '#4A90D9', borderRadius: 12, padding: 16, alignItems: 'center' },
+  butonlar: { flexDirection: 'row', gap: 10, marginHorizontal: 12, marginBottom: 24 },
+  geriBtn: { flex: 1, backgroundColor: '#1A2635', borderRadius: 12, padding: 16, alignItems: 'center', borderWidth: 1, borderColor: '#2A3F55' },
+  geriBtnText: { color: '#fff', fontSize: 16, fontWeight: 'bold' },
+  onaylaBtn: { flex: 1, backgroundColor: '#4A90D9', borderRadius: 12, padding: 16, alignItems: 'center' },
   btnDisabled: { backgroundColor: '#2A3F55' },
   onaylaText: { color: '#fff', fontSize: 16, fontWeight: 'bold' },
   bosSonuc: { margin: 40, alignItems: 'center' },
