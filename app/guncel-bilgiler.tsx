@@ -3,6 +3,7 @@ import { useFocusEffect } from '@react-navigation/native';
 import { router } from 'expo-router';
 import { useCallback, useMemo, useState } from 'react';
 import { FlatList, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { GuncelBilgi, guncelBilgilerData } from '../constants/guncelBilgilerData';
 import { FAVORI_KEY, getIdSet, OKUNAN_KEY } from '../utils/guncelBilgilerStorage';
 
@@ -13,6 +14,7 @@ const KART_BG = '#1A2635';
 type Filtre = 'tumu' | 'okunmadi' | 'okundu';
 
 export default function GuncelBilgilerScreen() {
+  const insets = useSafeAreaInsets();
   const [okunanIds, setOkunanIds] = useState<Set<string>>(new Set());
   const [favoriIds, setFavoriIds] = useState<Set<string>>(new Set());
   const [filtre, setFiltre] = useState<Filtre>('tumu');
@@ -68,7 +70,7 @@ export default function GuncelBilgilerScreen() {
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
+      <View style={[styles.header, { paddingTop: insets.top + 12 }]}>
         <View style={styles.headerUst}>
           <View style={styles.headerBtnSpacer} />
           <Text style={styles.headerBaslik}>KPSS Güncel Bilgiler</Text>
@@ -157,7 +159,6 @@ export default function GuncelBilgilerScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: BG },
   header: {
-    paddingTop: 56,
     paddingHorizontal: 12,
     paddingBottom: 10,
   },

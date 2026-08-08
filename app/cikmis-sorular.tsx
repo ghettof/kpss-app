@@ -1,6 +1,7 @@
 import { router } from 'expo-router';
 import { useEffect, useState } from 'react';
-import { BackHandler, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { BackHandler, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { TUM_SORULAR as SORULAR } from '../constants/sorular';
 import { useProgress } from '../hooks/useProgress';
 import { useRozetler } from '../hooks/useRozetler';
@@ -8,6 +9,7 @@ import { useRozetler } from '../hooks/useRozetler';
 const DERSLER = ['Tümü', 'Türkçe', 'Matematik', 'Tarih', 'Coğrafya', 'Vatandaşlık', 'Güncel Bilgiler'];
 
 export default function CikmisSorular() {
+  const insets = useSafeAreaInsets();
   const { cevapKaydet } = useProgress();
   const { rozetleriKontrolEt } = useRozetler();
   const YILLAR = Array.from(new Set(SORULAR.map(s => s.yil))).sort((a, b) => b - a);
@@ -118,8 +120,8 @@ export default function CikmisSorular() {
 
   if (!secilenYil) {
     return (
-      <SafeAreaView style={styles.container}>
-        <View style={styles.header}>
+      <View style={styles.container}>
+        <View style={[styles.header, { paddingTop: insets.top + 12 }]}>
           <TouchableOpacity onPress={() => router.back()}>
             <Text style={styles.geri}>← Geri</Text>
           </TouchableOpacity>
@@ -140,7 +142,7 @@ export default function CikmisSorular() {
             })}
           </View>
         </ScrollView>
-      </SafeAreaView>
+      </View>
     );
   }
 
@@ -149,8 +151,8 @@ export default function CikmisSorular() {
     const net = (dogru - yanlis * 0.25).toFixed(2);
     const basari = Math.round((dogru / filtreliSorular.length) * 100);
     return (
-      <SafeAreaView style={styles.container}>
-        <ScrollView contentContainerStyle={styles.sonucContainer}>
+      <View style={styles.container}>
+        <ScrollView contentContainerStyle={[styles.sonucContainer, { paddingTop: insets.top + 24 }]}>
           <Text style={styles.sonucEmoji}>{basari >= 70 ? '🏆' : basari >= 50 ? '👍' : '📚'}</Text>
           <Text style={styles.sonucBaslik}>Sınav Bitti!</Text>
           <Text style={styles.sonucYilText}>{secilenYil} • {secilenDers === 'Tümü' ? 'Tüm Dersler' : secilenDers}</Text>
@@ -173,15 +175,15 @@ export default function CikmisSorular() {
             <Text style={styles.yilBtnText}>← Yıl Seçimine Dön</Text>
           </TouchableOpacity>
         </ScrollView>
-      </SafeAreaView>
+      </View>
     );
   }
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <ScrollView stickyHeaderIndices={[0]}>
         <View style={styles.stickyHeader}>
-          <View style={styles.headerRow}>
+          <View style={[styles.headerRow, { paddingTop: insets.top + 12 }]}>
             <TouchableOpacity
               onPress={() => setSecilenYil(null)}
               style={styles.geriDokunma}
@@ -267,7 +269,7 @@ export default function CikmisSorular() {
           </>
         )}
       </ScrollView>
-    </SafeAreaView>
+    </View>
   );
 }
 
