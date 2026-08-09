@@ -487,3 +487,4 @@ export const guncelBilgilerData: GuncelBilgi[] = [
   { id: "gb415", kategori: "Coğrafya", on_yuz: "Türkiye'de en çok göç veren ve en çok göç alan bölgeler hangileridir?", arka_yuz: "En çok göç veren: Karadeniz Bölgesi. En çok göç alan: Marmara Bölgesi.", zorluk: "orta", aktif: true },
   { id: "gb416", kategori: "Coğrafya", on_yuz: "Güneş enerjisinden elektrik üretimi potansiyeli en yüksek ve en düşük bölgelerimiz hangileridir?", arka_yuz: "En yüksek: Güneydoğu Anadolu. En düşük: Karadeniz (bulutluluk oranı en yüksek bölge).", zorluk: "orta", aktif: true },
   { id: "gb417", kategori: "Coğrafya", on_yuz: "\"Siyah Altın\" olarak bilinen ve Zonguldak ile özdeşleşen enerji kaynağı nedir?", arka_yuz: "Taş Kömürü.", zorluk: "kolay", aktif: true },
+];
