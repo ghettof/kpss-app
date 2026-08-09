@@ -155,11 +155,13 @@ export default function FlashcardScreen() {
   return (
     <View style={s.container}>
       <View style={s.header}>
-        <TouchableOpacity onPress={() => router.back()} style={s.geriDokunma} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
+        <View style={s.headerTitleRow}>
+          <Text style={s.title}>Bilgi Kartları</Text>
+          <Text style={s.sub}>{index + 1} / {cards.length}</Text>
+        </View>
+        <TouchableOpacity onPress={() => router.back()} style={s.geriAlt} hitSlop={{ top: 15, bottom: 15, left: 15, right: 15 }}>
           <Text style={{ color: '#6C63FF', fontSize: 16, fontWeight: 'bold' }}>← Geri</Text>
         </TouchableOpacity>
-        <Text style={s.title}>Bilgi Kartları</Text>
-        <Text style={s.sub}>{index + 1} / {cards.length}</Text>
       </View>
 
       <View style={s.banner}>
@@ -210,8 +212,9 @@ export default function FlashcardScreen() {
 const s = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#0F1923' },
   centered: { flex: 1, backgroundColor: '#0F1923', alignItems: 'center', justifyContent: 'center', padding: 20 },
-  header: { paddingTop: 60, paddingHorizontal: 20, paddingBottom: 6, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
-  geriDokunma: { paddingVertical: 10, paddingHorizontal: 8, marginVertical: -10, marginLeft: -8 },
+  header: { paddingTop: 60, paddingHorizontal: 20, paddingBottom: 6 },
+  headerTitleRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  geriAlt: { marginTop: 10, alignSelf: 'flex-start', marginLeft: -16, paddingVertical: 12, paddingHorizontal: 16, zIndex: 20, elevation: 20 },
   geriAbsolute: { position: 'absolute', top: 50, left: 12, paddingVertical: 10, paddingHorizontal: 8, zIndex: 10 },
   title: { fontSize: 22, fontWeight: 'bold', color: '#fff' },
   sub: { color: '#8899AA', fontSize: 14, textAlign: 'center' },
