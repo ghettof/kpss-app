@@ -121,15 +121,17 @@ export default function CikmisSorular() {
   if (!secilenYil) {
     return (
       <View style={styles.container}>
-        <View style={[styles.header, { paddingTop: insets.top + 12 }]}>
-          <TouchableOpacity onPress={() => router.back()}>
+        <View style={[styles.yilHeaderCol, { paddingTop: insets.top + 12 }]}>
+          <Text style={styles.altBaslik}>📅 Yıl Seç</Text>
+          <TouchableOpacity
+            onPress={() => router.back()}
+            style={styles.geriDokunmaAlt}
+            hitSlop={{ top: 15, bottom: 15, left: 15, right: 15 }}
+          >
             <Text style={styles.geri}>← Geri</Text>
           </TouchableOpacity>
-          <Text style={styles.baslik}>Çıkmış Sorular</Text>
-          <View style={{ width: 60 }} />
         </View>
         <ScrollView contentContainerStyle={styles.yilListesi}>
-          <Text style={styles.altBaslik}>📅 Yıl Seç</Text>
           <View style={styles.yilGrid}>
             {YILLAR.map(yil => {
               const soruSayisi = SORULAR.filter(s => s.yil === yil).length;
@@ -275,16 +277,17 @@ export default function CikmisSorular() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#0F1923' },
-  header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 16, paddingTop: 12 },
+  yilHeaderCol: { paddingHorizontal: 16, paddingBottom: 10, zIndex: 10, elevation: 10 },
+  geriDokunmaAlt: { marginTop: 10, alignSelf: 'flex-start', paddingVertical: 12, paddingHorizontal: 16, zIndex: 20, elevation: 20 },
   headerRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingHorizontal: 16, paddingTop: 12, paddingBottom: 10 },
   stickyHeader: { backgroundColor: '#0F1923', paddingBottom: 8 },
   geri: { color: '#4A90D9', fontSize: 16 },
-  geriDokunma: { paddingVertical: 10, paddingHorizontal: 8, marginVertical: -10, marginLeft: -8 },
+  geriDokunma: { paddingVertical: 10, paddingHorizontal: 8, marginVertical: -10, marginLeft: -8, zIndex: 10, elevation: 10 },
   baslik: { fontSize: 18, fontWeight: 'bold', color: '#fff' },
   skor: { flexDirection: 'row', gap: 10 },
   dogruText: { color: '#2ECC71', fontSize: 16, fontWeight: 'bold' },
   yanlisText: { color: '#E74C3C', fontSize: 16, fontWeight: 'bold' },
-  altBaslik: { fontSize: 18, fontWeight: 'bold', color: '#fff', marginBottom: 16, paddingHorizontal: 16 },
+  altBaslik: { fontSize: 18, fontWeight: 'bold', color: '#fff' },
   yilListesi: { padding: 16 },
   yilGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 12 },
   yilKart: { backgroundColor: '#1A2635', borderRadius: 14, padding: 20, width: '47%', alignItems: 'center', borderWidth: 1, borderColor: '#2A3F55' },
