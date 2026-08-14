@@ -40,6 +40,12 @@ export default function HomeScreen() {
           <Text style={styles.cardDesc}>Swipe ile hızlı tekrar</Text>
         </TouchableOpacity>
 
+        <TouchableOpacity style={[styles.cardWide, { backgroundColor: '#8E44AD' }]} onPress={() => router.push('/kpss-araclari')}>
+          <Text style={styles.cardEmoji}>🧰</Text>
+          <Text style={styles.cardTitle}>KPSS Araçları</Text>
+          <Text style={styles.cardDesc}>Geri sayım, puan hesaplama, notlar</Text>
+        </TouchableOpacity>
+
         <TouchableOpacity style={[styles.card, { backgroundColor: '#16A085' }]} onPress={() => router.push('/istatistik')}>
           <Text style={styles.cardEmoji}>📊</Text>
           <Text style={styles.cardTitle}>İstatistikler</Text>

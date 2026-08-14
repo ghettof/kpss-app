@@ -27,6 +27,10 @@ export default function RootLayout() {
         <Stack.Screen name="flashcard" options={{ headerShown: false }} />
         <Stack.Screen name="guncel-bilgiler" options={{ headerShown: false }} />
         <Stack.Screen name="guncel-bilgi-detay" options={{ headerShown: false }} />
+        <Stack.Screen name="kpss-araclari" options={{ headerShown: false }} />
+        <Stack.Screen name="sinav-geri-sayim" options={{ headerShown: false }} />
+        <Stack.Screen name="puan-hesaplama" options={{ headerShown: false }} />
+        <Stack.Screen name="notlarim" options={{ headerShown: false }} />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>
